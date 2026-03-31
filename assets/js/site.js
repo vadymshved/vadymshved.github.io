@@ -343,3 +343,15 @@ document.querySelectorAll('.skills-accordion, .bio-accordion').forEach((details)
     details.toggleAttribute('open');
   });
 });
+
+
+// Teaching page accordions: start collapsed and toggle cleanly
+document.querySelectorAll('.teaching-focus-accordion').forEach((details) => {
+  details.removeAttribute('open');
+  const summary = details.querySelector('summary');
+  if (!summary) return;
+  summary.addEventListener('click', (event) => {
+    event.preventDefault();
+    details.toggleAttribute('open');
+  });
+});

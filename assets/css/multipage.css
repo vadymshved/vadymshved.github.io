@@ -2750,3 +2750,156 @@ footer .container > .button-row {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* === Footer polish pass === */
+.footer-cta-btn {
+  gap: 0.55rem;
+}
+
+.footer-links .footer-link,
+.footer-meta .footer-link {
+  display: inline-flex;
+  align-items: center;
+  color: inherit;
+  padding: 0.15rem 0;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  transition: all 0.25s ease;
+}
+
+.footer-links .footer-link.active,
+.footer-meta .footer-link.active {
+  padding: 0.38rem 0.8rem;
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(255,255,255,0.12);
+  color: #fff;
+  backdrop-filter: blur(6px);
+}
+
+.footer-links .footer-link:hover,
+.footer-meta .footer-link:hover {
+  background: rgba(255,255,255,0.06);
+  border-color: rgba(255,255,255,0.10);
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  color: #fff;
+  text-decoration: none !important;
+}
+
+.footer-contact-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-contact-item span:last-child {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1.2;
+}
+
+.footer-contact-item .icon-badge {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.05) !important;
+  border: 1px solid rgba(255,255,255,0.08) !important;
+  display: inline-grid;
+  place-items: center;
+  color: rgba(255,255,255,0.65) !important;
+  transition: all 0.25s ease;
+  box-shadow: none !important;
+}
+
+.footer-contact-item:hover .icon-badge {
+  background: rgba(35, 206, 217, 0.12) !important;
+  border-color: rgba(35, 206, 217, 0.25) !important;
+  color: #23CED9 !important;
+}
+
+footer a[href*='linkedin.com'].footer-contact-item .icon-badge::after,
+footer a[href*='instagram.com'].footer-contact-item .icon-badge::after {
+  filter: invert(77%) sepia(7%) saturate(265%) hue-rotate(182deg) brightness(91%) contrast(87%) !important;
+}
+
+footer a[href*='linkedin.com'].footer-contact-item:hover .icon-badge::after,
+footer a[href*='instagram.com'].footer-contact-item:hover .icon-badge::after {
+  filter: invert(71%) sepia(44%) saturate(1387%) hue-rotate(138deg) brightness(96%) contrast(94%) !important;
+}
+
+
+/* === Teaching focus accordions === */
+.teaching-focus-accordion-grid {
+  align-items: start;
+}
+
+.teaching-focus-accordion {
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+.teaching-focus-accordion summary {
+  list-style: none;
+  cursor: pointer;
+  display: grid;
+  gap: 0.55rem;
+  padding: 1.4rem 1.45rem;
+  position: relative;
+}
+
+.teaching-focus-accordion summary::-webkit-details-marker { display: none; }
+
+.teaching-focus-accordion summary::after {
+  content: "";
+  position: absolute;
+  top: 1.55rem;
+  right: 1.35rem;
+  width: 1rem;
+  height: 1rem;
+  background: var(--accent);
+  opacity: 0.85;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Cpath fill='black' d='m181.66 133.66l-48 48a8 8 0 0 1-11.32 0l-48-48a8 8 0 0 1 11.32-11.32L128 164.69l42.34-42.35a8 8 0 0 1 11.32 11.32'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Cpath fill='black' d='m181.66 133.66l-48 48a8 8 0 0 1-11.32 0l-48-48a8 8 0 0 1 11.32-11.32L128 164.69l42.34-42.35a8 8 0 0 1 11.32 11.32'/%3E%3C/svg%3E");
+  -webkit-mask-repeat:no-repeat; -webkit-mask-position:center; -webkit-mask-size:contain;
+  mask-repeat:no-repeat; mask-position:center; mask-size:contain;
+  transition: transform 0.25s ease;
+}
+
+.teaching-focus-accordion[open] summary::after {
+  transform: rotate(180deg);
+}
+
+.teaching-focus-accordion summary h3 {
+  margin: 0;
+  padding-right: 2.1rem;
+}
+
+.teaching-focus-intro {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.58;
+  max-width: 42rem;
+}
+
+.teaching-focus-body {
+  padding: 0 1.45rem 1.45rem;
+}
+
+.teaching-focus-body .stack-list {
+  gap: 0.85rem;
+}
+
+.teaching-focus-body .stack-list li {
+  transform: none !important;
+}
+
+@media (max-width: 900px) {
+  .teaching-focus-accordion summary {
+    padding: 1.2rem 1.2rem;
+  }
+  .teaching-focus-body {
+    padding: 0 1.2rem 1.2rem;
+  }
+}
