@@ -1,0 +1,17 @@
+QUICK FILE MAP
+
+Home hero portrait:
+- assets/data/site-media.json
+- assets/images/gallery/portrait/
+
+Preview blocks:
+- assets/data/gallery-previews.json
+
+All gallery images and captions:
+- assets/data/gallery-items.json
+
+Gallery categories and filter buttons:
+- assets/data/gallery-categories.json
+
+Local fallback mirror:
+- assets/data/gallery-data.js

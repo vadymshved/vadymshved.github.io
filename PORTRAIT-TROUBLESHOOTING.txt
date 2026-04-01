@@ -1,0 +1,53 @@
+WHY THE PORTRAIT DID NOT CHANGE
+
+Most likely reason:
+the site was reading the fallback file:
+assets/data/gallery-data.js
+
+and NOT the edited JSON file:
+assets/data/site-media.json
+
+This happened because the previous JS logic used the inline fallback first.
+So even if you changed site-media.json, the old image path from gallery-data.js could still win.
+
+FIX IN THIS VERSION
+Now the site tries to read JSON files first:
+- assets/data/gallery-categories.json
+- assets/data/gallery-items.json
+- assets/data/gallery-previews.json
+- assets/data/site-media.json
+
+Only if JSON cannot be loaded, it falls back to:
+- assets/data/gallery-data.js
+
+WHAT YOU SHOULD EDIT
+For the Home portrait, edit:
+assets/data/site-media.json
+
+Change:
+"src": "assets/images/gallery/portrait/hero-portrait.svg"
+
+to your real file, for example:
+"src": "assets/images/gallery/portrait/hero-portrait.jpg"
+
+ALSO CHECK
+1. The image really exists in:
+   assets/images/gallery/portrait/
+2. The file name matches exactly, including:
+   - upper/lowercase letters
+   - .jpg / .jpeg / .png / .webp
+3. Hard refresh the browser after replacing the file.
+
+IF YOU OPEN THE SITE LOCALLY
+Some browsers block JSON fetch for file:// pages.
+If that happens, you have two options:
+
+OPTION A
+Open the site through a local server or GitHub Pages.
+
+OPTION B
+Edit BOTH files:
+- assets/data/site-media.json
+- assets/data/gallery-data.js
+
+and make sure the src path is the same in both places.

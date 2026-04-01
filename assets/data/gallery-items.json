@@ -1,0 +1,203 @@
+[
+  {
+    "id": "teaching-cover",
+    "filename": "assets/images/gallery/teaching/cover.svg",
+    "category": "teaching",
+    "title": "Teaching preview cover",
+    "caption": "Teaching preview cover",
+    "alt": "Teaching gallery cover placeholder",
+    "visible": false,
+    "featured": true,
+    "order": 1,
+    "previewTargets": []
+  },
+  {
+    "id": "teaching-1",
+    "filename": "assets/images/gallery/teaching/teaching-1.svg",
+    "category": "teaching",
+    "title": "Teaching 1",
+    "caption": "Classroom moment",
+    "alt": "Teaching placeholder 1",
+    "visible": true,
+    "featured": true,
+    "order": 10,
+    "previewTargets": [
+      "home",
+      "teaching"
+    ]
+  },
+  {
+    "id": "teaching-2",
+    "filename": "assets/images/gallery/teaching/teaching-2.svg",
+    "category": "teaching",
+    "title": "Teaching 2",
+    "caption": "Teaching support session",
+    "alt": "Teaching placeholder 2",
+    "visible": true,
+    "featured": false,
+    "order": 11,
+    "previewTargets": [
+      "about"
+    ]
+  },
+  {
+    "id": "teaching-3",
+    "filename": "assets/images/gallery/teaching/teaching-3.svg",
+    "category": "teaching",
+    "title": "Teaching 3",
+    "caption": "Chemistry teaching practice",
+    "alt": "Teaching placeholder 3",
+    "visible": true,
+    "featured": false,
+    "order": 12,
+    "previewTargets": [
+      "teaching"
+    ]
+  },
+  {
+    "id": "teaching-4",
+    "filename": "assets/images/gallery/teaching/teaching-4.svg",
+    "category": "teaching",
+    "title": "Teaching 4",
+    "caption": "Tutoring and learning support",
+    "alt": "Teaching placeholder 4",
+    "visible": true,
+    "featured": false,
+    "order": 13,
+    "previewTargets": [
+      "teaching"
+    ]
+  },
+  {
+    "id": "science-cover",
+    "filename": "assets/images/gallery/science/cover.svg",
+    "category": "science",
+    "title": "Science preview cover",
+    "caption": "Science preview cover",
+    "alt": "Science gallery cover placeholder",
+    "visible": false,
+    "featured": true,
+    "order": 20,
+    "previewTargets": []
+  },
+  {
+    "id": "science-1",
+    "filename": "assets/images/gallery/science/science-1.svg",
+    "category": "science",
+    "title": "Science 1",
+    "caption": "Laboratory moment",
+    "alt": "Science placeholder 1",
+    "visible": true,
+    "featured": true,
+    "order": 21,
+    "previewTargets": [
+      "home",
+      "academic"
+    ]
+  },
+  {
+    "id": "science-2",
+    "filename": "assets/images/gallery/science/science-2.svg",
+    "category": "science",
+    "title": "Science 2",
+    "caption": "Research context",
+    "alt": "Science placeholder 2",
+    "visible": true,
+    "featured": false,
+    "order": 22,
+    "previewTargets": [
+      "about",
+      "academic"
+    ]
+  },
+  {
+    "id": "science-3",
+    "filename": "assets/images/gallery/science/science-3.svg",
+    "category": "science",
+    "title": "Science 3",
+    "caption": "Academic environment",
+    "alt": "Science placeholder 3",
+    "visible": true,
+    "featured": false,
+    "order": 23,
+    "previewTargets": [
+      "academic"
+    ]
+  },
+  {
+    "id": "science-4",
+    "filename": "assets/images/gallery/science/science-4.svg",
+    "category": "science",
+    "title": "Science 4",
+    "caption": "Scientific atmosphere",
+    "alt": "Science placeholder 4",
+    "visible": true,
+    "featured": false,
+    "order": 24,
+    "previewTargets": []
+  },
+  {
+    "id": "life-cover",
+    "filename": "assets/images/gallery/life/cover.svg",
+    "category": "life",
+    "title": "Life preview cover",
+    "caption": "Life preview cover",
+    "alt": "Life gallery cover placeholder",
+    "visible": false,
+    "featured": true,
+    "order": 30,
+    "previewTargets": []
+  },
+  {
+    "id": "life-1",
+    "filename": "assets/images/gallery/life/life-1.svg",
+    "category": "life",
+    "title": "Life 1",
+    "caption": "Travel and atmosphere",
+    "alt": "Life placeholder 1",
+    "visible": true,
+    "featured": true,
+    "order": 31,
+    "previewTargets": [
+      "home"
+    ]
+  },
+  {
+    "id": "life-2",
+    "filename": "assets/images/gallery/life/life-2.svg",
+    "category": "life",
+    "title": "Life 2",
+    "caption": "Everyday personal moment",
+    "alt": "Life placeholder 2",
+    "visible": true,
+    "featured": false,
+    "order": 32,
+    "previewTargets": [
+      "about"
+    ]
+  },
+  {
+    "id": "life-3",
+    "filename": "assets/images/gallery/life/life-3.svg",
+    "category": "life",
+    "title": "Life 3",
+    "caption": "International moment",
+    "alt": "Life placeholder 3",
+    "visible": true,
+    "featured": false,
+    "order": 33,
+    "previewTargets": []
+  },
+  {
+    "id": "life-4",
+    "filename": "assets/images/gallery/life/life-4.svg",
+    "category": "life",
+    "title": "Life 4",
+    "caption": "Travel experience",
+    "alt": "Life placeholder 4",
+    "visible": true,
+    "featured": false,
+    "order": 34,
+    "previewTargets": []
+  }
+]

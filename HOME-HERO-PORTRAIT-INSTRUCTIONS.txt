@@ -1,0 +1,63 @@
+HOME HERO PORTRAIT — HOW TO REPLACE
+
+Current portrait file:
+assets/images/gallery/portrait/hero-portrait.svg
+
+You can replace it with your own photo in 2 ways.
+
+OPTION 1 — EASIEST
+1. Prepare your portrait image.
+2. Rename it to:
+   hero-portrait.jpg
+   or hero-portrait.png
+   or hero-portrait.webp
+3. Put it into:
+   assets/images/gallery/portrait/
+4. Open this file:
+   assets/data/site-media.json
+5. Change:
+   "src": "assets/images/gallery/portrait/hero-portrait.svg"
+   to for example:
+   "src": "assets/images/gallery/portrait/hero-portrait.jpg"
+
+OPTION 2 — KEEP YOUR OWN FILE NAME
+1. Put your image into:
+   assets/images/gallery/portrait/
+2. Open:
+   assets/data/site-media.json
+3. Change the "src" field to your file name.
+   Example:
+   "src": "assets/images/gallery/portrait/my-portrait-2026.jpg"
+
+RECOMMENDED IMAGE FORMAT
+- vertical portrait photo
+- JPG, PNG, or WEBP
+- recommended minimum width: 1400 px
+- recommended aspect: portrait photo with some free space around head and shoulders
+
+CURRENT CROPPING BEHAVIOR
+- the image fills the whole hero frame automatically
+- it uses cover mode
+- it is centered
+- the visible focus is slightly shifted upward to better frame the face
+
+IF YOU WANT TO ADJUST CROPPING LATER
+Open:
+assets/css/multipage.css
+
+Find:
+.portrait-box--hero .portrait-box-image
+
+Current rule:
+object-position: center 24%;
+
+Examples:
+- center 20%  -> shifts image a bit higher
+- center 30%  -> shifts image a bit lower
+- center center -> perfect center crop
+
+IMPORTANT
+You do NOT need to edit index.html every time.
+For future portrait changes, only update:
+- the image file in assets/images/gallery/portrait/
+- and, if needed, the src path in assets/data/site-media.json

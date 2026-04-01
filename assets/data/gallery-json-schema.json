@@ -1,0 +1,68 @@
+{
+  "gallery-categories.json": {
+    "type": "array",
+    "itemFields": {
+      "id": "string, unique category id, e.g. teaching",
+      "title": "string, visible category name",
+      "description": "string, general category description",
+      "icon": "string, phosphor-like icon key used by JS",
+      "order": "number, sorting order",
+      "visibleInFilters": "boolean, show in top filter pills on gallery page",
+      "visibleAsAlbum": "boolean, show as large album card on gallery page",
+      "hash": "string, URL hash target, usually same as id",
+      "coverImage": "string|null, path to category cover image",
+      "albumText": "string, optional short text shown on album card"
+    }
+  },
+  "gallery-items.json": {
+    "type": "array",
+    "itemFields": {
+      "id": "string, unique image id",
+      "filename": "string, relative path to image file",
+      "category": "string, category id that this image belongs to",
+      "title": "string, internal / visible short title",
+      "caption": "string, visible caption under image on gallery page",
+      "alt": "string, alt text for accessibility",
+      "visible": "boolean, whether the image appears in gallery grid",
+      "featured": "boolean, optional future use for highlights",
+      "order": "number, sort order inside gallery",
+      "previewTargets": "array of page ids where this image may be reused, e.g. ['home','teaching']"
+    }
+  },
+  "gallery-previews.json": {
+    "type": "object",
+    "pageObjectFields": {
+      "title": "string, title of 3-image preview block",
+      "text": "string, subtitle / intro text",
+      "targetHash": "string, category hash for the View Gallery button",
+      "items": [
+        {
+          "itemId": "string, id from gallery-items.json",
+          "label": "string, short label shown under preview image"
+        }
+      ]
+    },
+    "pageKeys": [
+      "home",
+      "about",
+      "teaching",
+      "academic"
+    ]
+  },
+  "site-media.json": {
+    "type": "object",
+    "mediaObjectFields": {
+      "src": "string, relative image path",
+      "alt": "string, alt text",
+      "label": "string, optional badge text"
+    },
+    "currentKeys": {
+      "homeHeroPortrait": "main portrait image in homepage hero"
+    },
+    "futureExamples": {
+      "aboutPortrait": "optional portrait for about page",
+      "teachingFeaturedImage": "optional lead teaching image",
+      "academicFeaturedImage": "optional lead academic image"
+    }
+  }
+}

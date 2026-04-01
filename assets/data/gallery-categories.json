@@ -1,0 +1,82 @@
+[
+  {
+    "id": "all",
+    "title": "All",
+    "description": "All visible gallery items across categories.",
+    "icon": "squares-four",
+    "order": 0,
+    "visibleInFilters": true,
+    "visibleAsAlbum": false,
+    "hash": "all",
+    "coverImage": null
+  },
+  {
+    "id": "teaching",
+    "title": "Teaching",
+    "description": "Classroom moments, tutoring, and chemistry teaching practice.",
+    "icon": "chalkboard-teacher",
+    "order": 1,
+    "visibleInFilters": true,
+    "visibleAsAlbum": true,
+    "hash": "teaching",
+    "coverImage": "assets/images/gallery/teaching/cover.svg",
+    "albumText": "Classroom teaching, tutoring, and chemistry learning moments."
+  },
+  {
+    "id": "science",
+    "title": "Science",
+    "description": "Laboratory work, research atmosphere, and academic context.",
+    "icon": "flask",
+    "order": 2,
+    "visibleInFilters": true,
+    "visibleAsAlbum": true,
+    "hash": "science",
+    "coverImage": "assets/images/gallery/science/cover.svg",
+    "albumText": "Laboratory, research, and academic environment visuals."
+  },
+  {
+    "id": "life",
+    "title": "Life",
+    "description": "Travel, atmosphere, and selected personal moments.",
+    "icon": "globe-hemisphere-west",
+    "order": 3,
+    "visibleInFilters": true,
+    "visibleAsAlbum": true,
+    "hash": "life",
+    "coverImage": "assets/images/gallery/life/cover.svg",
+    "albumText": "Travel, atmosphere, and selected personal moments."
+  },
+  {
+    "id": "academic",
+    "title": "Academic",
+    "description": "University, laboratory, and academic environment images.",
+    "icon": "graduation-cap",
+    "order": 4,
+    "visibleInFilters": false,
+    "visibleAsAlbum": false,
+    "hash": "academic",
+    "coverImage": "assets/images/gallery/science/cover.svg"
+  },
+  {
+    "id": "travel",
+    "title": "Travel",
+    "description": "International and travel-related images.",
+    "icon": "airplane-tilt",
+    "order": 5,
+    "visibleInFilters": false,
+    "visibleAsAlbum": false,
+    "hash": "travel",
+    "coverImage": "assets/images/gallery/life/cover.svg"
+  },
+  {
+    "id": "projects",
+    "title": "Projects",
+    "description": "Work, volunteering, and project-related images.",
+    "icon": "folders",
+    "order": 6,
+    "visibleInFilters": false,
+    "visibleAsAlbum": false,
+    "hash": "projects",
+    "coverImage": "assets/images/gallery/life/cover.svg"
+  }
+]
