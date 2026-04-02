@@ -666,16 +666,16 @@ if (mobileToggle && mainNav) {
     });
   });
 
-  document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape') {
-      closeMobileMenu();
-    }
-  });
-
   document.addEventListener('click', (event) => {
     if (!mainNav.classList.contains('active')) return;
     if (mainNav.contains(event.target) || mobileToggle.contains(event.target)) return;
     closeMobileMenu();
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
+      closeMobileMenu();
+    }
   });
 
   window.addEventListener('resize', () => {

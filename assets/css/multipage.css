@@ -80,7 +80,7 @@ body {
 }
 
 /* =========================================
-   STEP 1 — Mobile menu (stable dropdown for Safari/iPhone)
+   STEP 1 — Mobile menu (simple Safari-safe dropdown)
    ========================================= */
 .topbar {
   background: rgba(248, 250, 252, 0.92);
@@ -102,7 +102,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   margin-left: 16px;
-  z-index: 1002;
+  z-index: 1003;
 }
 
 .mobile-toggle span {
@@ -115,10 +115,15 @@ body {
 }
 
 @media (max-width: 768px) {
+  .topbar {
+    overflow: visible !important;
+  }
+
   .topbar-inner {
     grid-template-columns: auto 1fr auto auto !important;
     align-items: center;
     gap: 0.85rem !important;
+    overflow: visible !important;
   }
 
   .brand {
@@ -127,43 +132,42 @@ body {
 
   .lang-switcher {
     justify-self: end;
+    position: relative;
+    z-index: 1004;
   }
 
   .mobile-toggle {
     display: flex;
+    position: relative;
+    z-index: 1005;
   }
 
   .nav-shell {
-    display: block !important;
-    position: fixed;
-    top: 76px;
-    left: 16px;
-    right: 16px;
-    width: auto;
-    height: auto;
-    max-height: calc(100vh - 104px);
-    padding: 14px 18px 16px;
-    background: rgba(255, 255, 255, 0.98);
+    display: none !important;
+    position: absolute;
+    top: calc(100% + 12px);
+    left: 0;
+    right: 0;
+    width: min(calc(100vw - 32px), 360px);
+    margin: 0 auto;
+    max-height: calc(100vh - 120px);
+    padding: 12px 14px 14px;
+    background: #ffffff;
     border: 1px solid rgba(226, 232, 240, 0.96);
     border-radius: 20px;
     box-shadow: 0 20px 48px rgba(15, 23, 42, 0.12);
     overflow-y: auto;
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transform: translateY(-10px) scale(0.985);
-    transform-origin: top right;
-    transition: opacity 0.22s ease, visibility 0.22s ease, transform 0.22s ease;
-    z-index: 1001;
-    -webkit-backdrop-filter: none;
-    backdrop-filter: none;
+    z-index: 1002;
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
   }
 
   .nav-shell.active {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-    transform: translateY(0) scale(1);
+    display: block !important;
   }
 
   .desktop-nav ul {
@@ -211,7 +215,12 @@ body {
   }
 
   body.menu-open {
-    overflow: visible;
+    overflow: visible !important;
+  }
+
+  body.menu-open::before {
+    content: none !important;
+    display: none !important;
   }
 }
 
