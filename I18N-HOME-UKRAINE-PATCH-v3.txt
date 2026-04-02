@@ -1,0 +1,15 @@
+I18N HOME UKRAINE PATCH V3
+
+Reason for the remaining English text:
+- The HTML bindings were already added in v2,
+- but when the site was opened locally via file://, fetch() for JSON could fail,
+- and the page then used the inline fallback translations from assets/js/site.js.
+- The UA inline fallback object still did not contain the newly added Home keys.
+
+What is fixed now:
+- Added all missing Home-page Ukrainian keys to the inline UA fallback in assets/js/site.js
+- Updated brand role translation in JSON files
+- Bumped cache version to i18n3
+
+Result:
+- Home page Ukrainian should now also work correctly when opened locally from extracted ZIP files.

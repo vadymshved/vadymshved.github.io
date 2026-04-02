@@ -1,0 +1,24 @@
+I18N HOME UKRAINE PATCH V2
+
+What was fixed:
+- Added missing data-i18n bindings on the Home page for:
+  * hero tags
+  * hero right mini-cards
+  * gallery preview labels and button
+  * Selected Highlights block
+  * Institution Links heading + intro
+  * Academic preview text, degrees, institutions, CTA, badge
+  * Who I work with block
+  * Teaching services preview cards
+  * Why work with me cards
+  * Built on science, teaching, and reliability block
+
+- Added corresponding translation keys to:
+  assets/i18n/en.json
+  assets/i18n/uk.json
+  assets/i18n/de.json
+  assets/i18n/fr.json
+  assets/i18n/es.json
+  assets/i18n/pl.json
+
+- Updated cache version to i18n2.
