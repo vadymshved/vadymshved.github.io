@@ -96,7 +96,7 @@ window.__GALLERY_DATA__ = {
     },
     {
       "id": "teaching-1",
-      "filename": "assets/images/gallery/teaching/teaching-1.svg",
+      "filename": "assets/images/gallery/teaching/teaching-1.jpg",
       "category": "teaching",
       "title": "Teaching 1",
       "caption": "Classroom moment",
@@ -165,7 +165,7 @@ window.__GALLERY_DATA__ = {
     },
     {
       "id": "science-1",
-      "filename": "assets/images/gallery/science/science-1.svg",
+      "filename": "assets/images/gallery/science/science-1.jpg",
       "category": "science",
       "title": "Science 1",
       "caption": "Laboratory moment",
@@ -233,7 +233,7 @@ window.__GALLERY_DATA__ = {
     },
     {
       "id": "life-1",
-      "filename": "assets/images/gallery/life/life-1.svg",
+      "filename": "assets/images/gallery/life/life-1.jpg",
       "category": "life",
       "title": "Life 1",
       "caption": "Travel and atmosphere",
@@ -364,7 +364,7 @@ window.__GALLERY_DATA__ = {
   },
   "siteMedia": {
     "homeHeroPortrait": {
-      "src": "assets/images/gallery/portrait/hero-portrait.svg",
+      "src": "assets/images/gallery/portrait/hero-portrait.jpg",
       "alt": "Professional portrait",
       "label": "Professional portrait"
     }

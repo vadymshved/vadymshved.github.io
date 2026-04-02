@@ -1,0 +1,17 @@
+{
+  "heroPortrait": "assets/images/gallery/portrait/hero-portrait.jpg",
+  "homeCards": [
+    {
+      "title": "Teaching",
+      "image": "assets/images/gallery/teaching/teaching-1.jpg"
+    },
+    {
+      "title": "Science",
+      "image": "assets/images/gallery/science/science-1.jpg"
+    },
+    {
+      "title": "Life",
+      "image": "assets/images/gallery/life/life-1.jpg"
+    }
+  ]
+}

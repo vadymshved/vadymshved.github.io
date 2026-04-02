@@ -1,7 +1,7 @@
 {
   "homeHeroPortrait": {
-    "src": "assets/images/gallery/portrait/hero-portrait.svg",
-    "alt": "Professional portrait",
+    "src": "assets/images/gallery/portrait/hero-portrait.jpg",
+    "alt": "Professional portrait of Vadym Shved",
     "label": "Professional portrait"
   }
 }

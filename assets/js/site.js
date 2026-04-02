@@ -551,6 +551,11 @@ const translations = {
       const open = typeof forceState === 'boolean' ? forceState : !langMenu.classList.contains('open');
       langMenu.classList.toggle('open', open);
       langToggle.setAttribute('aria-expanded', String(open));
+      if (open) {
+        document.body.classList.add('lang-menu-open');
+      } else {
+        document.body.classList.remove('lang-menu-open');
+      }
     }
 
     function setLanguage(lang) {
@@ -569,7 +574,18 @@ const translations = {
       toggleLanguageMenu(false);
     }
 
-    langToggle.addEventListener('click', () => toggleLanguageMenu());
+    langToggle.addEventListener('click', (event) => {
+      event.stopPropagation();
+      const mobileToggleRef = document.getElementById('mobile-toggle');
+      const mainNavRef = document.querySelector('.nav-shell');
+      if (mobileToggleRef && mainNavRef && mainNavRef.classList.contains('active')) {
+        mobileToggleRef.classList.remove('active');
+        mobileToggleRef.setAttribute('aria-expanded', 'false');
+        mainNavRef.classList.remove('active');
+        document.body.classList.remove('menu-open');
+      }
+      toggleLanguageMenu();
+    });
     document.querySelectorAll('.lang-option').forEach((btn) => {
       btn.addEventListener('click', () => setLanguage(btn.dataset.lang));
     });
@@ -638,6 +654,13 @@ if (mobileToggle && mainNav) {
   };
 
   const openMobileMenu = () => {
+    const langMenuRef = document.getElementById('langMenu');
+    const langToggleRef = document.getElementById('langToggle');
+    if (langMenuRef && langToggleRef) {
+      langMenuRef.classList.remove('open');
+      langToggleRef.setAttribute('aria-expanded', 'false');
+      document.body.classList.remove('lang-menu-open');
+    }
     mobileToggle.classList.add('active');
     mobileToggle.setAttribute('aria-expanded', 'true');
     mainNav.classList.add('active');
@@ -1081,4 +1104,72 @@ document.querySelectorAll('.teaching-focus-accordion').forEach((details) => {
   document.addEventListener('keydown', (event) => {
     if (event.key === 'Escape') closeLightbox();
   });
+})();
+
+
+/* === HOME IMAGE BINDING v1 === */
+(function () {
+  const heroTarget = document.querySelector('[data-site-media-target="homeHeroPortrait"]');
+  const homeTiles = document.querySelectorAll('[data-gallery-preview-home]');
+  if (!heroTarget && !homeTiles.length) return;
+
+  const applyHomeImages = (data) => {
+    try {
+      const hero = data?.homeHeroPortrait?.src || data?.heroPortrait;
+      if (hero && heroTarget) {
+        let img = heroTarget.querySelector('.portrait-box-image');
+        if (!img) {
+          img = document.createElement('img');
+          img.className = 'portrait-box-image';
+          heroTarget.appendChild(img);
+        }
+        img.src = hero;
+        img.alt = data?.homeHeroPortrait?.alt || 'Professional portrait of Vadym Shved';
+      }
+
+      const cards = Array.isArray(data?.homeCards) ? data.homeCards : [];
+      if (cards.length) {
+        const map = {};
+        cards.forEach((card) => {
+          if (card?.title) map[String(card.title).toLowerCase()] = card.image;
+        });
+
+        homeTiles.forEach((tile) => {
+          const key = (tile.getAttribute('data-gallery-preview-home') || '').toLowerCase();
+          const img = tile.querySelector('img');
+          if (img && map[key]) img.src = map[key];
+        });
+      }
+    } catch (err) {
+      console.warn('Home image binding failed:', err);
+    }
+  };
+
+  fetch('assets/data/site-media.json')
+    .then((r) => r.ok ? r.json() : Promise.reject(new Error('site-media.json not found')))
+    .then((siteMedia) => {
+      return fetch('assets/data/images-home.json')
+        .then((r) => r.ok ? r.json() : ({ heroPortrait: siteMedia?.homeHeroPortrait?.src || '', homeCards: [] }))
+        .then((homeImages) => {
+          applyHomeImages({
+            homeHeroPortrait: siteMedia?.homeHeroPortrait,
+            heroPortrait: homeImages?.heroPortrait,
+            homeCards: homeImages?.homeCards || []
+          });
+        });
+    })
+    .catch(() => {
+      // Local file:// fallback
+      applyHomeImages({
+        homeHeroPortrait: {
+          src: 'assets/images/gallery/portrait/hero-portrait.jpg',
+          alt: 'Professional portrait of Vadym Shved'
+        },
+        homeCards: [
+          { title: 'Teaching', image: 'assets/images/gallery/teaching/teaching-1.jpg' },
+          { title: 'Science', image: 'assets/images/gallery/science/science-1.jpg' },
+          { title: 'Life', image: 'assets/images/gallery/life/life-1.jpg' }
+        ]
+      });
+    });
 })();
