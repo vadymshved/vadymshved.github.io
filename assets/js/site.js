@@ -558,15 +558,73 @@ const translations = {
       }
     }
 
-    function setLanguage(lang) {
-      const current = translations[lang] || translations.en;
+    
+    const translationCache = {};
+    const replacementCache = {};
+
+    async function loadLanguagePack(lang) {
+      if (translationCache[lang]) return translationCache[lang];
+      try {
+        const code = lang === 'ua' ? 'uk' : lang;
+        const response = await fetch(`assets/i18n/${code}.json`);
+        if (!response.ok) throw new Error('Language file not found');
+        const data = await response.json();
+        translationCache[lang] = data;
+        return data;
+      } catch (error) {
+        translationCache[lang] = translations[lang] || translations.en;
+        return translationCache[lang];
+      }
+    }
+
+    async function loadReplacementPack(lang) {
+      if (replacementCache[lang]) return replacementCache[lang];
+      try {
+        const code = lang === 'ua' ? 'uk' : lang;
+        const response = await fetch(`assets/i18n/text-replacements/${code}.json`);
+        if (!response.ok) throw new Error('Replacement file not found');
+        const data = await response.json();
+        replacementCache[lang] = data;
+        return data;
+      } catch (error) {
+        replacementCache[lang] = {};
+        return replacementCache[lang];
+      }
+    }
+
+    function applyReplacementMap(map) {
+      const selectors = 'main p, main h1, main h2, main h3, main h4, main h5, main h6, main li, main span, main strong, main summary, main a, footer p, footer span, footer a, footer strong, footer h2, footer h3, footer li, .gallery-photo-caption';
+      document.querySelectorAll(selectors).forEach((el) => {
+        if (el.hasAttribute('data-i18n')) return;
+        if (el.children.length > 0 && !el.classList.contains('gallery-photo-caption')) return;
+        const source = (el.dataset.i18nOriginal || el.textContent || '').trim();
+        if (!source) return;
+        if (!el.dataset.i18nOriginal) {
+          el.dataset.i18nOriginal = source;
+        }
+        el.textContent = map[source] || el.dataset.i18nOriginal;
+      });
+    }
+
+async function setLanguage(lang) {
+      const current = await loadLanguagePack(lang);
+      const replacements = await loadReplacementPack(lang);
       document.documentElement.lang = lang === 'ua' ? 'uk' : lang;
       document.querySelectorAll('[data-i18n]').forEach((el) => {
         const key = el.getAttribute('data-i18n');
-        if (current[key]) {
-          el.textContent = current[key];
+        if (!el.dataset.i18nOriginal) {
+          el.dataset.i18nOriginal = el.textContent;
         }
+        el.textContent = current[key] || translations.en[key] || el.dataset.i18nOriginal;
       });
+      document.querySelectorAll('[data-i18n-alt]').forEach((el) => {
+        const key = el.getAttribute('data-i18n-alt');
+        if (!el.dataset.i18nAltOriginal) {
+          el.dataset.i18nAltOriginal = el.getAttribute('alt') || '';
+        }
+        el.setAttribute('alt', current[key] || translations.en[key] || el.dataset.i18nAltOriginal);
+      });
+      applyReplacementMap(replacements);
       document.querySelectorAll('.lang-option').forEach((btn) => {
         btn.classList.toggle('active', btn.dataset.lang === lang);
       });

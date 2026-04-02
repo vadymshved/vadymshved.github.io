@@ -1,0 +1,1 @@
+Some long page-body texts are still hardcoded in HTML and will benefit from later extraction into data-i18n keys for perfect full-page translation. This package already externalizes the main multilingual system and the most visible interface texts.
