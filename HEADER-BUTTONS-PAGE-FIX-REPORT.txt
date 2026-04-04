@@ -1,0 +1,1 @@
+Fixed non-clickable header buttons on specific pages by removing duplicated script loads after </html>. Duplicate site.js/ui.js initializations caused the language switcher and mobile menu toggles to immediately re-toggle and appear frozen. Gallery also keeps its gallery-data.js include, now in the correct place before the common scripts. Design and layout unchanged.

@@ -1,11 +1,30 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Vadym Shved — Research & Teaching Portfolio</title>
-<link href="assets/css/style.css?v=i18n3" rel="stylesheet"/>
-<link href="assets/css/multipage.css?v=i18n3" rel="stylesheet"/>
+<title data-i18n="page_title_research_portfolio">Vadym Shved — Research &amp; Teaching Portfolio</title>
+<link href="assets/css/style.css?v=i18n7" rel="stylesheet"/>
+<link href="assets/css/multipage.css?v=i18n7" rel="stylesheet"/>
+<style id="i18n-antiflicker-style">
+  html.i18n-preload body { visibility: hidden; }
+</style>
+<script id="i18n-antiflicker-bootstrap">
+(function () {
+  try {
+    var raw = localStorage.getItem('siteLanguage') || 'en';
+    var lang = ({ua:'uk', uk:'uk', en:'en', de:'de', fr:'fr', es:'es', pl:'pl'})[raw] || 'en';
+    document.documentElement.classList.add('i18n-preload');
+    document.documentElement.setAttribute('data-initial-lang', lang);
+    document.documentElement.lang = lang;
+  } catch (e) {
+    document.documentElement.classList.add('i18n-preload');
+    document.documentElement.setAttribute('data-initial-lang', 'en');
+    document.documentElement.lang = 'en';
+  }
+})();
+</script>
 </head>
 <body class="page-shell">
 <header class="topbar">
@@ -15,7 +34,7 @@
 <span class="brand-role" data-i18n="brand_role">Chemist · Teacher · Educator</span>
 </a>
 <div class="nav-shell">
-<nav aria-label="Main navigation" class="desktop-nav" id="main-nav">
+<nav aria-label="Main navigation" class="desktop-nav" data-i18n-aria-label="index_main_navigation_aria_label" id="main-nav">
 <ul>
 <li>
 <a class="nav-link" data-i18n="nav_home" href="index.html">Home</a>
@@ -43,19 +62,19 @@
 </div>
 <div class="lang-switcher">
 <button aria-controls="langMenu" aria-expanded="false" aria-haspopup="true" class="lang-toggle" id="langToggle" type="button">
-<span class="lang-label">EN</span>
+<span class="lang-label" data-i18n="index_en">EN</span>
 <span aria-hidden="true">▾</span>
 </button>
 <div class="lang-menu" id="langMenu" role="menu">
-<button class="lang-option active" data-lang="en" type="button">English (EN)</button>
-<button class="lang-option" data-lang="ua" type="button">Українська (UA)</button>
-<button class="lang-option" data-lang="de" type="button">Deutsch (DE)</button>
-<button class="lang-option" data-lang="fr" type="button">Français (FR)</button>
-<button class="lang-option" data-lang="es" type="button">Español (ES)</button>
-<button class="lang-option" data-lang="pl" type="button">Polski (PL)</button>
+<button class="lang-option active" data-i18n="index_english_en" data-lang="en" type="button">English (EN)</button>
+<button class="lang-option" data-i18n="index_ua" data-lang="ua" type="button">Українська (UA)</button>
+<button class="lang-option" data-i18n="index_deutsch_de" data-lang="de" type="button">Deutsch (DE)</button>
+<button class="lang-option" data-i18n="index_fran_ais_fr" data-lang="fr" type="button">Français (FR)</button>
+<button class="lang-option" data-i18n="index_espa_ol_es" data-lang="es" type="button">Español (ES)</button>
+<button class="lang-option" data-i18n="index_polski_pl" data-lang="pl" type="button">Polski (PL)</button>
 </div>
 </div>
-<button aria-label="Open Menu" aria-controls="main-nav" aria-expanded="false" class="mobile-toggle" id="mobile-toggle" type="button">
+<button aria-controls="main-nav" aria-expanded="false" aria-label="Open Menu" class="mobile-toggle" data-i18n-aria-label="index_open_menu_aria_label" id="mobile-toggle" type="button">
 <span>
 </span>
 <span>
@@ -65,118 +84,107 @@
 </button>
 </div>
 </header>
-
-
 <main>
 <section id="research-portfolio">
-  <div class="container">
-    <div class="portfolio-dev-banner">
-      <strong data-i18n="portfolio_dev_label">Work in progress:</strong>
-      <span data-i18n="portfolio_dev_text">this section is currently under development. Some pages, summaries, and project details are still being refined and may contain incomplete information.</span>
-    </div>
-
-    <div class="section-header portfolio-hero">
-      <div>
-        <h2 class="portfolio-main-title" data-i18n="portfolio_title">Research &amp; Teaching Portfolio</h2>
-        <p class="section-intro" data-i18n="portfolio_intro">A curated archive of research, teaching, and academic project work in chemistry, nanochemistry, education, and interdisciplinary scientific communication.</p>
-      </div>
-      <div class="portfolio-stats">
-        <span class="portfolio-stat"><strong>2</strong><span data-i18n="portfolio_stat_featured">featured projects</span></span>
-        <span class="portfolio-stat"><strong>4+</strong><span data-i18n="portfolio_stat_future">categories planned</span></span>
-      </div>
-    </div>
-
-    <div class="portfolio-nav-row card">
-      <div class="portfolio-pill-row">
-        <button class="portfolio-pill active" data-filter="all" type="button" data-i18n="portfolio_cat_all">All Projects</button>
-        <button class="portfolio-pill" data-filter="research" type="button" data-i18n="portfolio_cat_research">Research Projects</button>
-        <button class="portfolio-pill" data-filter="teaching" type="button" data-i18n="portfolio_cat_teaching">Teaching / Didactics</button>
-        <button class="portfolio-pill" data-filter="presentations" type="button" data-i18n="portfolio_cat_presentations">Presentations &amp; Reports</button>
-        <button class="portfolio-pill" data-filter="mini" type="button" data-i18n="portfolio_cat_mini">Academic Mini Projects</button>
-      </div>
-      <p class="ext-note" data-i18n="portfolio_nav_note">The first version focuses on the two main research projects. Additional didactics and mini-project pages can be added to this structure later.</p>
-    </div>
-
-    <div class="section-header portfolio-featured-header">
-      <h3 data-i18n="portfolio_featured_title">Featured Projects</h3>
-      <p class="section-intro" data-i18n="portfolio_featured_intro">The two central academic projects currently highlighted in this portfolio.</p>
-    </div>
-
-    <div class="grid-2 portfolio-featured-grid">
-      <article class="detail-card portfolio-project-card portfolio-project-card--featured portfolio-filter-card" data-cat="research">
-        <div class="portfolio-project-topline">
-          <span class="portfolio-type-badge" data-i18n="portfolio_type_thesis">Thesis</span>
-          <span class="portfolio-meta-line">2020 · Chemistry · Supramolecular Chemistry</span>
-        </div>
-        <h3 data-i18n="portfolio_bachelor_title">Bachelor Research Project</h3>
-        <p class="portfolio-project-subtitle" data-i18n="portfolio_bachelor_subtitle">Functionalization of Hexacalixresorcinarene Derivatives for Supramolecular Applications</p>
-        <p data-i18n="portfolio_bachelor_desc">Study of calixarene-based model molecules for the analysis of intermolecular interactions in supramolecular and nanochemical contexts.</p>
-        <div class="tag-row">
-          <span class="tag">Supramolecular Chemistry</span>
-          <span class="tag">Nanochemistry</span>
-          <span class="tag">Model Molecules</span>
-        </div>
-        <div class="button-row">
-          <a class="btn btn-primary btn-view-project" href="bachelor-research.html" data-i18n="portfolio_view_project">View Project</a>
-        </div>
-      </article>
-
-      <article class="detail-card portfolio-project-card portfolio-project-card--featured portfolio-filter-card" data-cat="research">
-        <div class="portfolio-project-topline">
-          <span class="portfolio-type-badge" data-i18n="portfolio_type_thesis">Thesis</span>
-          <span class="portfolio-meta-line">Nanochemistry · Biomedical Context · Master</span>
-        </div>
-        <h3 data-i18n="portfolio_master_title">Master Research Project</h3>
-        <p class="portfolio-project-subtitle" data-i18n="portfolio_master_subtitle">Bioconjugation of AGuIX Nanoparticles for Targeted Cancer Therapy</p>
-        <p data-i18n="portfolio_master_desc">Development of antibody-functionalized nanoparticles through click chemistry for targeted interaction with cancer-related biological pathways.</p>
-        <div class="tag-row">
-          <span class="tag">Nanomedicine</span>
-          <span class="tag">Click Chemistry</span>
-          <span class="tag">Cancer Therapy</span>
-        </div>
-        <div class="button-row">
-          <a class="btn btn-primary btn-view-project" href="master-research.html" data-i18n="portfolio_view_project">View Project</a>
-        </div>
-      </article>
-    </div>
-
-    <div class="section-header portfolio-archive-header">
-      <h3 data-i18n="portfolio_archive_title">Future Archive Structure</h3>
-      <p class="section-intro" data-i18n="portfolio_archive_intro">This page is designed to expand into a larger archive of teaching, didactics, presentation, and mini-research materials.</p>
-    </div>
-
-    <div class="grid-3 portfolio-archive-grid">
-      <article class="detail-card portfolio-mini-card portfolio-filter-card" data-cat="teaching">
-        <span class="portfolio-type-badge" data-i18n="portfolio_type_didactics">Didactics Project</span>
-        <h3 data-i18n="portfolio_didactics_title">Comparative Textbook Analysis</h3>
-        <p data-i18n="portfolio_didactics_desc">Reserved for comparative analysis of Swiss, Swedish, and Polish chemistry textbooks, including strengths, weaknesses, and didactic implications.</p>
-      <div class="button-row"><a class="btn btn-primary btn-view-project" href="didactics-project-textbook-comparison.html">View Project</a></div></article>
-      <article class="detail-card portfolio-mini-card portfolio-filter-card" data-cat="presentations">
-        <span class="portfolio-type-badge" data-i18n="portfolio_type_presentation">Presentation</span>
-        <h3 data-i18n="portfolio_presentation_title">Scientific Article Presentation</h3>
-        <p data-i18n="portfolio_presentation_desc">Reserved for course-based scientific presentations and article analysis projects completed during chemistry and nanotechnology studies.</p>
-      <div class="button-row"><a class="btn btn-primary btn-view-project" href="scientific-article-presentation.html">View Project</a></div></article>
-      <article class="detail-card portfolio-mini-card portfolio-filter-card" data-cat="mini">
-        <span class="portfolio-type-badge" data-i18n="portfolio_type_mini">Mini Project</span>
-        <h3 data-i18n="portfolio_mini_title">Academic Mini Projects</h3>
-        <p data-i18n="portfolio_mini_desc">Reserved for seminar work, reports, educational tasks, and smaller academic outputs with summaries, skills, methods, and attached files.</p>
-      <div class="button-row"><a class="btn btn-primary btn-view-project" href="academic-mini-projects.html">View Project</a></div></article>
-    </div>
-
-    <div class="cta-box" style="margin-top:1.35rem;">
-      <div>
-        <h3 data-i18n="portfolio_cta_title">Academic section under active development</h3>
-        <p class="section-intro" data-i18n="portfolio_cta_text">The architecture is already in place. More projects, didactics pages, summaries, visuals, and linked materials can be added to this portfolio progressively.</p>
-      </div>
-      <div class="button-row" style="margin-bottom:0;">
-        <a class="btn btn-secondary" href="academic.html" data-i18n="portfolio_cta_back">Back to Academic Background</a>
-        <a class="btn btn-primary btn-contact-cta" href="contact.html" data-i18n="portfolio_cta_contact">Contact Me</a>
-      </div>
-    </div>
-  </div>
+<div class="container">
+<div class="portfolio-dev-banner">
+<strong data-i18n="portfolio_dev_label">Work in progress:</strong>
+<span data-i18n="portfolio_dev_text">this section is currently under development. Some pages, summaries, and project details are still being refined and may contain incomplete information.</span>
+</div>
+<div class="section-header portfolio-hero">
+<div>
+<h2 class="portfolio-main-title" data-i18n="portfolio_title">Research &amp; Teaching Portfolio</h2>
+<p class="section-intro" data-i18n="portfolio_intro">A curated archive of research, teaching, and academic project work in chemistry, nanochemistry, education, and interdisciplinary scientific communication.</p>
+</div>
+<div class="portfolio-stats" data-i18n-html="research_teaching_portfolio_2_featured_projects_4_categories_planned">
+<span class="portfolio-stat"><strong data-i18n="research_teaching_portfolio_2">2</strong><span data-i18n="portfolio_stat_featured">featured projects</span></span>
+<span class="portfolio-stat"><strong data-i18n="research_teaching_portfolio_4">4+</strong><span data-i18n="portfolio_stat_future">categories planned</span></span>
+</div>
+</div>
+<div class="portfolio-nav-row card">
+<div class="portfolio-pill-row">
+<button class="portfolio-pill active" data-filter="all" data-i18n="portfolio_cat_all" type="button">All Projects</button>
+<button class="portfolio-pill" data-filter="research" data-i18n="portfolio_cat_research" type="button">Research Projects</button>
+<button class="portfolio-pill" data-filter="teaching" data-i18n="portfolio_cat_teaching" type="button">Teaching / Didactics</button>
+<button class="portfolio-pill" data-filter="presentations" data-i18n="portfolio_cat_presentations" type="button">Presentations &amp; Reports</button>
+<button class="portfolio-pill" data-filter="mini" data-i18n="portfolio_cat_mini" type="button">Academic Mini Projects</button>
+</div>
+<p class="ext-note" data-i18n="portfolio_nav_note">The first version focuses on the two main research projects. Additional didactics and mini-project pages can be added to this structure later.</p>
+</div>
+<div class="section-header portfolio-featured-header">
+<h3 data-i18n="portfolio_featured_title">Featured Projects</h3>
+<p class="section-intro" data-i18n="portfolio_featured_intro">The two central academic projects currently highlighted in this portfolio.</p>
+</div>
+<div class="grid-2 portfolio-featured-grid">
+<article class="detail-card portfolio-project-card portfolio-project-card--featured portfolio-filter-card" data-cat="research">
+<div class="portfolio-project-topline">
+<span class="portfolio-type-badge" data-i18n="portfolio_type_thesis">Thesis</span>
+<span class="portfolio-meta-line" data-i18n="research_teaching_portfolio_2020_chemistry_supramolecular_chemistry">2020 · Chemistry · Supramolecular Chemistry</span>
+</div>
+<h3 data-i18n="portfolio_bachelor_title">Bachelor Research Project</h3>
+<p class="portfolio-project-subtitle" data-i18n="portfolio_bachelor_subtitle">Functionalization of Hexacalixresorcinarene Derivatives for Supramolecular Applications</p>
+<p data-i18n="portfolio_bachelor_desc">Study of calixarene-based model molecules for the analysis of intermolecular interactions in supramolecular and nanochemical contexts.</p>
+<div class="tag-row">
+<span class="tag" data-i18n="research_teaching_portfolio_supramolecular_chemistry">Supramolecular Chemistry</span>
+<span class="tag" data-i18n="research_teaching_portfolio_nanochemistry">Nanochemistry</span>
+<span class="tag" data-i18n="research_teaching_portfolio_model_molecules">Model Molecules</span>
+</div>
+<div class="button-row">
+<a class="btn btn-primary btn-view-project" data-i18n="portfolio_view_project" href="bachelor-research.html">View Project</a>
+</div>
+</article>
+<article class="detail-card portfolio-project-card portfolio-project-card--featured portfolio-filter-card" data-cat="research">
+<div class="portfolio-project-topline">
+<span class="portfolio-type-badge" data-i18n="portfolio_type_thesis">Thesis</span>
+<span class="portfolio-meta-line" data-i18n="research_teaching_portfolio_nanochemistry_biomedical_context_master">Nanochemistry · Biomedical Context · Master</span>
+</div>
+<h3 data-i18n="portfolio_master_title">Master Research Project</h3>
+<p class="portfolio-project-subtitle" data-i18n="portfolio_master_subtitle">Bioconjugation of AGuIX Nanoparticles for Targeted Cancer Therapy</p>
+<p data-i18n="portfolio_master_desc">Development of antibody-functionalized nanoparticles through click chemistry for targeted interaction with cancer-related biological pathways.</p>
+<div class="tag-row">
+<span class="tag" data-i18n="research_teaching_portfolio_nanomedicine">Nanomedicine</span>
+<span class="tag" data-i18n="research_teaching_portfolio_click_chemistry">Click Chemistry</span>
+<span class="tag" data-i18n="research_teaching_portfolio_cancer_therapy">Cancer Therapy</span>
+</div>
+<div class="button-row">
+<a class="btn btn-primary btn-view-project" data-i18n="portfolio_view_project" href="master-research.html">View Project</a>
+</div>
+</article>
+</div>
+<div class="section-header portfolio-archive-header">
+<h3 data-i18n="portfolio_archive_title">Future Archive Structure</h3>
+<p class="section-intro" data-i18n="portfolio_archive_intro">This page is designed to expand into a larger archive of teaching, didactics, presentation, and mini-research materials.</p>
+</div>
+<div class="grid-3 portfolio-archive-grid">
+<article class="detail-card portfolio-mini-card portfolio-filter-card" data-cat="teaching">
+<span class="portfolio-type-badge" data-i18n="portfolio_type_didactics">Didactics Project</span>
+<h3 data-i18n="portfolio_didactics_title">Comparative Textbook Analysis</h3>
+<p data-i18n="portfolio_didactics_desc">Reserved for comparative analysis of Swiss, Swedish, and Polish chemistry textbooks, including strengths, weaknesses, and didactic implications.</p>
+<div class="button-row"><a class="btn btn-primary btn-view-project" data-i18n="portfolio_view_project" href="didactics-project-textbook-comparison.html">View Project</a></div></article>
+<article class="detail-card portfolio-mini-card portfolio-filter-card" data-cat="presentations">
+<span class="portfolio-type-badge" data-i18n="portfolio_type_presentation">Presentation</span>
+<h3 data-i18n="portfolio_presentation_title">Scientific Article Presentation</h3>
+<p data-i18n="portfolio_presentation_desc">Reserved for course-based scientific presentations and article analysis projects completed during chemistry and nanotechnology studies.</p>
+<div class="button-row"><a class="btn btn-primary btn-view-project" data-i18n="portfolio_view_project" href="scientific-article-presentation.html">View Project</a></div></article>
+<article class="detail-card portfolio-mini-card portfolio-filter-card" data-cat="mini">
+<span class="portfolio-type-badge" data-i18n="portfolio_type_mini">Mini Project</span>
+<h3 data-i18n="portfolio_mini_title">Academic Mini Projects</h3>
+<p data-i18n="portfolio_mini_desc">Reserved for seminar work, reports, educational tasks, and smaller academic outputs with summaries, skills, methods, and attached files.</p>
+<div class="button-row"><a class="btn btn-primary btn-view-project" data-i18n="portfolio_view_project" href="academic-mini-projects.html">View Project</a></div></article>
+</div>
+<div class="cta-box" style="margin-top:1.35rem;">
+<div>
+<h3 data-i18n="portfolio_cta_title">Academic section under active development</h3>
+<p class="section-intro" data-i18n="portfolio_cta_text">The architecture is already in place. More projects, didactics pages, summaries, visuals, and linked materials can be added to this portfolio progressively.</p>
+</div>
+<div class="button-row" style="margin-bottom:0;">
+<a class="btn btn-secondary" data-i18n="portfolio_cta_back" href="academic.html">Back to Academic Background</a>
+<a class="btn btn-primary btn-contact-cta" data-i18n="portfolio_cta_contact" href="contact.html">Contact Me</a>
+</div>
+</div>
+</div>
 </section>
 </main>
-
 <footer>
 <div class="container">
 <div class="footer-grid">
@@ -211,67 +219,65 @@
 <h3 class="footer-title" data-i18n="footer_meta">Contact &amp; Info</h3>
 <ul class="footer-meta">
 <li>
-<a class="icon-link footer-contact-link" data-contact-email-link="true" href="mailto:your.email@example.com">
+<a class="icon-link footer-contact-link" data-contact-email-link="true" data-i18n-html="index_email" href="mailto:your.email@example.com">
 <span class="icon-badge icon-badge-mail"></span>
-<span>Email</span>
+<span data-i18n="index_email">Email</span>
 </a>
 </li>
-<li>
+<li data-i18n-html="index_in_linkedin">
 <a class="icon-link footer-contact-link" href="https://www.linkedin.com/in/shvedvadym" rel="noreferrer" target="_blank">
-<span class="icon-badge">in</span>
-<span>LinkedIn</span>
+<span class="icon-badge" data-i18n="index_in">in</span>
+<span data-i18n="index_linkedin">LinkedIn</span>
 </a>
 </li>
-<li>
+<li data-i18n-html="index_ig_instagram">
 <a class="icon-link footer-contact-link" href="https://www.instagram.com/vadymtravels" rel="noreferrer" target="_blank">
-<span class="icon-badge">IG</span>
-<span>Instagram</span>
+<span class="icon-badge" data-i18n="index_ig">IG</span>
+<span data-i18n="index_instagram">Instagram</span>
 </a>
 </li>
-<li>
+<li data-i18n-html="index_t24_tutor24">
 <a class="icon-link footer-contact-link" href="https://tutor24.ch/de/providers/3301791?public_view=true" rel="noreferrer" target="_blank">
-<span class="icon-badge">T24</span>
-<span>Tutor24</span>
+<span class="icon-badge" data-i18n="index_t24">T24</span>
+<span data-i18n="index_tutor24">Tutor24</span>
 </a>
 </li>
-<li>
+<li data-i18n-html="index_bu_buki">
 <a class="icon-link footer-contact-link" href="https://buki.com.ua/user-21753/" rel="noreferrer" target="_blank">
-<span class="icon-badge">BU</span>
-<span>BUKI</span>
+<span class="icon-badge" data-i18n="index_bu">BU</span>
+<span data-i18n="index_buki">BUKI</span>
 </a>
 </li>
-<li>
+<li data-i18n-html="index_ar_repetitor_org_ua">
 <a class="icon-link footer-contact-link" href="https://repetitor.org.ua/uk-id8693" rel="noreferrer" target="_blank">
-<span class="icon-badge">AR</span>
-<span>Repetitor.org.ua</span>
+<span class="icon-badge" data-i18n="index_ar">AR</span>
+<span data-i18n="index_repetitor_org_ua">Repetitor.org.ua</span>
 </a>
 </li>
-<li>
+<li data-i18n-html="index_cv_cv_download">
 <a class="icon-link footer-contact-link" data-cv-link="true" href="#">
-<span class="icon-badge">CV</span>
-<span>CV download</span>
+<span class="icon-badge" data-i18n="index_cv">CV</span>
+<span data-i18n="index_cv_download">CV download</span>
 </a>
 </li>
-<li>
+<li data-i18n-html="index_legal_business_info_2">
 <a class="icon-link footer-contact-link" href="#">
-<span class="icon-badge">§</span>
-<span>Legal / Business Info</span>
+<span class="icon-badge" data-i18n="index_text">§</span>
+<span data-i18n="index_legal_business_info">Legal / Business Info</span>
 </a>
 </li>
 </ul>
 </div>
 </div>
 <div class="button-row" style="margin-top: 1.2rem; margin-bottom: 0;">
-<a class="btn btn-primary btn-booking" data-booking-link="true" href="contact.html#booking">Book a Lesson</a>
-<a class="btn btn-secondary btn-contact footer-cta-btn" data-i18n="final_btn_1" href="contact.html"><span class="btn-inline-icon" aria-hidden="true">✉️</span><span>Contact Me</span></a>
+<a class="btn btn-primary btn-booking" data-booking-link="true" data-i18n="hero_btn_book" href="contact.html#booking">Book a Lesson</a>
+<a class="btn btn-secondary btn-contact footer-cta-btn" data-i18n="final_btn_1" href="contact.html"><span aria-hidden="true" class="btn-inline-icon">✉️</span><span>Contact Me</span></a>
 </div>
 <div class="copyright" data-i18n="footer_copy">© Vadym Shved — Multilingual personal professional website</div>
 </div>
 </footer>
-<script src="assets/js/site.js?v=i18n3">
-</script>
-</body>
-</html>
-<script src="assets/js/site.js?v=i18n3"></script>
+<script src="assets/js/i18n-inline.js?v=langfix1"></script>
+<script src="assets/js/site.js?v=langfix1"></script>
+<script src="assets/js/ui.js?v=langfix1"></script>
 </body>
 </html>

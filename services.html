@@ -4,9 +4,27 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Vadym Shved — Projects &amp; Services</title>
-<link href="assets/css/style.css?v=i18n3" rel="stylesheet"/>
-<link href="assets/css/multipage.css?v=i18n3" rel="stylesheet"/>
+<title data-i18n="page_title_services">Vadym Shved — Projects &amp; Other Services</title>
+<link href="assets/css/style.css?v=i18n7" rel="stylesheet"/>
+<link href="assets/css/multipage.css?v=i18n7" rel="stylesheet"/>
+<style id="i18n-antiflicker-style">
+  html.i18n-preload body { visibility: hidden; }
+</style>
+<script id="i18n-antiflicker-bootstrap">
+(function () {
+  try {
+    var raw = localStorage.getItem('siteLanguage') || 'en';
+    var lang = ({ua:'uk', uk:'uk', en:'en', de:'de', fr:'fr', es:'es', pl:'pl'})[raw] || 'en';
+    document.documentElement.classList.add('i18n-preload');
+    document.documentElement.setAttribute('data-initial-lang', lang);
+    document.documentElement.lang = lang;
+  } catch (e) {
+    document.documentElement.classList.add('i18n-preload');
+    document.documentElement.setAttribute('data-initial-lang', 'en');
+    document.documentElement.lang = 'en';
+  }
+})();
+</script>
 </head>
 <body class="page-shell">
 <header class="topbar">
@@ -16,7 +34,7 @@
 <span class="brand-role" data-i18n="brand_role">Chemist · Teacher · Educator</span>
 </a>
 <div class="nav-shell">
-<nav aria-label="Main navigation" class="desktop-nav" id="main-nav">
+<nav aria-label="Main navigation" class="desktop-nav" data-i18n-aria-label="index_main_navigation_aria_label" id="main-nav">
 <ul>
 <li>
 <a class="nav-link" data-i18n="nav_home" href="index.html">Home</a>
@@ -44,19 +62,19 @@
 </div>
 <div class="lang-switcher">
 <button aria-controls="langMenu" aria-expanded="false" aria-haspopup="true" class="lang-toggle" id="langToggle" type="button">
-<span class="lang-label">EN</span>
+<span class="lang-label" data-i18n="index_en">EN</span>
 <span aria-hidden="true">▾</span>
 </button>
 <div class="lang-menu" id="langMenu" role="menu">
-<button class="lang-option active" data-lang="en" type="button">English (EN)</button>
-<button class="lang-option" data-lang="ua" type="button">Українська (UA)</button>
-<button class="lang-option" data-lang="de" type="button">Deutsch (DE)</button>
-<button class="lang-option" data-lang="fr" type="button">Français (FR)</button>
-<button class="lang-option" data-lang="es" type="button">Español (ES)</button>
-<button class="lang-option" data-lang="pl" type="button">Polski (PL)</button>
+<button class="lang-option active" data-i18n="index_english_en" data-lang="en" type="button">English (EN)</button>
+<button class="lang-option" data-i18n="index_ua" data-lang="ua" type="button">Українська (UA)</button>
+<button class="lang-option" data-i18n="index_deutsch_de" data-lang="de" type="button">Deutsch (DE)</button>
+<button class="lang-option" data-i18n="index_fran_ais_fr" data-lang="fr" type="button">Français (FR)</button>
+<button class="lang-option" data-i18n="index_espa_ol_es" data-lang="es" type="button">Español (ES)</button>
+<button class="lang-option" data-i18n="index_polski_pl" data-lang="pl" type="button">Polski (PL)</button>
 </div>
 </div>
-<button aria-label="Open Menu" aria-controls="main-nav" aria-expanded="false" class="mobile-toggle" id="mobile-toggle" type="button">
+<button aria-controls="main-nav" aria-expanded="false" aria-label="Open Menu" class="mobile-toggle" data-i18n-aria-label="index_open_menu_aria_label" id="mobile-toggle" type="button">
 <span>
 </span>
 <span>
@@ -71,40 +89,40 @@
 <div class="container">
 <div class="section-header">
 <h2 data-i18n="services_title">Projects &amp; Other Services</h2>
-<p class="section-intro">Alongside my main work in chemistry and education, I also develop a small number of independent projects and additional services presented here as a secondary part of my professional profile.</p>
+<p class="section-intro" data-i18n="services_alongside_my_main_work_in_chemistry">Alongside my main work in chemistry and education, I also develop a small number of independent projects and additional services presented here as a secondary part of my professional profile.</p>
 </div>
 <div class="grid-2">
 <article class="detail-card accent-panel">
-<h3>Independent projects</h3>
+<h3 data-i18n="services_independent_projects">Independent projects</h3>
 <ul class="bullet-list">
 <li>
-<strong>Peru &amp; South America Travel Initiative</strong>
-<span class="muted">Route planning, coordination, and practical travel guidance as a secondary project.</span>
+<strong data-i18n="services_peru_south_america_travel_initiative">Peru &amp; South America Travel Initiative</strong>
+<span class="muted" data-i18n="services_route_planning_coordination_and_practical_travel">Route planning, coordination, and practical travel guidance as a secondary project.</span>
 </li>
 <li>
-<strong>Future selected initiatives</strong>
-<span class="muted">Space for other independent projects if added later.</span>
+<strong data-i18n="services_future_selected_initiatives">Future selected initiatives</strong>
+<span class="muted" data-i18n="services_space_for_other_independent_projects_if">Space for other independent projects if added later.</span>
 </li>
 </ul>
-<a class="btn btn-secondary" data-travel-link="true" href="https://www.instagram.com/vadymtravels" rel="noreferrer" style="margin-top:1rem; display:inline-flex;" target="_blank">Open Travel Project</a></article>
+<a class="btn btn-secondary" data-i18n="services_open_travel_project" data-travel-link="true" href="https://www.instagram.com/vadymtravels" rel="noreferrer" style="margin-top:1rem; display:inline-flex;" target="_blank">Open Travel Project</a></article>
 <article class="detail-card soft-panel">
-<h3>Other services</h3>
+<h3 data-i18n="services_other_services">Other services</h3>
 <ul class="bullet-list">
 <li>
-<strong>Travel route planning</strong>
-<span class="muted">Clear structure for independent travel support.</span>
+<strong data-i18n="services_travel_route_planning">Travel route planning</strong>
+<span class="muted" data-i18n="services_clear_structure_for_independent_travel_support">Clear structure for independent travel support.</span>
 </li>
 <li>
-<strong>Travel coordination</strong>
-<span class="muted">Planning assistance and logistical guidance.</span>
+<strong data-i18n="services_travel_coordination">Travel coordination</strong>
+<span class="muted" data-i18n="services_planning_assistance_and_logistical_guidance">Planning assistance and logistical guidance.</span>
 </li>
 <li>
-<strong>Personal travel assistance</strong>
-<span class="muted">Selected support depending on scope and format.</span>
+<strong data-i18n="services_personal_travel_assistance">Personal travel assistance</strong>
+<span class="muted" data-i18n="services_selected_support_depending_on_scope_and">Selected support depending on scope and format.</span>
 </li>
 <li>
-<strong>International trip planning support</strong>
-<span class="muted">Secondary service layer, professionally separated from the main teaching identity.</span>
+<strong data-i18n="services_international_trip_planning_support">International trip planning support</strong>
+<span class="muted" data-i18n="services_secondary_service_layer_professionally_separated_from">Secondary service layer, professionally separated from the main teaching identity.</span>
 </li>
 </ul>
 </article>
@@ -171,64 +189,65 @@
 <h3 class="footer-title" data-i18n="footer_meta">Contact &amp; Info</h3>
 <ul class="footer-meta">
 <li>
-<a class="icon-link footer-contact-link" data-contact-email-link="true" href="mailto:your.email@example.com">
+<a class="icon-link footer-contact-link" data-contact-email-link="true" data-i18n-html="index_email" href="mailto:your.email@example.com">
 <span class="icon-badge icon-badge-mail"></span>
-<span>Email</span>
+<span data-i18n="index_email">Email</span>
 </a>
 </li>
-<li>
+<li data-i18n-html="index_in_linkedin">
 <a class="icon-link footer-contact-link" href="https://www.linkedin.com/in/shvedvadym" rel="noreferrer" target="_blank">
-<span class="icon-badge">in</span>
-<span>LinkedIn</span>
+<span class="icon-badge" data-i18n="index_in">in</span>
+<span data-i18n="index_linkedin">LinkedIn</span>
 </a>
 </li>
-<li>
+<li data-i18n-html="index_ig_instagram">
 <a class="icon-link footer-contact-link" href="https://www.instagram.com/vadymtravels" rel="noreferrer" target="_blank">
-<span class="icon-badge">IG</span>
-<span>Instagram</span>
+<span class="icon-badge" data-i18n="index_ig">IG</span>
+<span data-i18n="index_instagram">Instagram</span>
 </a>
 </li>
-<li>
+<li data-i18n-html="index_t24_tutor24">
 <a class="icon-link footer-contact-link" href="https://tutor24.ch/de/providers/3301791?public_view=true" rel="noreferrer" target="_blank">
-<span class="icon-badge">T24</span>
-<span>Tutor24</span>
+<span class="icon-badge" data-i18n="index_t24">T24</span>
+<span data-i18n="index_tutor24">Tutor24</span>
 </a>
 </li>
-<li>
+<li data-i18n-html="index_bu_buki">
 <a class="icon-link footer-contact-link" href="https://buki.com.ua/user-21753/" rel="noreferrer" target="_blank">
-<span class="icon-badge">BU</span>
-<span>BUKI</span>
+<span class="icon-badge" data-i18n="index_bu">BU</span>
+<span data-i18n="index_buki">BUKI</span>
 </a>
 </li>
-<li>
+<li data-i18n-html="index_ar_repetitor_org_ua">
 <a class="icon-link footer-contact-link" href="https://repetitor.org.ua/uk-id8693" rel="noreferrer" target="_blank">
-<span class="icon-badge">AR</span>
-<span>Repetitor.org.ua</span>
+<span class="icon-badge" data-i18n="index_ar">AR</span>
+<span data-i18n="index_repetitor_org_ua">Repetitor.org.ua</span>
 </a>
 </li>
-<li>
+<li data-i18n-html="index_cv_cv_download">
 <a class="icon-link footer-contact-link" data-cv-link="true" href="#">
-<span class="icon-badge">CV</span>
-<span>CV download</span>
+<span class="icon-badge" data-i18n="index_cv">CV</span>
+<span data-i18n="index_cv_download">CV download</span>
 </a>
 </li>
-<li>
+<li data-i18n-html="index_legal_business_info_2">
 <a class="icon-link footer-contact-link" href="#">
-<span class="icon-badge">§</span>
-<span>Legal / Business Info</span>
+<span class="icon-badge" data-i18n="index_text">§</span>
+<span data-i18n="index_legal_business_info">Legal / Business Info</span>
 </a>
 </li>
 </ul>
 </div>
 </div>
 <div class="button-row" style="margin-top: 1.2rem; margin-bottom: 0;">
-<a class="btn btn-primary btn-booking" data-booking-link="true" href="contact.html#booking">Book a Lesson</a>
-<a class="btn btn-secondary btn-contact footer-cta-btn" data-i18n="final_btn_1" href="contact.html"><span class="btn-inline-icon" aria-hidden="true">✉️</span><span>Contact Me</span></a>
+<a class="btn btn-primary btn-booking" data-booking-link="true" data-i18n="hero_btn_book" href="contact.html#booking">Book a Lesson</a>
+<a class="btn btn-secondary btn-contact footer-cta-btn" data-i18n="final_btn_1" href="contact.html"><span aria-hidden="true" class="btn-inline-icon">✉️</span><span>Contact Me</span></a>
 </div>
 <div class="copyright" data-i18n="footer_copy">© Vadym Shved — Multilingual personal professional website</div>
 </div>
 </footer>
-<script src="assets/js/site.js?v=i18n3">
-</script>
+<script src="assets/js/i18n-inline.js?v=langfix1"></script>
+<script src="assets/js/site.js?v=langfix1"></script>
+<script src="assets/js/ui.js?v=langfix1"></script>
 </body>
 </html>

@@ -1,0 +1,9 @@
+Language switcher fix report
+
+Fixed:
+- Ukrainian code in the header label now shows UA instead of UK
+- language switching now works in local file:// testing
+- added assets/js/i18n-inline.js as a runtime mirror of the canonical JSON language files
+- site.js now loads translations from the inline mirror first, then uses cached/network JSON as available
+- English remains the canonical source in assets/i18n/en.json
+- other language files remain mirrored in assets/i18n/*.json

@@ -1,13 +1,32 @@
 <!DOCTYPE html>
 
-<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>Vadym Shved — Teaching</title><link href="assets/css/style.css?v=i18n3" rel="stylesheet"/><link href="assets/css/multipage.css?v=i18n3" rel="stylesheet"/></head><body class="page-shell"><header class="topbar">
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title data-i18n="page_title_teaching">Vadym Shved — Teaching</title><link href="assets/css/style.css?v=i18n7" rel="stylesheet"/><link href="assets/css/multipage.css?v=i18n7" rel="stylesheet"/>
+<style id="i18n-antiflicker-style">
+  html.i18n-preload body { visibility: hidden; }
+</style>
+<script id="i18n-antiflicker-bootstrap">
+(function () {
+  try {
+    var raw = localStorage.getItem('siteLanguage') || 'en';
+    var lang = ({ua:'uk', uk:'uk', en:'en', de:'de', fr:'fr', es:'es', pl:'pl'})[raw] || 'en';
+    document.documentElement.classList.add('i18n-preload');
+    document.documentElement.setAttribute('data-initial-lang', lang);
+    document.documentElement.lang = lang;
+  } catch (e) {
+    document.documentElement.classList.add('i18n-preload');
+    document.documentElement.setAttribute('data-initial-lang', 'en');
+    document.documentElement.lang = 'en';
+  }
+})();
+</script>
+</head><body class="page-shell"><header class="topbar">
 <div class="container topbar-inner">
 <a class="brand" href="index.html">
 <span class="brand-name" data-i18n="person_name">Vadym Shved</span>
 <span class="brand-role" data-i18n="brand_role">Chemist · Teacher · Educator</span>
 </a>
 <div class="nav-shell">
-<nav aria-label="Main navigation" class="desktop-nav" id="main-nav">
+<nav aria-label="Main navigation" class="desktop-nav" data-i18n-aria-label="index_main_navigation_aria_label" id="main-nav">
 <ul>
 <li><a class="nav-link" data-i18n="nav_home" href="index.html">Home</a></li>
 <li><a class="nav-link" data-i18n="nav_about" href="about.html">About</a></li>
@@ -21,19 +40,19 @@
 </div>
 <div class="lang-switcher">
 <button aria-controls="langMenu" aria-expanded="false" aria-haspopup="true" class="lang-toggle" id="langToggle" type="button">
-<span class="lang-label">EN</span>
+<span class="lang-label" data-i18n="index_en">EN</span>
 <span aria-hidden="true">▾</span>
 </button>
 <div class="lang-menu" id="langMenu" role="menu">
-<button class="lang-option active" data-lang="en" type="button">English (EN)</button>
-<button class="lang-option" data-lang="ua" type="button">Українська (UA)</button>
-<button class="lang-option" data-lang="de" type="button">Deutsch (DE)</button>
-<button class="lang-option" data-lang="fr" type="button">Français (FR)</button>
-<button class="lang-option" data-lang="es" type="button">Español (ES)</button>
-<button class="lang-option" data-lang="pl" type="button">Polski (PL)</button>
+<button class="lang-option active" data-i18n="index_english_en" data-lang="en" type="button">English (EN)</button>
+<button class="lang-option" data-i18n="index_ua" data-lang="ua" type="button">Українська (UA)</button>
+<button class="lang-option" data-i18n="index_deutsch_de" data-lang="de" type="button">Deutsch (DE)</button>
+<button class="lang-option" data-i18n="index_fran_ais_fr" data-lang="fr" type="button">Français (FR)</button>
+<button class="lang-option" data-i18n="index_espa_ol_es" data-lang="es" type="button">Español (ES)</button>
+<button class="lang-option" data-i18n="index_polski_pl" data-lang="pl" type="button">Polski (PL)</button>
 </div>
 </div>
-<button aria-label="Open Menu" aria-controls="main-nav" aria-expanded="false" class="mobile-toggle" id="mobile-toggle" type="button">
+<button aria-controls="main-nav" aria-expanded="false" aria-label="Open Menu" class="mobile-toggle" data-i18n-aria-label="index_open_menu_aria_label" id="mobile-toggle" type="button">
 <span></span>
 <span></span>
 <span></span>
@@ -43,228 +62,225 @@
 <div class="container">
 <div class="section-header">
 <h2 data-i18n="teaching_title">Teaching &amp; Tutoring</h2>
-<p class="section-intro">Chemistry tutoring, academic support, and German language guidance for students from different educational backgrounds.</p>
+<p class="section-intro" data-i18n="teaching_chemistry_tutoring_academic_support_and_german">Chemistry tutoring, academic support, and German language guidance for students from different educational backgrounds.</p>
 </div>
 <div class="detail-card gallery-preview-card gallery-preview-card--inline" style="margin:0 0 1rem;">
-  <div class="section-header">
-    <h3 class="gallery-preview-title" data-i18n="gallery_preview_teaching_title">Teaching in practice</h3>
-    <p class="section-intro" data-i18n="gallery_preview_teaching_text">A visual overview of classroom work, tutoring, and chemistry teaching moments in different educational contexts.</p>
-  </div>
-  <div class="gallery-preview-grid">
-    <a class="gallery-preview-tile" href="gallery.html#teaching"><figure><img alt="Classroom preview" src="assets/images/gallery/teaching/teaching-1.svg"/></figure><span class="gallery-preview-label" data-i18n="gallery_teaching_classroom">Classroom</span></a>
-    <a class="gallery-preview-tile" href="gallery.html#teaching"><figure><img alt="Tutoring preview" src="assets/images/gallery/teaching/teaching-3.svg"/></figure><span class="gallery-preview-label" data-i18n="gallery_teaching_tutoring">Tutoring</span></a>
-    <a class="gallery-preview-tile" href="gallery.html#teaching"><figure><img alt="Chemistry practice preview" src="assets/images/gallery/teaching/teaching-4.svg"/></figure><span class="gallery-preview-label" data-i18n="gallery_teaching_practice">Chemistry Practice</span></a>
-  </div>
-  <div class="button-row gallery-preview-actions">
-    <a class="btn btn-secondary btn-view-gallery btn-gallery-open" href="gallery.html#teaching" data-i18n="gallery_view_cta">View Gallery</a>
-  </div>
+<div class="section-header">
+<h3 class="gallery-preview-title" data-i18n="gallery_preview_teaching_title">Teaching in practice</h3>
+<p class="section-intro" data-i18n="gallery_preview_teaching_text">A visual overview of classroom work, tutoring, and chemistry teaching moments in different educational contexts.</p>
 </div>
-
+<div class="gallery-preview-grid" data-i18n-html="teaching_classroom_tutoring_chemistry_practice">
+<a class="gallery-preview-tile" href="gallery.html#teaching"><figure><img alt="Classroom preview" src="assets/images/gallery/teaching/teaching-1.svg"/></figure><span class="gallery-preview-label" data-i18n="gallery_teaching_classroom">Classroom</span></a>
+<a class="gallery-preview-tile" href="gallery.html#teaching"><figure><img alt="Tutoring preview" src="assets/images/gallery/teaching/teaching-3.svg"/></figure><span class="gallery-preview-label" data-i18n="gallery_teaching_tutoring">Tutoring</span></a>
+<a class="gallery-preview-tile" href="gallery.html#teaching"><figure><img alt="Chemistry practice preview" src="assets/images/gallery/teaching/teaching-4.svg"/></figure><span class="gallery-preview-label" data-i18n="gallery_teaching_practice">Chemistry Practice</span></a>
+</div>
+<div class="button-row gallery-preview-actions">
+<a class="btn btn-secondary btn-view-gallery btn-gallery-open" data-i18n="gallery_view_cta" href="gallery.html#teaching">View Gallery</a>
+</div>
+</div>
 <div class="detail-card soft-panel teaching-intro-card" style="margin-bottom:1rem;">
-<h3>Structured, Multilingual, and Individualized Teaching</h3>
-<p>I work through clear explanations, strong structure, and individualized support. The aim is not only to solve the immediate topic, but also to help learners build durable understanding, confidence, and independence.</p>
+<h3 data-i18n="teaching_structured_multilingual_and_individualized_teaching">Structured, Multilingual, and Individualized Teaching</h3>
+<p data-i18n="teaching_i_work_through_clear_explanations_strong">I work through clear explanations, strong structure, and individualized support. The aim is not only to solve the immediate topic, but also to help learners build durable understanding, confidence, and independence.</p>
 </div>
-
-<div class="grid-5 teaching-pillars" style="margin-bottom:1rem;"><article class="card teaching-pillar-card"><h3>School Chemistry Support</h3><p>For students who want stronger understanding, better grades, and more confidence.</p></article><article class="card teaching-pillar-card"><h3>Exam Preparation</h3><p>Preparation for school exams, entrance exams, and demanding chemistry assessments.</p></article><article class="card teaching-pillar-card"><h3>University Chemistry Support</h3><p>Foundational chemistry support for general, inorganic, organic, and physical chemistry topics.</p></article><article class="card teaching-pillar-card"><h3>Advanced International Chemistry</h3><p>Support for motivated learners and international programs such as IB Diploma Chemistry.</p></article><article class="card teaching-pillar-card"><h3>German Language Tutoring</h3><p>Additional tutoring service focused on grammar, vocabulary, communication, and structured progress.</p></article></div>
+<div class="grid-5 teaching-pillars" style="margin-bottom:1rem;"><article class="card teaching-pillar-card"><h3 data-i18n="teaching_preview_1_title">School Chemistry Support</h3><p data-i18n="teaching_preview_1_text">For students who want stronger understanding, better grades, and more confidence.</p></article><article class="card teaching-pillar-card"><h3 data-i18n="teaching_preview_2_title">Exam Preparation</h3><p data-i18n="teaching_preview_2_text">Preparation for school exams, entrance exams, and demanding chemistry assessments.</p></article><article class="card teaching-pillar-card"><h3 data-i18n="teaching_preview_3_title">University Chemistry Support</h3><p data-i18n="teaching_preview_3_text">Foundational chemistry support for general, inorganic, organic, and physical chemistry topics.</p></article><article class="card teaching-pillar-card"><h3 data-i18n="teaching_advanced_international_chemistry">Advanced International Chemistry</h3><p data-i18n="teaching_preview_4_text">Support for motivated learners and international programs such as IB Diploma Chemistry.</p></article><article class="card teaching-pillar-card"><h3 data-i18n="teaching_preview_5_title">German Language Tutoring</h3><p data-i18n="teaching_preview_5_text">Additional tutoring service focused on grammar, vocabulary, communication, and structured progress.</p></article></div>
 <div class="grid-2 teaching-focus-accordion-grid">
 <details class="detail-card teaching-focus-card teaching-focus-card--chemistry teaching-focus-accordion">
 <summary>
-  <h3>Chemistry Tutoring</h3>
-  <p class="teaching-focus-intro">Structured chemistry support focused on concepts, confidence, and long-term academic progress across school and early university levels.</p>
+<h3 data-i18n="teaching_chemistry_tutoring">Chemistry Tutoring</h3>
+<p class="teaching-focus-intro" data-i18n="teaching_structured_chemistry_support_focused_on_concepts">Structured chemistry support focused on concepts, confidence, and long-term academic progress across school and early university levels.</p>
 </summary>
-  <div class="teaching-focus-body">
-    <ul class="stack-list">
-      <li><strong>Understanding over memorization</strong><span class="muted">Clear concepts and logical foundations come first.</span></li>
-      <li><strong>Strong foundations</strong><span class="muted">Step-by-step development of core chemical thinking.</span></li>
-      <li><strong>Theory connected to practice</strong><span class="muted">Scientific ideas linked to real applications and laboratory reality.</span></li>
-      <li><strong>Confidence-building</strong><span class="muted">Support that reduces stress and increases long-term academic confidence.</span></li>
-      <li><strong>School and university support</strong><span class="muted">Adapted for learners from different systems and levels.</span></li>
-      <li><strong>Exam preparation</strong><span class="muted">Targeted work for tests, admissions, and intensive preparation phases.</span></li>
-    </ul>
-  </div>
+<div class="teaching-focus-body">
+<ul class="stack-list">
+<li><strong data-i18n="teaching_understanding_over_memorization">Understanding over memorization</strong><span class="muted" data-i18n="teaching_clear_concepts_and_logical_foundations_come">Clear concepts and logical foundations come first.</span></li>
+<li><strong data-i18n="teaching_strong_foundations">Strong foundations</strong><span class="muted" data-i18n="teaching_step_by_step_development_of_core">Step-by-step development of core chemical thinking.</span></li>
+<li><strong data-i18n="teaching_theory_connected_to_practice">Theory connected to practice</strong><span class="muted" data-i18n="teaching_scientific_ideas_linked_to_real_applications">Scientific ideas linked to real applications and laboratory reality.</span></li>
+<li><strong data-i18n="teaching_confidence_building">Confidence-building</strong><span class="muted" data-i18n="teaching_support_that_reduces_stress_and_increases">Support that reduces stress and increases long-term academic confidence.</span></li>
+<li><strong data-i18n="teaching_school_and_university_support">School and university support</strong><span class="muted" data-i18n="teaching_adapted_for_learners_from_different_systems">Adapted for learners from different systems and levels.</span></li>
+<li><strong data-i18n="teaching_exam_preparation">Exam preparation</strong><span class="muted" data-i18n="teaching_targeted_work_for_tests_admissions_and">Targeted work for tests, admissions, and intensive preparation phases.</span></li>
+</ul>
+</div>
 </details>
 <details class="detail-card accent-panel teaching-focus-card teaching-focus-card--language teaching-focus-accordion">
 <summary>
-  <h3>German Language Tutoring</h3>
-  <p class="teaching-focus-intro">In addition to chemistry, I also offer German language tutoring as a secondary teaching service with a structured, supportive, and learner-friendly approach.</p>
+<h3 data-i18n="teaching_preview_5_title">German Language Tutoring</h3>
+<p class="teaching-focus-intro" data-i18n="teaching_in_addition_to_chemistry_i_also">In addition to chemistry, I also offer German language tutoring as a secondary teaching service with a structured, supportive, and learner-friendly approach.</p>
 </summary>
-  <div class="teaching-focus-body">
-    <ul class="stack-list">
-      <li><strong>Approximate level range</strong><span class="muted">Support from beginner to intermediate level (approximately A1 to B2).</span></li>
-      <li><strong>Grammar and vocabulary</strong><span class="muted">Solid language structures built in a systematic way.</span></li>
-      <li><strong>Practical communication</strong><span class="muted">Support for speaking confidence, written tasks, and everyday usage.</span></li>
-      <li><strong>Ukrainian-speaking learners</strong><span class="muted">Lessons can be especially useful for learners adapting to German-speaking contexts.</span></li>
-      <li><strong>Complementary support</strong><span class="muted">Useful as a parallel language service beside chemistry tutoring.</span></li>
-    </ul>
-  </div>
+<div class="teaching-focus-body">
+<ul class="stack-list">
+<li><strong data-i18n="teaching_approximate_level_range">Approximate level range</strong><span class="muted" data-i18n="teaching_support_from_beginner_to_intermediate_level">Support from beginner to intermediate level (approximately A1 to B2).</span></li>
+<li><strong data-i18n="teaching_grammar_and_vocabulary">Grammar and vocabulary</strong><span class="muted" data-i18n="teaching_solid_language_structures_built_in_a">Solid language structures built in a systematic way.</span></li>
+<li><strong data-i18n="teaching_practical_communication">Practical communication</strong><span class="muted" data-i18n="teaching_support_for_speaking_confidence_written_tasks">Support for speaking confidence, written tasks, and everyday usage.</span></li>
+<li><strong data-i18n="teaching_ukrainian_speaking_learners">Ukrainian-speaking learners</strong><span class="muted" data-i18n="teaching_lessons_can_be_especially_useful_for">Lessons can be especially useful for learners adapting to German-speaking contexts.</span></li>
+<li><strong data-i18n="teaching_complementary_support">Complementary support</strong><span class="muted" data-i18n="teaching_useful_as_a_parallel_language_service">Useful as a parallel language service beside chemistry tutoring.</span></li>
+</ul>
+</div>
 </details>
 </div>
 <div class="grid-3" style="margin-top:1rem;">
 <article class="detail-card teaching-meta-card teaching-language-card">
-<h3>Languages of instruction</h3>
-<div class="tag-row"><span class="tag flag-tag"><span class="flag-emoji">🇬🇧</span><span>English</span></span><span class="tag flag-tag"><span class="flag-emoji">🇩🇪</span><span>German</span></span><span class="tag flag-tag"><span class="flag-emoji">🇺🇦</span><span>Ukrainian</span></span><span class="tag flag-tag"><span class="flag-emoji">🇷🇺</span><span>Russian</span></span></div>
-<p class="ext-note">Additional support possible in Spanish, French, and Polish depending on level and goals.</p>
+<h3 data-i18n="teaching_languages_of_instruction">Languages of instruction</h3>
+<div class="tag-row" data-i18n-html="teaching_english_german_ukrainian_russian"><span class="tag flag-tag"><span class="flag-emoji" data-i18n="teaching_text">🇬🇧</span><span data-i18n="teaching_english">English</span></span><span class="tag flag-tag"><span class="flag-emoji" data-i18n="teaching_text_2">🇩🇪</span><span data-i18n="teaching_german">German</span></span><span class="tag flag-tag"><span class="flag-emoji" data-i18n="teaching_text_3">🇺🇦</span><span data-i18n="teaching_ukrainian">Ukrainian</span></span><span class="tag flag-tag"><span class="flag-emoji" data-i18n="teaching_text_4">🇷🇺</span><span data-i18n="teaching_russian">Russian</span></span></div>
+<p class="ext-note" data-i18n="teaching_additional_support_possible_in_spanish_french">Additional support possible in Spanish, French, and Polish depending on level and goals.</p>
 </article>
 <article class="detail-card teaching-meta-card">
-<h3>Who I work with</h3>
+<h3 data-i18n="who_title">Who I work with</h3>
 <div class="tag-row">
-<span class="tag">School Students</span>
-<span class="tag">Upper-Secondary / Gymnasium</span>
-<span class="tag">University Beginners</span>
-<span class="tag">International Learners</span>
-<span class="tag">Ukrainian-Speaking Learners</span>
+<span class="tag" data-i18n="teaching_school_students">School Students</span>
+<span class="tag" data-i18n="teaching_upper_secondary_gymnasium">Upper-Secondary / Gymnasium</span>
+<span class="tag" data-i18n="library_teaching_university">University Beginners</span>
+<span class="tag" data-i18n="teaching_international_learners">International Learners</span>
+<span class="tag" data-i18n="teaching_ukrainian_speaking_learners_2">Ukrainian-Speaking Learners</span>
 </div>
 </article>
 <article class="detail-card teaching-meta-card">
-<h3>Lesson formats</h3>
+<h3 data-i18n="teaching_lesson_formats">Lesson formats</h3>
 <div class="tag-row">
-<span class="tag">Online one-to-one lessons</span>
-<span class="tag">Long-term tutoring</span>
-<span class="tag">Intensive exam prep</span>
-<span class="tag">Topic-focused sessions</span>
-<span class="tag">Small-group support</span>
-<span class="tag">Personalized planning</span>
+<span class="tag" data-i18n="teaching_online_one_to_one_lessons">Online one-to-one lessons</span>
+<span class="tag" data-i18n="teaching_long_term_tutoring">Long-term tutoring</span>
+<span class="tag" data-i18n="teaching_intensive_exam_prep">Intensive exam prep</span>
+<span class="tag" data-i18n="teaching_topic_focused_sessions">Topic-focused sessions</span>
+<span class="tag" data-i18n="teaching_small_group_support">Small-group support</span>
+<span class="tag" data-i18n="teaching_personalized_planning">Personalized planning</span>
 </div>
 </article>
 </div>
 <div class="section-header teaching-subsection-header" style="margin-top:2rem; margin-bottom:1rem;">
-<h3 style="font-size:1.45rem; margin:0;">Lesson Rates</h3>
-<p class="section-intro">A transparent and flexible pricing section for chemistry lessons, German language tutoring, and specialized academic support.</p>
+<h3 data-i18n="teaching_lesson_rates" style="font-size:1.45rem; margin:0;">Lesson Rates</h3>
+<p class="section-intro" data-i18n="teaching_a_transparent_and_flexible_pricing_section">A transparent and flexible pricing section for chemistry lessons, German language tutoring, and specialized academic support.</p>
 </div>
 <div class="teaching-rates-shell">
-  <article class="pricing-card pricing-card-primary chemistry-rate-card">
-    <div class="pricing-card-label">Chemistry tutoring</div>
-    <div class="pricing-card-topline">
-      <h3>Chemistry Lessons</h3>
-      <span class="pricing-card-icon" aria-hidden="true">⚗️</span>
-    </div>
-    <div class="pricing-card-hero">
-      <span class="pricing-card-price-prefix">from</span>
-      <div class="pricing-card-price">€15</div>
-      <div class="pricing-card-price-meta">per hour</div>
-    </div>
-    <p class="pricing-card-summary">Structured support for school students, upper-secondary learners, and university beginners who want clear chemistry guidance.</p>
-    <ul class="pricing-checklist">
-      <li>School chemistry support</li>
-      <li>Exam preparation and revision</li>
-      <li>University beginner topics</li>
-      <li>Individual lesson planning</li>
-    </ul>
-    <div class="pricing-card-actions">
-      <a class="btn btn-primary btn-booking btn-chemistry" data-booking-link="true" href="#"><span class="btn-inline-icon" aria-hidden="true">⚗️</span><span>Book a Chemistry Lesson</span></a>
-    </div>
-  </article>
-  <div class="teaching-rates-secondary">
-    <article class="pricing-card pricing-card-secondary german-rate-card">
-      <div class="pricing-card-side">
-        <span class="pricing-card-mini-icon" aria-hidden="true">💬</span>
-        <div class="pricing-card-side-copy">
-          <div class="pricing-card-label">German tutoring</div>
-          <h3>German Language Lessons</h3>
-          <p>Practical language support with structured progression, grammar work, and communication-focused lessons.</p>
-        </div>
-      </div>
-      <div class="pricing-card-side-meta">
-        <div class="pricing-card-price-sm">from €10</div>
-        <div class="pricing-card-price-note">per hour</div>
-      </div>
-      <ul class="pricing-checklist pricing-checklist-compact">
-        <li>Grammar and speaking practice</li>
-        <li>Structured progression by level</li>
-        <li>Individual support and homework follow-up</li>
-      </ul>
-      <a class="btn btn-secondary pricing-inline-btn btn-booking btn-language-secondary" data-booking-link="true" href="#"><span class="btn-inline-icon" aria-hidden="true">💬</span><span>Book a German Lesson</span></a>
-    </article>
-    <article class="pricing-card pricing-card-secondary advanced-rate-card">
-      <div class="pricing-card-side">
-        <span class="pricing-card-mini-icon" aria-hidden="true">🧩</span>
-        <div class="pricing-card-side-copy">
-          <div class="pricing-card-label">Advanced support</div>
-          <h3>Advanced Specialized Support</h3>
-          <p>For IB, intensive preparation, advanced chemistry topics, and specialized academic support with deeper preparation needs.</p>
-        </div>
-      </div>
-      <div class="pricing-card-side-meta">
-        <div class="pricing-card-price-sm">from €15</div>
-        <div class="pricing-card-price-note">per hour</div>
-      </div>
-      <ul class="pricing-checklist pricing-checklist-compact">
-        <li>Advanced chemistry topics</li>
-        <li>Exam-oriented preparation</li>
-        <li>Tailored materials and focused guidance</li>
-      </ul>
-      <a class="btn btn-soft pricing-inline-btn btn-booking btn-advanced-secondary" data-booking-link="true" href="#"><span class="btn-inline-icon" aria-hidden="true">⚙️</span><span>Schedule Specialized Support</span></a>
-    </article>
-  </div>
+<article class="pricing-card pricing-card-primary chemistry-rate-card">
+<div class="pricing-card-label" data-i18n="teaching_chemistry_tutoring_2">Chemistry tutoring</div>
+<div class="pricing-card-topline">
+<h3 data-i18n="teaching_chemistry_lessons">Chemistry Lessons</h3>
+<span aria-hidden="true" class="pricing-card-icon" data-i18n="teaching_text_5">⚗️</span>
 </div>
-<p class="ext-note">Final rates may vary depending on level, lesson format, lesson length, language, and preparation needs.</p>
+<div class="pricing-card-hero">
+<span class="pricing-card-price-prefix" data-i18n="teaching_from">from</span>
+<div class="pricing-card-price" data-i18n="teaching_15">€15</div>
+<div class="pricing-card-price-meta" data-i18n="teaching_per_hour">per hour</div>
+</div>
+<p class="pricing-card-summary" data-i18n="teaching_structured_support_for_school_students_upper">Structured support for school students, upper-secondary learners, and university beginners who want clear chemistry guidance.</p>
+<ul class="pricing-checklist">
+<li data-i18n="teaching_school_chemistry_support">School chemistry support</li>
+<li data-i18n="teaching_exam_preparation_and_revision">Exam preparation and revision</li>
+<li data-i18n="teaching_university_beginner_topics">University beginner topics</li>
+<li data-i18n="teaching_individual_lesson_planning">Individual lesson planning</li>
+</ul>
+<div class="pricing-card-actions" data-i18n-html="teaching_book_a_chemistry_lesson">
+<a class="btn btn-primary btn-booking btn-chemistry" data-booking-link="true" href="#"><span aria-hidden="true" class="btn-inline-icon" data-i18n="teaching_text_5">⚗️</span><span data-i18n="booking_btn_1">Book a Chemistry Lesson</span></a>
+</div>
+</article>
+<div class="teaching-rates-secondary">
+<article class="pricing-card pricing-card-secondary german-rate-card">
+<div class="pricing-card-side">
+<span aria-hidden="true" class="pricing-card-mini-icon" data-i18n="teaching_text_6">💬</span>
+<div class="pricing-card-side-copy">
+<div class="pricing-card-label" data-i18n="teaching_german_tutoring">German tutoring</div>
+<h3 data-i18n="teaching_german_language_lessons">German Language Lessons</h3>
+<p data-i18n="teaching_practical_language_support_with_structured_progression">Practical language support with structured progression, grammar work, and communication-focused lessons.</p>
+</div>
+</div>
+<div class="pricing-card-side-meta">
+<div class="pricing-card-price-sm" data-i18n="teaching_from_10">from €10</div>
+<div class="pricing-card-price-note" data-i18n="teaching_per_hour">per hour</div>
+</div>
+<ul class="pricing-checklist pricing-checklist-compact">
+<li data-i18n="teaching_grammar_and_speaking_practice">Grammar and speaking practice</li>
+<li data-i18n="teaching_structured_progression_by_level">Structured progression by level</li>
+<li data-i18n="teaching_individual_support_and_homework_follow_up">Individual support and homework follow-up</li>
+</ul>
+<a class="btn btn-secondary pricing-inline-btn btn-booking btn-language-secondary" data-booking-link="true" href="#"><span aria-hidden="true" class="btn-inline-icon" data-i18n="teaching_text_6">💬</span><span data-i18n="booking_btn_2">Book a German Lesson</span></a>
+</article>
+<article class="pricing-card pricing-card-secondary advanced-rate-card">
+<div class="pricing-card-side">
+<span aria-hidden="true" class="pricing-card-mini-icon" data-i18n="teaching_text_7">🧩</span>
+<div class="pricing-card-side-copy">
+<div class="pricing-card-label" data-i18n="teaching_advanced_support">Advanced support</div>
+<h3 data-i18n="teaching_advanced_specialized_support">Advanced Specialized Support</h3>
+<p data-i18n="teaching_for_ib_intensive_preparation_advanced_chemistry">For IB, intensive preparation, advanced chemistry topics, and specialized academic support with deeper preparation needs.</p>
+</div>
+</div>
+<div class="pricing-card-side-meta">
+<div class="pricing-card-price-sm" data-i18n="teaching_from_15">from €15</div>
+<div class="pricing-card-price-note" data-i18n="teaching_per_hour">per hour</div>
+</div>
+<ul class="pricing-checklist pricing-checklist-compact">
+<li data-i18n="teaching_advanced_chemistry_topics">Advanced chemistry topics</li>
+<li data-i18n="teaching_exam_oriented_preparation">Exam-oriented preparation</li>
+<li data-i18n="teaching_tailored_materials_and_focused_guidance">Tailored materials and focused guidance</li>
+</ul>
+<a class="btn btn-soft pricing-inline-btn btn-booking btn-advanced-secondary" data-booking-link="true" href="#"><span aria-hidden="true" class="btn-inline-icon" data-i18n="teaching_text_8">⚙️</span><span data-i18n="teaching_schedule_specialized_support">Schedule Specialized Support</span></a>
+</article>
+</div>
+</div>
+<p class="ext-note" data-i18n="teaching_final_rates_may_vary_depending_on">Final rates may vary depending on level, lesson format, lesson length, language, and preparation needs.</p>
 <div class="teaching-rates-note-grid teaching-rates-info-cards">
-  <article class="detail-card teaching-rates-info-card teaching-rates-info-card--trial">
-    <div class="teaching-rates-info-head">
-      <span class="teaching-rates-info-icon" aria-hidden="true">✨</span>
-      <h3>Free trial lesson</h3>
-    </div>
-    <p>The first trial session is free for chemistry, German language support, and advanced specialized lessons. This helps us define goals, level, and the best learning format before continuing.</p>
-  </article>
-  <article class="detail-card teaching-rates-info-card teaching-rates-info-card--booking">
-    <div class="teaching-rates-info-head">
-      <span class="teaching-rates-info-icon" aria-hidden="true">🗓️</span>
-      <h3>Flexible booking options</h3>
-    </div>
-    <p>Discounts can be offered for block bookings, regular long-term scheduling, and selected small-group online formats depending on goals and availability.</p>
-  </article>
-  <article class="detail-card teaching-rates-info-card teaching-rates-info-card--zoom">
-    <div class="teaching-rates-info-head">
-      <span class="teaching-rates-info-icon" aria-hidden="true">🎥</span>
-      <h3>Online lesson format</h3>
-    </div>
-    <p>All lessons take place via Zoom. A licensed setup allows screen sharing, note exchange, document work, and a comfortable learning process with flexible scheduling.</p>
-  </article>
+<article class="detail-card teaching-rates-info-card teaching-rates-info-card--trial">
+<div class="teaching-rates-info-head">
+<span aria-hidden="true" class="teaching-rates-info-icon" data-i18n="teaching_text_9">✨</span>
+<h3 data-i18n="teaching_free_trial_lesson">Free trial lesson</h3>
+</div>
+<p data-i18n="teaching_the_first_trial_session_is_free">The first trial session is free for chemistry, German language support, and advanced specialized lessons. This helps us define goals, level, and the best learning format before continuing.</p>
+</article>
+<article class="detail-card teaching-rates-info-card teaching-rates-info-card--booking">
+<div class="teaching-rates-info-head">
+<span aria-hidden="true" class="teaching-rates-info-icon" data-i18n="teaching_text_10">🗓️</span>
+<h3 data-i18n="teaching_flexible_booking_options">Flexible booking options</h3>
+</div>
+<p data-i18n="teaching_discounts_can_be_offered_for_block">Discounts can be offered for block bookings, regular long-term scheduling, and selected small-group online formats depending on goals and availability.</p>
+</article>
+<article class="detail-card teaching-rates-info-card teaching-rates-info-card--zoom">
+<div class="teaching-rates-info-head">
+<span aria-hidden="true" class="teaching-rates-info-icon" data-i18n="teaching_text_11">🎥</span>
+<h3 data-i18n="teaching_online_lesson_format">Online lesson format</h3>
+</div>
+<p data-i18n="teaching_all_lessons_take_place_via_zoom">All lessons take place via Zoom. A licensed setup allows screen sharing, note exchange, document work, and a comfortable learning process with flexible scheduling.</p>
+</article>
 </div><div class="section-header" id="profiles" style="margin-top:2rem; margin-bottom:1rem;">
-<h3 style="font-size:1.45rem; margin:0;">Where to Find Me</h3>
-<p class="section-intro">External teaching and professional profiles can be presented in a clean, trust-building format. The most important platforms appear as primary cards, while additional country-specific tutoring profiles are grouped below so the site stays elegant and easy to scan.</p>
+<h3 data-i18n="teaching_where_to_find_me" style="font-size:1.45rem; margin:0;">Where to Find Me</h3>
+<p class="section-intro" data-i18n="teaching_external_teaching_and_professional_profiles_can">External teaching and professional profiles can be presented in a clean, trust-building format. The most important platforms appear as primary cards, while additional country-specific tutoring profiles are grouped below so the site stays elegant and easy to scan.</p>
 </div>
 <div class="grid-5 teaching-profiles-grid">
-<article class="profile-card"><h3><a class="icon-link footer-contact-item" href="https://www.linkedin.com/in/shvedvadym" rel="noreferrer" target="_blank"><span class="icon-badge">in</span><span>LinkedIn</span></a></h3><p>Professional profile with academic background, education path, and international positioning.</p><a class="text-link" href="https://www.linkedin.com/in/shvedvadym" rel="noreferrer" target="_blank">Open LinkedIn</a></article>
-<article class="profile-card"><h3><a class="icon-link footer-contact-item" href="https://tutor24.ch/de/providers/3301791?public_view=true" rel="noreferrer" target="_blank"><span class="icon-badge">T24</span><span>Tutor24 Switzerland</span></a></h3><p>Main Swiss tutoring profile for chemistry and academic support.</p><a class="text-link" href="https://tutor24.ch/de/providers/3301791?public_view=true" rel="noreferrer" target="_blank">View Profile</a></article>
-<article class="profile-card"><h3><a class="icon-link footer-contact-item" href="https://buki.com.ua/user-21753/" rel="noreferrer" target="_blank"><span class="icon-badge">BU</span><span>BUKI Ukraine</span></a></h3><p>Established tutoring profile for Ukrainian learners and chemistry support.</p><a class="text-link" href="https://buki.com.ua/user-21753/" rel="noreferrer" target="_blank">View Profile</a></article>
-<article class="profile-card"><h3><a class="icon-link footer-contact-item" href="https://repetitor.org.ua/uk-id8693" rel="noreferrer" target="_blank"><span class="icon-badge">AR</span><span>Repetitor.org.ua</span></a></h3><p>Profile on the Association of Tutors of Ukraine platform.</p><a class="text-link" href="https://repetitor.org.ua/uk-id8693" rel="noreferrer" target="_blank">View Profile</a></article>
-<article class="profile-card"><h3><a class="icon-link footer-contact-item" href="https://www.instagram.com/vadymtravels" rel="noreferrer" target="_blank"><span class="icon-badge">IG</span><span>@vadymtravels</span></a></h3><p>Peru Travel Initiative by @vadymtravels — a secondary project focused on route planning and practical travel guidance.</p><a class="text-link" href="https://www.instagram.com/vadymtravels" rel="noreferrer" target="_blank">Open Instagram</a></article>
+<article class="profile-card"><h3 data-i18n-html="index_in_linkedin"><a class="icon-link footer-contact-item" href="https://www.linkedin.com/in/shvedvadym" rel="noreferrer" target="_blank"><span class="icon-badge" data-i18n="index_in">in</span><span data-i18n="index_linkedin">LinkedIn</span></a></h3><p data-i18n="teaching_professional_profile_with_academic_background_education">Professional profile with academic background, education path, and international positioning.</p><a class="text-link" data-i18n="teaching_open_linkedin" href="https://www.linkedin.com/in/shvedvadym" rel="noreferrer" target="_blank">Open LinkedIn</a></article>
+<article class="profile-card"><h3 data-i18n-html="teaching_t24_tutor24_switzerland"><a class="icon-link footer-contact-item" href="https://tutor24.ch/de/providers/3301791?public_view=true" rel="noreferrer" target="_blank"><span class="icon-badge" data-i18n="index_t24">T24</span><span data-i18n="teaching_tutor24_switzerland">Tutor24 Switzerland</span></a></h3><p data-i18n="teaching_main_swiss_tutoring_profile_for_chemistry">Main Swiss tutoring profile for chemistry and academic support.</p><a class="text-link" data-i18n="teaching_view_profile" href="https://tutor24.ch/de/providers/3301791?public_view=true" rel="noreferrer" target="_blank">View Profile</a></article>
+<article class="profile-card"><h3 data-i18n-html="teaching_bu_buki_ukraine"><a class="icon-link footer-contact-item" href="https://buki.com.ua/user-21753/" rel="noreferrer" target="_blank"><span class="icon-badge" data-i18n="index_bu">BU</span><span data-i18n="teaching_buki_ukraine">BUKI Ukraine</span></a></h3><p data-i18n="teaching_established_tutoring_profile_for_ukrainian_learners">Established tutoring profile for Ukrainian learners and chemistry support.</p><a class="text-link" data-i18n="teaching_view_profile" href="https://buki.com.ua/user-21753/" rel="noreferrer" target="_blank">View Profile</a></article>
+<article class="profile-card"><h3 data-i18n-html="index_ar_repetitor_org_ua"><a class="icon-link footer-contact-item" href="https://repetitor.org.ua/uk-id8693" rel="noreferrer" target="_blank"><span class="icon-badge" data-i18n="index_ar">AR</span><span data-i18n="index_repetitor_org_ua">Repetitor.org.ua</span></a></h3><p data-i18n="teaching_profile_on_the_association_of_tutors">Profile on the Association of Tutors of Ukraine platform.</p><a class="text-link" data-i18n="teaching_view_profile" href="https://repetitor.org.ua/uk-id8693" rel="noreferrer" target="_blank">View Profile</a></article>
+<article class="profile-card"><h3 data-i18n-html="teaching_ig_vadymtravels"><a class="icon-link footer-contact-item" href="https://www.instagram.com/vadymtravels" rel="noreferrer" target="_blank"><span class="icon-badge" data-i18n="index_ig">IG</span><span data-i18n="teaching_vadymtravels">@vadymtravels</span></a></h3><p data-i18n="teaching_peru_travel_initiative_by_vadymtravels_a">Peru Travel Initiative by @vadymtravels — a secondary project focused on route planning and practical travel guidance.</p><a class="text-link" data-i18n="teaching_open_instagram" href="https://www.instagram.com/vadymtravels" rel="noreferrer" target="_blank">Open Instagram</a></article>
 </div>
 <div class="note-box soft-panel" style="margin-top:1rem;">
-<h3>Additional tutoring platforms</h3>
-<p>These country-specific profiles expand tutoring visibility without overwhelming the main design. They are grouped here in a more compact format.</p>
-<div class="link-pills">
-<a class="link-pill" href="https://www.meetnlearn.ch/438085-nachhilfe" rel="noreferrer" target="_blank"><span class="icon-badge">ML</span><span>Meet'n'Learn Switzerland</span></a>
-<a class="link-pill" href="https://nachhilfen24.at/de/providers/3840607?public_view=true" rel="noreferrer" target="_blank"><span class="icon-badge">N24</span><span>Nachhilfen24 Austria</span></a>
-<a class="link-pill" href="https://www.meetnlearn.at/438071-nachhilfe" rel="noreferrer" target="_blank"><span class="icon-badge">ML</span><span>Meet'n'Learn Austria</span></a>
-<a class="link-pill" href="https://www.meetnlearn.de/438204-nachhilfe" rel="noreferrer" target="_blank"><span class="icon-badge">ML</span><span>Meet'n'Learn Germany</span></a>
-<a class="link-pill" href="https://www.meetnlearn.se/454765-tutoring" rel="noreferrer" target="_blank"><span class="icon-badge">ML</span><span>Meet'n'Learn Sweden</span></a>
-<a class="link-pill" href="https://buki.org.pl/user-117558/" rel="noreferrer" target="_blank"><span class="icon-badge">BU</span><span>BUKI Poland</span></a>
+<h3 data-i18n="teaching_additional_tutoring_platforms">Additional tutoring platforms</h3>
+<p data-i18n="teaching_these_country_specific_profiles_expand_tutoring">These country-specific profiles expand tutoring visibility without overwhelming the main design. They are grouped here in a more compact format.</p>
+<div class="link-pills" data-i18n-html="teaching_ml_meet_n_learn_switzerland_n24">
+<a class="link-pill" href="https://www.meetnlearn.ch/438085-nachhilfe" rel="noreferrer" target="_blank"><span class="icon-badge" data-i18n="teaching_ml">ML</span><span data-i18n="teaching_meet_n_learn_switzerland">Meet'n'Learn Switzerland</span></a>
+<a class="link-pill" href="https://nachhilfen24.at/de/providers/3840607?public_view=true" rel="noreferrer" target="_blank"><span class="icon-badge" data-i18n="teaching_n24">N24</span><span data-i18n="teaching_nachhilfen24_austria">Nachhilfen24 Austria</span></a>
+<a class="link-pill" href="https://www.meetnlearn.at/438071-nachhilfe" rel="noreferrer" target="_blank"><span class="icon-badge" data-i18n="teaching_ml">ML</span><span data-i18n="teaching_meet_n_learn_austria">Meet'n'Learn Austria</span></a>
+<a class="link-pill" href="https://www.meetnlearn.de/438204-nachhilfe" rel="noreferrer" target="_blank"><span class="icon-badge" data-i18n="teaching_ml">ML</span><span data-i18n="teaching_meet_n_learn_germany">Meet'n'Learn Germany</span></a>
+<a class="link-pill" href="https://www.meetnlearn.se/454765-tutoring" rel="noreferrer" target="_blank"><span class="icon-badge" data-i18n="teaching_ml">ML</span><span data-i18n="teaching_meet_n_learn_sweden">Meet'n'Learn Sweden</span></a>
+<a class="link-pill" href="https://buki.org.pl/user-117558/" rel="noreferrer" target="_blank"><span class="icon-badge" data-i18n="index_bu">BU</span><span data-i18n="teaching_buki_poland">BUKI Poland</span></a>
 </div>
-<p class="ext-note">The design is now icon-ready, so WhatsApp, Telegram, or additional social links can be added later in the same visual style as soon as you provide the links.</p>
+<p class="ext-note" data-i18n="teaching_the_design_is_now_icon_ready">The design is now icon-ready, so WhatsApp, Telegram, or additional social links can be added later in the same visual style as soon as you provide the links.</p>
 </div>
 <div class="section-header" style="margin-top:2rem; margin-bottom:1rem;">
-<h3 style="font-size:1.45rem; margin:0;">Selected Textbooks &amp; Resources</h3>
-<p class="section-intro">I work with carefully selected textbooks, digital tools, and learning materials depending on the learner’s level, goals, language, and educational system.</p>
+<h3 data-i18n="teaching_selected_textbooks_resources" style="font-size:1.45rem; margin:0;">Selected Textbooks &amp; Resources</h3>
+<p class="section-intro" data-i18n="teaching_i_work_with_carefully_selected_textbooks">I work with carefully selected textbooks, digital tools, and learning materials depending on the learner’s level, goals, language, and educational system.</p>
 </div>
 <div class="grid-3 teaching-resource-grid">
-<article class="resource-card teaching-resource-entry"><div class="resource-cover">English-language material cover</div><h3>General Chemistry Textbook</h3><p>Language: English · Level: school / university beginner · A clear foundational resource.</p><a class="text-link resource-entry-link" data-resource-link="schoolChemistry" href="resources.html">General Chemistry Textbooks</a></article>
-<article class="resource-card teaching-resource-entry"><div class="resource-cover">German-language material cover</div><h3>Chemie Lernmaterial</h3><p>Language: German · Level: school / gymnasium · Useful for structured practice and revision.</p><a class="text-link resource-entry-link" data-resource-link="chemistryMaterials" href="resources.html">Chemistry Learning Materials</a></article>
-<article class="resource-card teaching-resource-entry"><div class="resource-cover">Digital tool / simulation</div><h3>Interactive Tool or Simulation</h3><p>Language: multi-language · Category: digital tool · Helpful for visual and concept-based learning.</p><a class="text-link resource-entry-link" data-resource-link="interactiveTools" href="resources.html">Interactive Tools and Simulations</a></article>
+<article class="resource-card teaching-resource-entry"><div class="resource-cover" data-i18n="teaching_english_language_material_cover">English-language material cover</div><h3 data-i18n="teaching_general_chemistry_textbook">General Chemistry Textbook</h3><p data-i18n="teaching_language_english_level_school_university_beginner">Language: English · Level: school / university beginner · A clear foundational resource.</p><a class="text-link resource-entry-link" data-i18n="teaching_general_chemistry_textbooks" data-resource-link="schoolChemistry" href="resources.html">General Chemistry Textbooks</a></article>
+<article class="resource-card teaching-resource-entry"><div class="resource-cover" data-i18n="teaching_german_language_material_cover">German-language material cover</div><h3 data-i18n="teaching_chemie_lernmaterial">Chemie Lernmaterial</h3><p data-i18n="teaching_language_german_level_school_gymnasium_useful">Language: German · Level: school / gymnasium · Useful for structured practice and revision.</p><a class="text-link resource-entry-link" data-i18n="teaching_chemistry_learning_materials" data-resource-link="chemistryMaterials" href="resources.html">Chemistry Learning Materials</a></article>
+<article class="resource-card teaching-resource-entry"><div class="resource-cover" data-i18n="teaching_digital_tool_simulation">Digital tool / simulation</div><h3 data-i18n="teaching_interactive_tool_or_simulation">Interactive Tool or Simulation</h3><p data-i18n="teaching_language_multi_language_category_digital_tool">Language: multi-language · Category: digital tool · Helpful for visual and concept-based learning.</p><a class="text-link resource-entry-link" data-i18n="teaching_interactive_tools_and_simulations" data-resource-link="interactiveTools" href="resources.html">Interactive Tools and Simulations</a></article>
 </div>
 <div class="detail-card soft-panel teaching-approach-card" style="margin-top:1rem;">
-<h3>My Teaching Approach</h3>
+<h3 data-i18n="teaching_my_teaching_approach">My Teaching Approach</h3>
 <div class="tag-row">
-<span class="tag">Clear explanations</span>
-<span class="tag">Strong foundations</span>
-<span class="tag">Personalized support</span>
-<span class="tag">Interdisciplinary perspective</span>
-<span class="tag">Multilingual flexibility</span>
-<span class="tag">Long-term progress</span>
+<span class="tag" data-i18n="teaching_clear_explanations">Clear explanations</span>
+<span class="tag" data-i18n="teaching_strong_foundations">Strong foundations</span>
+<span class="tag" data-i18n="teaching_personalized_support">Personalized support</span>
+<span class="tag" data-i18n="teaching_interdisciplinary_perspective">Interdisciplinary perspective</span>
+<span class="tag" data-i18n="teaching_multilingual_flexibility">Multilingual flexibility</span>
+<span class="tag" data-i18n="teaching_long_term_progress">Long-term progress</span>
 </div>
 </div>
-
 </div>
 </section><section class="teaching-final-cta" id="booking">
 <div class="container">
@@ -300,14 +316,16 @@
 </div>
 <div>
 <h3 class="footer-title" data-i18n="footer_meta">Contact &amp; Info</h3>
-<ul class="footer-meta"><li><a class="icon-link footer-contact-link" data-contact-email-link="true" href="mailto:your.email@example.com"><span class="icon-badge icon-badge-mail"></span><span>Email</span></a></li><li><a class="icon-link footer-contact-link" href="https://www.linkedin.com/in/shvedvadym" rel="noreferrer" target="_blank"><span class="icon-badge">in</span><span>LinkedIn</span></a></li><li><a class="icon-link footer-contact-link" href="https://www.instagram.com/vadymtravels" rel="noreferrer" target="_blank"><span class="icon-badge">IG</span><span>Instagram</span></a></li><li><a class="icon-link footer-contact-link" href="https://tutor24.ch/de/providers/3301791?public_view=true" rel="noreferrer" target="_blank"><span class="icon-badge">T24</span><span>Tutor24</span></a></li><li><a class="icon-link footer-contact-link" href="https://buki.com.ua/user-21753/" rel="noreferrer" target="_blank"><span class="icon-badge">BU</span><span>BUKI</span></a></li><li><a class="icon-link footer-contact-link" href="https://repetitor.org.ua/uk-id8693" rel="noreferrer" target="_blank"><span class="icon-badge">AR</span><span>Repetitor.org.ua</span></a></li><li><a class="icon-link footer-contact-link" data-cv-link="true" href="#"><span class="icon-badge">CV</span><span>CV download</span></a></li><li><a class="icon-link footer-contact-link" href="#"><span class="icon-badge">§</span><span>Legal / Business Info</span></a></li></ul>
+<ul class="footer-meta"><li><a class="icon-link footer-contact-link" data-contact-email-link="true" data-i18n-html="index_email" href="mailto:your.email@example.com"><span class="icon-badge icon-badge-mail"></span><span data-i18n="index_email">Email</span></a></li><li data-i18n-html="index_in_linkedin"><a class="icon-link footer-contact-link" href="https://www.linkedin.com/in/shvedvadym" rel="noreferrer" target="_blank"><span class="icon-badge" data-i18n="index_in">in</span><span data-i18n="index_linkedin">LinkedIn</span></a></li><li data-i18n-html="index_ig_instagram"><a class="icon-link footer-contact-link" href="https://www.instagram.com/vadymtravels" rel="noreferrer" target="_blank"><span class="icon-badge" data-i18n="index_ig">IG</span><span data-i18n="index_instagram">Instagram</span></a></li><li data-i18n-html="index_t24_tutor24"><a class="icon-link footer-contact-link" href="https://tutor24.ch/de/providers/3301791?public_view=true" rel="noreferrer" target="_blank"><span class="icon-badge" data-i18n="index_t24">T24</span><span data-i18n="index_tutor24">Tutor24</span></a></li><li data-i18n-html="index_bu_buki"><a class="icon-link footer-contact-link" href="https://buki.com.ua/user-21753/" rel="noreferrer" target="_blank"><span class="icon-badge" data-i18n="index_bu">BU</span><span data-i18n="index_buki">BUKI</span></a></li><li data-i18n-html="index_ar_repetitor_org_ua"><a class="icon-link footer-contact-link" href="https://repetitor.org.ua/uk-id8693" rel="noreferrer" target="_blank"><span class="icon-badge" data-i18n="index_ar">AR</span><span data-i18n="index_repetitor_org_ua">Repetitor.org.ua</span></a></li><li data-i18n-html="index_cv_cv_download"><a class="icon-link footer-contact-link" data-cv-link="true" href="#"><span class="icon-badge" data-i18n="index_cv">CV</span><span data-i18n="index_cv_download">CV download</span></a></li><li data-i18n-html="index_legal_business_info_2"><a class="icon-link footer-contact-link" href="#"><span class="icon-badge" data-i18n="index_text">§</span><span data-i18n="index_legal_business_info">Legal / Business Info</span></a></li></ul>
 </div>
 </div>
-<div class="button-row" style="margin-top: 1.2rem; margin-bottom: 0;">
-<a class="btn btn-primary btn-booking footer-cta-btn" data-booking-link="true" href="#"><span class="btn-inline-icon" aria-hidden="true">📅</span><span>Book a Lesson</span></a>
-<a class="btn btn-secondary btn-contact footer-cta-btn" data-i18n="final_btn_1" href="contact.html"><span class="btn-inline-icon" aria-hidden="true">✉️</span><span>Contact Me</span></a>
+<div class="button-row" data-i18n-html="teaching_book_a_lesson_contact_me" style="margin-top: 1.2rem; margin-bottom: 0;">
+<a class="btn btn-primary btn-booking footer-cta-btn" data-booking-link="true" href="#"><span aria-hidden="true" class="btn-inline-icon" data-i18n="teaching_text_12">📅</span><span data-i18n="hero_btn_book">Book a Lesson</span></a>
+<a class="btn btn-secondary btn-contact footer-cta-btn" data-i18n="final_btn_1" href="contact.html"><span aria-hidden="true" class="btn-inline-icon">✉️</span><span>Contact Me</span></a>
 </div>
 <div class="copyright" data-i18n="footer_copy">© Vadym Shved — Multilingual personal professional website</div>
 </div>
-</footer><script src="assets/data/gallery-data.js?v=i18n3"></script>
-<script src="assets/js/site.js?v=i18n3"></script></body></html>
+</footer><script src="assets/data/gallery-data.js?v=i18n7"></script>
+<script src="assets/js/i18n-inline.js?v=langfix1"></script>
+<script src="assets/js/site.js?v=langfix1"></script>
+<script src="assets/js/ui.js?v=langfix1"></script></body></html>

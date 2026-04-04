@@ -5167,3 +5167,178 @@ body .gallery-preview-card .gallery-preview-title {
   object-position: center 32%;
   border-radius: 18px;
 }
+
+
+/* === mobile-language-button-width-fix-v1 === */
+@media (max-width: 768px) {
+  .lang-switcher {
+    display: flex;
+    align-items: center;
+  }
+
+  .lang-toggle {
+    min-width: 74px !important;
+    height: 48px !important;
+    padding: 0.5rem 0.82rem !important;
+    gap: 0.34rem !important;
+    justify-content: center !important;
+    border-radius: 999px !important;
+    font-size: 0.96rem !important;
+    line-height: 1 !important;
+    white-space: nowrap !important;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .lang-toggle .lang-label,
+  .lang-toggle span,
+  .lang-toggle strong {
+    line-height: 1 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .lang-toggle {
+    min-width: 72px !important;
+    height: 46px !important;
+    padding: 0.46rem 0.78rem !important;
+    gap: 0.3rem !important;
+    font-size: 0.94rem !important;
+  }
+}
+
+
+/* === mobile-language-button-balance-fix-v2 === */
+@media (max-width: 768px) {
+  .lang-switcher {
+    display: flex;
+    align-items: center;
+    justify-self: end;
+  }
+
+  .lang-toggle {
+    min-width: 0 !important;
+    width: auto !important;
+    height: 42px !important;
+    padding: 0.52rem 0.88rem !important;
+    gap: 0.28rem !important;
+    justify-content: center !important;
+    border-radius: 999px !important;
+    font-size: 0.92rem !important;
+    font-weight: 700 !important;
+    line-height: 1 !important;
+    white-space: nowrap !important;
+    -webkit-text-size-adjust: none !important;
+    text-size-adjust: none !important;
+  }
+
+  .mobile-toggle {
+    width: 42px !important;
+    height: 42px !important;
+    padding: 0 !important;
+    margin-left: 12px !important;
+    border-radius: 999px !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .mobile-toggle span {
+    width: 18px !important;
+    margin: 0 auto !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .lang-toggle {
+    height: 40px !important;
+    padding: 0.5rem 0.82rem !important;
+    gap: 0.24rem !important;
+    font-size: 0.9rem !important;
+  }
+
+  .mobile-toggle {
+    width: 40px !important;
+    height: 40px !important;
+    margin-left: 10px !important;
+  }
+
+  .mobile-toggle span {
+    width: 17px !important;
+  }
+}
+
+
+/* === mobile-menu-icon-restore-fix-v1 === */
+@media (max-width: 768px) {
+  .mobile-toggle {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 5px !important;
+  }
+
+  .mobile-toggle span {
+    display: block !important;
+    width: 18px !important;
+    height: 2.2px !important;
+    margin: 0 !important;
+    flex: 0 0 auto !important;
+    border-radius: 999px !important;
+    background-color: var(--text) !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .mobile-toggle {
+    gap: 4.5px !important;
+  }
+
+  .mobile-toggle span {
+    width: 17px !important;
+    height: 2.1px !important;
+  }
+}
+
+
+/* === mobile-menu-icon-cleanup-fix-v2 === */
+@media (max-width: 768px) {
+  .mobile-toggle {
+    overflow: hidden !important;
+  }
+
+  .mobile-toggle span {
+    position: relative !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+
+  .mobile-toggle:not(.active) span:nth-child(1),
+  .mobile-toggle:not(.active) span:nth-child(2),
+  .mobile-toggle:not(.active) span:nth-child(3) {
+    transform: none !important;
+    opacity: 1 !important;
+  }
+
+  .mobile-toggle.active span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg) !important;
+  }
+
+  .mobile-toggle.active span:nth-child(2) {
+    opacity: 0 !important;
+    transform: none !important;
+  }
+
+  .mobile-toggle.active span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg) !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .mobile-toggle.active span:nth-child(1) {
+    transform: translateY(6.5px) rotate(45deg) !important;
+  }
+
+  .mobile-toggle.active span:nth-child(3) {
+    transform: translateY(-6.5px) rotate(-45deg) !important;
+  }
+}

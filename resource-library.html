@@ -1,11 +1,30 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Vadym Shved — Teaching Resource Library</title>
-<link href="assets/css/style.css?v=i18n3" rel="stylesheet"/>
-<link href="assets/css/multipage.css?v=i18n3" rel="stylesheet"/>
+<title data-i18n="page_title_resource_library">Vadym Shved — Teaching Resource Library</title>
+<link href="assets/css/style.css?v=i18n7" rel="stylesheet"/>
+<link href="assets/css/multipage.css?v=i18n7" rel="stylesheet"/>
+<style id="i18n-antiflicker-style">
+  html.i18n-preload body { visibility: hidden; }
+</style>
+<script id="i18n-antiflicker-bootstrap">
+(function () {
+  try {
+    var raw = localStorage.getItem('siteLanguage') || 'en';
+    var lang = ({ua:'uk', uk:'uk', en:'en', de:'de', fr:'fr', es:'es', pl:'pl'})[raw] || 'en';
+    document.documentElement.classList.add('i18n-preload');
+    document.documentElement.setAttribute('data-initial-lang', lang);
+    document.documentElement.lang = lang;
+  } catch (e) {
+    document.documentElement.classList.add('i18n-preload');
+    document.documentElement.setAttribute('data-initial-lang', 'en');
+    document.documentElement.lang = 'en';
+  }
+})();
+</script>
 </head>
 <body class="page-shell page-library">
 <header class="topbar">
@@ -15,7 +34,7 @@
 <span class="brand-role" data-i18n="brand_role">Chemist · Teacher · Educator</span>
 </a>
 <div class="nav-shell">
-<nav aria-label="Main navigation" class="desktop-nav" id="main-nav">
+<nav aria-label="Main navigation" class="desktop-nav" data-i18n-aria-label="index_main_navigation_aria_label" id="main-nav">
 <ul>
 <li>
 <a class="nav-link" data-i18n="nav_home" href="index.html">Home</a>
@@ -43,19 +62,19 @@
 </div>
 <div class="lang-switcher">
 <button aria-controls="langMenu" aria-expanded="false" aria-haspopup="true" class="lang-toggle" id="langToggle" type="button">
-<span class="lang-label">EN</span>
+<span class="lang-label" data-i18n="index_en">EN</span>
 <span aria-hidden="true">▾</span>
 </button>
 <div class="lang-menu" id="langMenu" role="menu">
-<button class="lang-option active" data-lang="en" type="button">English (EN)</button>
-<button class="lang-option" data-lang="ua" type="button">Українська (UA)</button>
-<button class="lang-option" data-lang="de" type="button">Deutsch (DE)</button>
-<button class="lang-option" data-lang="fr" type="button">Français (FR)</button>
-<button class="lang-option" data-lang="es" type="button">Español (ES)</button>
-<button class="lang-option" data-lang="pl" type="button">Polski (PL)</button>
+<button class="lang-option active" data-i18n="index_english_en" data-lang="en" type="button">English (EN)</button>
+<button class="lang-option" data-i18n="index_ua" data-lang="ua" type="button">Українська (UA)</button>
+<button class="lang-option" data-i18n="index_deutsch_de" data-lang="de" type="button">Deutsch (DE)</button>
+<button class="lang-option" data-i18n="index_fran_ais_fr" data-lang="fr" type="button">Français (FR)</button>
+<button class="lang-option" data-i18n="index_espa_ol_es" data-lang="es" type="button">Español (ES)</button>
+<button class="lang-option" data-i18n="index_polski_pl" data-lang="pl" type="button">Polski (PL)</button>
 </div>
 </div>
-<button aria-label="Open Menu" class="mobile-toggle" id="mobile-toggle" type="button">
+<button aria-label="Open Menu" class="mobile-toggle" data-i18n-aria-label="index_open_menu_aria_label" id="mobile-toggle" type="button">
 <span>
 </span>
 <span>
@@ -65,501 +84,329 @@
 </button>
 </div>
 </header>
-
-
-
-
 <main class="library-page-main library-page-v2">
 <section class="library-v2-shell" id="resource-library">
-  <div class="container">
-    <div class="library-v2-topline">
-      <div class="library-v2-heading">
-        <div class="section-kicker" data-i18n="library_kicker">Curated academic and teaching materials</div>
-        <h1 data-i18n="library_title">Teaching Resource Library</h1>
-        <p class="section-intro library-v2-intro" data-i18n="library_intro">A searchable collection of books, PDFs, guides, interactive tools, and comparative educational materials for chemistry, German learning, and broader teaching support.</p>
-      </div>
-      <div class="library-v2-toptools">
-        <div class="library-search-wrap compact">
-          <label class="visually-hidden" for="librarySearch" data-i18n="library_search_label">Search resources</label>
-          <input id="librarySearch" class="library-search-input compact" type="search" data-i18n-placeholder="library_search_placeholder" placeholder="Search by title, keyword, language, country…" />
-        </div>
-        <div class="library-compact-stats">
-          <span class="library-stat-mini"><strong>12</strong><span data-i18n="library_stat_resources">Resources</span></span>
-          <span class="library-stat-mini"><strong>6</strong><span data-i18n="library_stat_languages">Languages</span></span>
-        </div>
-      </div>
-    </div>
-
-    <div class="library-v2-toolbar card">
-      <div class="library-top-filters compact" aria-label="Quick resource filters">
-        <button class="library-filter-pill active" data-library-filter="all" data-filter-group="quick" type="button" data-i18n="library_filter_all">All</button>
-        <button class="library-filter-pill" data-library-filter="book" data-filter-group="quick" type="button" data-i18n="library_filter_books">Books</button>
-        <button class="library-filter-pill" data-library-filter="pdf" data-filter-group="quick" type="button" data-i18n="library_filter_pdfs">PDFs</button>
-        <button class="library-filter-pill" data-library-filter="frequently-used" data-filter-group="quick" type="button" data-i18n="library_filter_frequently_used">Frequently Used</button>
-        <button class="library-filter-pill" data-library-filter="recommended" data-filter-group="quick" type="button" data-i18n="library_filter_recommended">Recommended</button>
-        <button class="library-filter-pill" data-library-filter="downloadable" data-filter-group="quick" type="button" data-i18n="library_filter_downloadable">Downloadable</button>
-      </div>
-      <div class="library-sort-wrap compact">
-        <label class="visually-hidden" for="librarySort" data-i18n="library_sort_label">Sort</label>
-        <select id="librarySort" class="library-sort-select compact">
-          <option value="manual" data-i18n="library_sort_manual">Manual</option>
-          <option value="title" data-i18n="library_sort_title">Title A–Z</option>
-          <option value="language" data-i18n="library_sort_language">Language</option>
-          <option value="country" data-i18n="library_sort_country">Country</option>
-        </select>
-      </div>
-      <button class="btn btn-secondary library-filter-drawer-toggle" id="libraryFilterDrawerToggle" type="button">Filters</button>
-    </div>
-
-    <div class="library-v2-dashboard">
-      <aside class="library-sidebar card" id="librarySidebar" aria-label="Library navigation">
-        <div class="library-sidebar-section">
-          <h2 data-i18n="library_sidebar_main">Main Library</h2>
-          <div class="library-sidebar-links">
-            <button class="library-sidebar-link active" type="button" data-library-filter="all" data-filter-group="category" data-i18n="library_cat_all">All Resources</button>
-            <button class="library-sidebar-link" type="button" data-library-filter="book" data-filter-group="category" data-i18n="library_cat_books">Books</button>
-            <button class="library-sidebar-link" type="button" data-library-filter="pdf" data-filter-group="category" data-i18n="library_cat_pdfs">PDFs</button>
-            <button class="library-sidebar-link" type="button" data-library-filter="guide" data-filter-group="category" data-i18n="library_cat_guides">Guides</button>
-            <button class="library-sidebar-link" type="button" data-library-filter="interactive-tool" data-filter-group="category" data-i18n="library_cat_tools">Interactive Tools</button>
-            <button class="library-sidebar-link" type="button" data-library-filter="comparative-resource" data-filter-group="category" data-i18n="library_cat_comparative">Comparative Materials</button>
-          </div>
-        </div>
-
-        <div class="library-sidebar-section">
-          <h2 data-i18n="library_sidebar_teaching">Teaching Collections</h2>
-          <div class="library-sidebar-links">
-            <button class="library-sidebar-link" type="button" data-library-filter="school-chemistry" data-filter-group="collection" data-i18n="library_teaching_school">School Chemistry</button>
-            <button class="library-sidebar-link" type="button" data-library-filter="ib-advanced" data-filter-group="collection" data-i18n="library_teaching_ib">IB / Advanced</button>
-            <button class="library-sidebar-link" type="button" data-library-filter="university-beginners" data-filter-group="collection" data-i18n="library_teaching_university">University Beginners</button>
-            <button class="library-sidebar-link" type="button" data-library-filter="german-learning" data-filter-group="collection" data-i18n="library_teaching_german">German Learning</button>
-            <button class="library-sidebar-link" type="button" data-library-filter="study-support" data-filter-group="collection" data-i18n="library_teaching_support">Study Support</button>
-            <button class="library-sidebar-link" type="button" data-library-filter="didactics-pedagogy" data-filter-group="collection" data-i18n="library_teaching_didactics">Didactics & Pedagogy</button>
-          </div>
-        </div>
-
-        <div class="library-sidebar-section">
-          <h2 data-i18n="library_sidebar_curated">Curated by Me</h2>
-          <div class="library-sidebar-links">
-            <button class="library-sidebar-link" type="button" data-library-filter="frequently-used" data-filter-group="tag" data-i18n="library_curated_used">Frequently Used</button>
-            <button class="library-sidebar-link" type="button" data-library-filter="favorite" data-filter-group="tag" data-i18n="library_curated_favorites">Favorite Books</button>
-            <button class="library-sidebar-link" type="button" data-library-filter="recommended" data-filter-group="tag" data-i18n="library_curated_recommended">Recommended</button>
-            <button class="library-sidebar-link" type="button" data-library-filter="core-teaching-materials" data-filter-group="tag" data-i18n="library_curated_core">Core Teaching Materials</button>
-            <button class="library-sidebar-link" type="button" data-library-filter="comparative-curriculum" data-filter-group="tag" data-i18n="library_curated_curriculum">Comparative Curriculum</button>
-          </div>
-        </div>
-
-        <div class="library-sidebar-section">
-          <h2 data-i18n="library_sidebar_languages">Languages & Regions</h2>
-          <div class="library-sidebar-link-group">
-            <div class="library-mini-heading" data-i18n="library_sidebar_languages_label">Languages</div>
-            <div class="library-sidebar-links compact">
-              <button class="library-sidebar-link compact" type="button" data-library-filter="english" data-filter-group="language">English</button>
-              <button class="library-sidebar-link compact" type="button" data-library-filter="german" data-filter-group="language">German</button>
-              <button class="library-sidebar-link compact" type="button" data-library-filter="french" data-filter-group="language">French</button>
-              <button class="library-sidebar-link compact" type="button" data-library-filter="spanish" data-filter-group="language">Spanish</button>
-              <button class="library-sidebar-link compact" type="button" data-library-filter="ukrainian" data-filter-group="language">Ukrainian</button>
-              <button class="library-sidebar-link compact" type="button" data-library-filter="russian" data-filter-group="language">Russian</button>
-            </div>
-          </div>
-          <div class="library-sidebar-link-group">
-            <div class="library-mini-heading" data-i18n="library_sidebar_regions_label">Regions</div>
-            <div class="library-sidebar-links compact">
-              <button class="library-sidebar-link compact" type="button" data-library-filter="switzerland" data-filter-group="country">Switzerland</button>
-              <button class="library-sidebar-link compact" type="button" data-library-filter="germany" data-filter-group="country">Germany</button>
-              <button class="library-sidebar-link compact" type="button" data-library-filter="france" data-filter-group="country">France</button>
-              <button class="library-sidebar-link compact" type="button" data-library-filter="poland" data-filter-group="country">Poland</button>
-              <button class="library-sidebar-link compact" type="button" data-library-filter="ukraine" data-filter-group="country">Ukraine</button>
-              <button class="library-sidebar-link compact" type="button" data-library-filter="usa-canada" data-filter-group="country">USA / Canada</button>
-            </div>
-          </div>
-        </div>
-      </aside>
-
-      <section class="library-main">
-        <div class="library-results-head compact">
-          <div>
-            <h2 id="libraryResultTitle" data-i18n="library_results_all">All Resources</h2>
-            <p class="muted" id="libraryResultMeta" data-i18n="library_results_meta">12 demo resources in the current collection.</p>
-          </div>
-        </div>
-
-        <div class="library-grid compact" id="libraryGrid">
-          
-          <article class="library-book-card compact" tabindex="0"
-            data-id="school-chemistry-starter"
-            data-type="pdf"
-            data-collection="school-chemistry"
-            data-language="ukrainian"
-            data-country="ukraine"
-            data-tags="frequently-used downloadable school foundations revision core-teaching-materials"
-            data-title="School Chemistry Starter"
-            data-subtitle="School Chemistry · Ukrainian · Ukraine"
-            data-level="School"
-            data-description="A practical starting resource for school learners who need stronger fundamentals, clearer explanations, and topic-based revision support in chemistry."
-            data-keywords="school chemistry foundations revision ukrainian curriculum practical support"
-            data-download="#"
-            data-external="https://example.com">
-            <div class="library-book-cover-frame">
-              <div class="library-cover chemistry-cover">
-                <span class="library-cover-badge">PDF</span>
-                <span class="library-cover-title">School Chemistry Starter</span>
-              </div>
-            </div>
-            <div class="library-book-meta compact">
-              <h3>School Chemistry Starter</h3>
-              <p>School Chemistry · Ukrainian · Ukraine</p>
-              <div class="library-book-tags compact"><span>Frequently Used</span><span>Downloadable</span></div>
-            </div>
-          </article>
-          <article class="library-book-card compact" tabindex="0"
-            data-id="intro-general-chemistry"
-            data-type="book"
-            data-collection="university-beginners"
-            data-language="english"
-            data-country="usa-canada"
-            data-tags="recommended university-beginners foundational chemistry"
-            data-title="Introductory General Chemistry"
-            data-subtitle="University Beginners · English · USA / Canada"
-            data-level="University Beginner"
-            data-description="A foundational general chemistry text suitable for early university study, conceptual clarification, and topic-based support."
-            data-keywords="general chemistry beginner university english stoichiometry atoms molecules"
-            data-download="#"
-            data-external="https://example.com">
-            <div class="library-book-cover-frame">
-              <div class="library-cover intro-cover">
-                <span class="library-cover-badge">Book</span>
-                <span class="library-cover-title">Introductory General Chemistry</span>
-              </div>
-            </div>
-            <div class="library-book-meta compact">
-              <h3>Introductory General Chemistry</h3>
-              <p>University Beginners · English · USA / Canada</p>
-              <div class="library-book-tags compact"><span>Recommended</span><span>University Beginners</span></div>
-            </div>
-          </article>
-          <article class="library-book-card compact" tabindex="0"
-            data-id="ib-chemistry-practice-notes"
-            data-type="guide"
-            data-collection="ib-advanced"
-            data-language="english"
-            data-country="international"
-            data-tags="downloadable recommended ib-advanced exam-preparation"
-            data-title="IB Chemistry Practice Notes"
-            data-subtitle="IB / Advanced · English · International"
-            data-level="Advanced"
-            data-description="A compact guide for higher-level chemistry learners who need structured notes, problem-solving support, and exam-oriented revision."
-            data-keywords="ib chemistry advanced notes hl exam preparation english"
-            data-download="#"
-            data-external="https://example.com">
-            <div class="library-book-cover-frame">
-              <div class="library-cover ib-cover">
-                <span class="library-cover-badge">Guide</span>
-                <span class="library-cover-title">IB Chemistry Practice Notes</span>
-              </div>
-            </div>
-            <div class="library-book-meta compact">
-              <h3>IB Chemistry Practice Notes</h3>
-              <p>IB / Advanced · English · International</p>
-              <div class="library-book-tags compact"><span>Downloadable</span><span>Recommended</span></div>
-            </div>
-          </article>
-          <article class="library-book-card compact" tabindex="0"
-            data-id="deutsch-naturwissenschaft"
-            data-type="book"
-            data-collection="german-learning"
-            data-language="german"
-            data-country="germany"
-            data-tags="recommended german-learning science-language"
-            data-title="Deutsch für naturwissenschaftliche Studiengänge"
-            data-subtitle="German Learning · German · Germany"
-            data-level="Language Support"
-            data-description="A useful language-support book for learners preparing to study chemistry and science in German-speaking academic contexts."
-            data-keywords="deutsch chemie naturwissenschaft studium german language science"
-            data-download="#"
-            data-external="https://example.com">
-            <div class="library-book-cover-frame">
-              <div class="library-cover german-cover">
-                <span class="library-cover-badge">Book</span>
-                <span class="library-cover-title">Deutsch für naturwissenschaftliche Studiengänge</span>
-              </div>
-            </div>
-            <div class="library-book-meta compact">
-              <h3>Deutsch für naturwissenschaftliche Studiengänge</h3>
-              <p>German Learning · German · Germany</p>
-              <div class="library-book-tags compact"><span>Recommended</span><span>German Learning</span></div>
-            </div>
-          </article>
-          <article class="library-book-card compact" tabindex="0"
-            data-id="swiss-curriculum-reference"
-            data-type="comparative-resource"
-            data-collection="comparative-curriculum"
-            data-language="german"
-            data-country="switzerland"
-            data-tags="comparative-curriculum external comparative-resource core-teaching-materials"
-            data-title="Swiss Chemistry Curriculum Reference"
-            data-subtitle="Comparative Materials · German · Switzerland"
-            data-level="Comparative Curriculum"
-            data-description="A comparative curriculum resource used for understanding chemistry teaching expectations, levels, and educational context in Switzerland."
-            data-keywords="switzerland chemistry curriculum swiss gymnasium teaching comparison german"
-            data-download="#"
-            data-external="https://example.com">
-            <div class="library-book-cover-frame">
-              <div class="library-cover swiss-cover">
-                <span class="library-cover-badge">Compare</span>
-                <span class="library-cover-title">Swiss Chemistry Curriculum Reference</span>
-              </div>
-            </div>
-            <div class="library-book-meta compact">
-              <h3>Swiss Chemistry Curriculum Reference</h3>
-              <p>Comparative Materials · German · Switzerland</p>
-              <div class="library-book-tags compact"><span>Comparative Curriculum</span><span>External</span></div>
-            </div>
-          </article>
-          <article class="library-book-card compact" tabindex="0"
-            data-id="organic-visual-guide"
-            data-type="pdf"
-            data-collection="university-beginners"
-            data-language="english"
-            data-country="international"
-            data-tags="downloadable recommended university-beginners organic chemistry"
-            data-title="Organic Chemistry Visual Guide"
-            data-subtitle="University Beginners · English · International"
-            data-level="University Beginner"
-            data-description="A visual support resource for learners who need a clearer overview of organic chemistry structures, reactions, and conceptual patterns."
-            data-keywords="organic chemistry visual guide beginner university english reactions structures"
-            data-download="#"
-            data-external="https://example.com">
-            <div class="library-book-cover-frame">
-              <div class="library-cover organic-cover">
-                <span class="library-cover-badge">PDF</span>
-                <span class="library-cover-title">Organic Chemistry Visual Guide</span>
-              </div>
-            </div>
-            <div class="library-book-meta compact">
-              <h3>Organic Chemistry Visual Guide</h3>
-              <p>University Beginners · English · International</p>
-              <div class="library-book-tags compact"><span>Downloadable</span><span>Recommended</span></div>
-            </div>
-          </article>
-          <article class="library-book-card compact" tabindex="0"
-            data-id="science-didactics-practice"
-            data-type="book"
-            data-collection="didactics-pedagogy"
-            data-language="french"
-            data-country="france"
-            data-tags="favorite didactics-pedagogy pedagogy teaching practice"
-            data-title="Practical Didactics in Science Teaching"
-            data-subtitle="Didactics & Pedagogy · French · France"
-            data-level="Teaching Methodology"
-            data-description="A teaching-methodology resource that supports lesson planning, science instruction, and student-centered educational design."
-            data-keywords="didactics pedagogy science teaching france french lesson planning"
-            data-download="#"
-            data-external="https://example.com">
-            <div class="library-book-cover-frame">
-              <div class="library-cover pedagogy-cover">
-                <span class="library-cover-badge">Book</span>
-                <span class="library-cover-title">Practical Didactics in Science Teaching</span>
-              </div>
-            </div>
-            <div class="library-book-meta compact">
-              <h3>Practical Didactics in Science Teaching</h3>
-              <p>Didactics & Pedagogy · French · France</p>
-              <div class="library-book-tags compact"><span>Favorite</span><span>Didactics Pedagogy</span></div>
-            </div>
-          </article>
-          <article class="library-book-card compact" tabindex="0"
-            data-id="stoichiometry-simulator"
-            data-type="interactive-tool"
-            data-collection="study-support"
-            data-language="english"
-            data-country="international"
-            data-tags="external interactive-tool study-support recommended"
-            data-title="Interactive Stoichiometry Simulator"
-            data-subtitle="Interactive Tools · English · International"
-            data-level="Study Support"
-            data-description="A digital interactive tool for concept-building, visualization, and guided independent practice in stoichiometry."
-            data-keywords="interactive stoichiometry simulator chemistry tool calculations visual english"
-            data-download="#"
-            data-external="https://example.com">
-            <div class="library-book-cover-frame">
-              <div class="library-cover tool-cover">
-                <span class="library-cover-badge">Tool</span>
-                <span class="library-cover-title">Interactive Stoichiometry Simulator</span>
-              </div>
-            </div>
-            <div class="library-book-meta compact">
-              <h3>Interactive Stoichiometry Simulator</h3>
-              <p>Interactive Tools · English · International</p>
-              <div class="library-book-tags compact"><span>External</span><span>Interactive Tool</span></div>
-            </div>
-          </article>
-          <article class="library-book-card compact" tabindex="0"
-            data-id="german-a1-workbook"
-            data-type="pdf"
-            data-collection="german-learning"
-            data-language="german"
-            data-country="germany"
-            data-tags="frequently-used downloadable german-learning beginner"
-            data-title="German A1.1 Core Workbook"
-            data-subtitle="German Learning · German · Germany"
-            data-level="Beginner Language"
-            data-description="A regularly used workbook for structured beginner German support, especially helpful for learners building academic language foundations."
-            data-keywords="german a1 workbook beginner grammar vocabulary chemistry learners"
-            data-download="#"
-            data-external="https://example.com">
-            <div class="library-book-cover-frame">
-              <div class="library-cover a1-cover">
-                <span class="library-cover-badge">PDF</span>
-                <span class="library-cover-title">German A1.1 Core Workbook</span>
-              </div>
-            </div>
-            <div class="library-book-meta compact">
-              <h3>German A1.1 Core Workbook</h3>
-              <p>German Learning · German · Germany</p>
-              <div class="library-book-tags compact"><span>Frequently Used</span><span>Downloadable</span></div>
-            </div>
-          </article>
-          <article class="library-book-card compact" tabindex="0"
-            data-id="exam-preparation-pack"
-            data-type="guide"
-            data-collection="study-support"
-            data-language="english"
-            data-country="international"
-            data-tags="recommended study-support exam-preparation downloadable"
-            data-title="Chemistry Exam Preparation Pack"
-            data-subtitle="Study Support · English · International"
-            data-level="Exam Preparation"
-            data-description="A compact preparation pack for review, self-check, and structured revision before chemistry tests and demanding assessments."
-            data-keywords="exam preparation chemistry revision guide study support self-check"
-            data-download="#"
-            data-external="https://example.com">
-            <div class="library-book-cover-frame">
-              <div class="library-cover exam-cover">
-                <span class="library-cover-badge">Guide</span>
-                <span class="library-cover-title">Chemistry Exam Preparation Pack</span>
-              </div>
-            </div>
-            <div class="library-book-meta compact">
-              <h3>Chemistry Exam Preparation Pack</h3>
-              <p>Study Support · English · International</p>
-              <div class="library-book-tags compact"><span>Recommended</span><span>Study Support</span></div>
-            </div>
-          </article>
-          <article class="library-book-card compact" tabindex="0"
-            data-id="physical-chemistry-foundations"
-            data-type="book"
-            data-collection="university-beginners"
-            data-language="french"
-            data-country="france"
-            data-tags="external university-beginners physical chemistry"
-            data-title="Physical Chemistry Foundations"
-            data-subtitle="University Beginners · French · France"
-            data-level="University Beginner"
-            data-description="A foundational text supporting physical chemistry concepts, mathematical framing, and theoretical understanding for early higher education."
-            data-keywords="physical chemistry beginner french france thermodynamics kinetics"
-            data-download="#"
-            data-external="https://example.com">
-            <div class="library-book-cover-frame">
-              <div class="library-cover physical-cover">
-                <span class="library-cover-badge">Book</span>
-                <span class="library-cover-title">Physical Chemistry Foundations</span>
-              </div>
-            </div>
-            <div class="library-book-meta compact">
-              <h3>Physical Chemistry Foundations</h3>
-              <p>University Beginners · French · France</p>
-              <div class="library-book-tags compact"><span>External</span><span>University Beginners</span></div>
-            </div>
-          </article>
-          <article class="library-book-card compact" tabindex="0"
-            data-id="comparative-programs-europe"
-            data-type="comparative-resource"
-            data-collection="comparative-curriculum"
-            data-language="english"
-            data-country="europe"
-            data-tags="core-teaching-materials comparative-curriculum recommended"
-            data-title="Comparative Chemistry Programs: Europe"
-            data-subtitle="Comparative Materials · English · Europe"
-            data-level="Comparative Curriculum"
-            data-description="A synthetic overview of chemistry teaching approaches, curricular emphasis, and progression patterns across multiple European educational systems."
-            data-keywords="comparative chemistry europe curriculum countries teaching systems analysis"
-            data-download="#"
-            data-external="https://example.com">
-            <div class="library-book-cover-frame">
-              <div class="library-cover compare-cover">
-                <span class="library-cover-badge">Compare</span>
-                <span class="library-cover-title">Comparative Chemistry Programs: Europe</span>
-              </div>
-            </div>
-            <div class="library-book-meta compact">
-              <h3>Comparative Chemistry Programs: Europe</h3>
-              <p>Comparative Materials · English · Europe</p>
-              <div class="library-book-tags compact"><span>Core Teaching Materials</span><span>Comparative Curriculum</span></div>
-            </div>
-          </article>
-        </div>
-
-        <p class="ext-note library-empty-state" id="libraryEmptyState" hidden>No resources match the current search and filter combination.</p>
-      </section>
-    </div>
-  </div>
+<div class="container">
+<div class="library-v2-topline">
+<div class="library-v2-heading">
+<div class="section-kicker" data-i18n="library_kicker">Curated academic and teaching materials</div>
+<h1 data-i18n="library_title">Teaching Resource Library</h1>
+<p class="section-intro library-v2-intro" data-i18n="library_intro">A searchable collection of books, PDFs, guides, interactive tools, and comparative educational materials for chemistry, German learning, and broader teaching support.</p>
+</div>
+<div class="library-v2-toptools">
+<div class="library-search-wrap compact">
+<label class="visually-hidden" data-i18n="library_search_label" for="librarySearch">Search resources</label>
+<input class="library-search-input compact" data-i18n-placeholder="library_search_placeholder" id="librarySearch" placeholder="Search by title, keyword, language, country…" type="search"/>
+</div>
+<div class="library-compact-stats" data-i18n-html="resource_library_12_resources_6_languages">
+<span class="library-stat-mini"><strong data-i18n="resource_library_12">12</strong><span data-i18n="library_stat_resources">Resources</span></span>
+<span class="library-stat-mini"><strong data-i18n="resource_library_6">6</strong><span data-i18n="library_stat_languages">Languages</span></span>
+</div>
+</div>
+</div>
+<div class="library-v2-toolbar card">
+<div aria-label="Quick resource filters" class="library-top-filters compact" data-i18n-aria-label="resource_library_quick_resource_filters_aria_label">
+<button class="library-filter-pill active" data-filter-group="quick" data-i18n="library_filter_all" data-library-filter="all" type="button">All</button>
+<button class="library-filter-pill" data-filter-group="quick" data-i18n="library_filter_books" data-library-filter="book" type="button">Books</button>
+<button class="library-filter-pill" data-filter-group="quick" data-i18n="library_filter_pdfs" data-library-filter="pdf" type="button">PDFs</button>
+<button class="library-filter-pill" data-filter-group="quick" data-i18n="library_filter_frequently_used" data-library-filter="frequently-used" type="button">Frequently Used</button>
+<button class="library-filter-pill" data-filter-group="quick" data-i18n="library_filter_recommended" data-library-filter="recommended" type="button">Recommended</button>
+<button class="library-filter-pill" data-filter-group="quick" data-i18n="library_filter_downloadable" data-library-filter="downloadable" type="button">Downloadable</button>
+</div>
+<div class="library-sort-wrap compact">
+<label class="visually-hidden" data-i18n="library_sort_label" for="librarySort">Sort</label>
+<select class="library-sort-select compact" id="librarySort">
+<option data-i18n="library_sort_manual" value="manual">Manual</option>
+<option data-i18n="library_sort_title" value="title">Title A–Z</option>
+<option data-i18n="library_sort_language" value="language">Language</option>
+<option data-i18n="library_sort_country" value="country">Country</option>
+</select>
+</div>
+<button class="btn btn-secondary library-filter-drawer-toggle" data-i18n="resource_library_filters" id="libraryFilterDrawerToggle" type="button">Filters</button>
+</div>
+<div class="library-v2-dashboard">
+<aside aria-label="Library navigation" class="library-sidebar card" data-i18n-aria-label="resource_library_library_navigation_aria_label" id="librarySidebar">
+<div class="library-sidebar-section">
+<h2 data-i18n="library_sidebar_main">Main Library</h2>
+<div class="library-sidebar-links">
+<button class="library-sidebar-link active" data-filter-group="category" data-i18n="library_cat_all" data-library-filter="all" type="button">All Resources</button>
+<button class="library-sidebar-link" data-filter-group="category" data-i18n="library_cat_books" data-library-filter="book" type="button">Books</button>
+<button class="library-sidebar-link" data-filter-group="category" data-i18n="library_cat_pdfs" data-library-filter="pdf" type="button">PDFs</button>
+<button class="library-sidebar-link" data-filter-group="category" data-i18n="library_cat_guides" data-library-filter="guide" type="button">Guides</button>
+<button class="library-sidebar-link" data-filter-group="category" data-i18n="library_cat_tools" data-library-filter="interactive-tool" type="button">Interactive Tools</button>
+<button class="library-sidebar-link" data-filter-group="category" data-i18n="library_cat_comparative" data-library-filter="comparative-resource" type="button">Comparative Materials</button>
+</div>
+</div>
+<div class="library-sidebar-section">
+<h2 data-i18n="library_sidebar_teaching">Teaching Collections</h2>
+<div class="library-sidebar-links">
+<button class="library-sidebar-link" data-filter-group="collection" data-i18n="library_teaching_school" data-library-filter="school-chemistry" type="button">School Chemistry</button>
+<button class="library-sidebar-link" data-filter-group="collection" data-i18n="library_teaching_ib" data-library-filter="ib-advanced" type="button">IB / Advanced</button>
+<button class="library-sidebar-link" data-filter-group="collection" data-i18n="library_teaching_university" data-library-filter="university-beginners" type="button">University Beginners</button>
+<button class="library-sidebar-link" data-filter-group="collection" data-i18n="library_teaching_german" data-library-filter="german-learning" type="button">German Learning</button>
+<button class="library-sidebar-link" data-filter-group="collection" data-i18n="library_teaching_support" data-library-filter="study-support" type="button">Study Support</button>
+<button class="library-sidebar-link" data-filter-group="collection" data-i18n="library_teaching_didactics" data-library-filter="didactics-pedagogy" type="button">Didactics &amp; Pedagogy</button>
+</div>
+</div>
+<div class="library-sidebar-section">
+<h2 data-i18n="library_sidebar_curated">Curated by Me</h2>
+<div class="library-sidebar-links">
+<button class="library-sidebar-link" data-filter-group="tag" data-i18n="library_curated_used" data-library-filter="frequently-used" type="button">Frequently Used</button>
+<button class="library-sidebar-link" data-filter-group="tag" data-i18n="library_curated_favorites" data-library-filter="favorite" type="button">Favorite Books</button>
+<button class="library-sidebar-link" data-filter-group="tag" data-i18n="library_curated_recommended" data-library-filter="recommended" type="button">Recommended</button>
+<button class="library-sidebar-link" data-filter-group="tag" data-i18n="library_curated_core" data-library-filter="core-teaching-materials" type="button">Core Teaching Materials</button>
+<button class="library-sidebar-link" data-filter-group="tag" data-i18n="library_curated_curriculum" data-library-filter="comparative-curriculum" type="button">Comparative Curriculum</button>
+</div>
+</div>
+<div class="library-sidebar-section">
+<h2 data-i18n="library_sidebar_languages">Languages &amp; Regions</h2>
+<div class="library-sidebar-link-group">
+<div class="library-mini-heading" data-i18n="library_sidebar_languages_label">Languages</div>
+<div class="library-sidebar-links compact">
+<button class="library-sidebar-link compact" data-filter-group="language" data-i18n="teaching_english" data-library-filter="english" type="button">English</button>
+<button class="library-sidebar-link compact" data-filter-group="language" data-i18n="teaching_german" data-library-filter="german" type="button">German</button>
+<button class="library-sidebar-link compact" data-filter-group="language" data-i18n="resource_library_french" data-library-filter="french" type="button">French</button>
+<button class="library-sidebar-link compact" data-filter-group="language" data-i18n="resource_library_spanish" data-library-filter="spanish" type="button">Spanish</button>
+<button class="library-sidebar-link compact" data-filter-group="language" data-i18n="teaching_ukrainian" data-library-filter="ukrainian" type="button">Ukrainian</button>
+<button class="library-sidebar-link compact" data-filter-group="language" data-i18n="teaching_russian" data-library-filter="russian" type="button">Russian</button>
+</div>
+</div>
+<div class="library-sidebar-link-group">
+<div class="library-mini-heading" data-i18n="library_sidebar_regions_label">Regions</div>
+<div class="library-sidebar-links compact">
+<button class="library-sidebar-link compact" data-filter-group="country" data-i18n="hero_mini_geo_3" data-library-filter="switzerland" type="button">Switzerland</button>
+<button class="library-sidebar-link compact" data-filter-group="country" data-i18n="resource_library_germany" data-library-filter="germany" type="button">Germany</button>
+<button class="library-sidebar-link compact" data-filter-group="country" data-i18n="hero_mini_geo_2" data-library-filter="france" type="button">France</button>
+<button class="library-sidebar-link compact" data-filter-group="country" data-i18n="resource_library_poland" data-library-filter="poland" type="button">Poland</button>
+<button class="library-sidebar-link compact" data-filter-group="country" data-i18n="hero_mini_geo_1" data-library-filter="ukraine" type="button">Ukraine</button>
+<button class="library-sidebar-link compact" data-filter-group="country" data-i18n="resource_library_usa_canada" data-library-filter="usa-canada" type="button">USA / Canada</button>
+</div>
+</div>
+</div>
+</aside>
+<section class="library-main">
+<div class="library-results-head compact">
+<div>
+<h2 data-i18n="library_results_all" id="libraryResultTitle">All Resources</h2>
+<p class="muted" data-i18n="library_results_meta" id="libraryResultMeta">12 demo resources in the current collection.</p>
+</div>
+</div>
+<div class="library-grid compact" id="libraryGrid">
+<article class="library-book-card compact" data-collection="school-chemistry" data-country="ukraine" data-description="A practical starting resource for school learners who need stronger fundamentals, clearer explanations, and topic-based revision support in chemistry." data-download="#" data-external="https://example.com" data-id="school-chemistry-starter" data-keywords="school chemistry foundations revision ukrainian curriculum practical support" data-language="ukrainian" data-level="School" data-subtitle="School Chemistry · Ukrainian · Ukraine" data-tags="frequently-used downloadable school foundations revision core-teaching-materials" data-title="School Chemistry Starter" data-type="pdf" tabindex="0">
+<div class="library-book-cover-frame">
+<div class="library-cover chemistry-cover">
+<span class="library-cover-badge" data-i18n="resource_library_pdf">PDF</span>
+<span class="library-cover-title" data-i18n="resource_library_school_chemistry_starter">School Chemistry Starter</span>
+</div>
+</div>
+<div class="library-book-meta compact">
+<h3 data-i18n="resource_library_school_chemistry_starter">School Chemistry Starter</h3>
+<p data-i18n="resource_library_school_chemistry_ukrainian_ukraine">School Chemistry · Ukrainian · Ukraine</p>
+<div class="library-book-tags compact"><span data-i18n="library_curated_used">Frequently Used</span><span data-i18n="library_filter_downloadable">Downloadable</span></div>
+</div>
+</article>
+<article class="library-book-card compact" data-collection="university-beginners" data-country="usa-canada" data-description="A foundational general chemistry text suitable for early university study, conceptual clarification, and topic-based support." data-download="#" data-external="https://example.com" data-id="intro-general-chemistry" data-keywords="general chemistry beginner university english stoichiometry atoms molecules" data-language="english" data-level="University Beginner" data-subtitle="University Beginners · English · USA / Canada" data-tags="recommended university-beginners foundational chemistry" data-title="Introductory General Chemistry" data-type="book" tabindex="0">
+<div class="library-book-cover-frame">
+<div class="library-cover intro-cover">
+<span class="library-cover-badge" data-i18n="resource_library_book">Book</span>
+<span class="library-cover-title" data-i18n="resource_library_introductory_general_chemistry">Introductory General Chemistry</span>
+</div>
+</div>
+<div class="library-book-meta compact">
+<h3 data-i18n="resource_library_introductory_general_chemistry">Introductory General Chemistry</h3>
+<p data-i18n="resource_library_university_beginners_english_usa_canada">University Beginners · English · USA / Canada</p>
+<div class="library-book-tags compact"><span data-i18n="library_curated_recommended">Recommended</span><span data-i18n="library_teaching_university">University Beginners</span></div>
+</div>
+</article>
+<article class="library-book-card compact" data-collection="ib-advanced" data-country="international" data-description="A compact guide for higher-level chemistry learners who need structured notes, problem-solving support, and exam-oriented revision." data-download="#" data-external="https://example.com" data-id="ib-chemistry-practice-notes" data-keywords="ib chemistry advanced notes hl exam preparation english" data-language="english" data-level="Advanced" data-subtitle="IB / Advanced · English · International" data-tags="downloadable recommended ib-advanced exam-preparation" data-title="IB Chemistry Practice Notes" data-type="guide" tabindex="0">
+<div class="library-book-cover-frame">
+<div class="library-cover ib-cover">
+<span class="library-cover-badge" data-i18n="resource_library_guide">Guide</span>
+<span class="library-cover-title" data-i18n="resource_library_ib_chemistry_practice_notes">IB Chemistry Practice Notes</span>
+</div>
+</div>
+<div class="library-book-meta compact">
+<h3 data-i18n="resource_library_ib_chemistry_practice_notes">IB Chemistry Practice Notes</h3>
+<p data-i18n="resource_library_ib_advanced_english_international">IB / Advanced · English · International</p>
+<div class="library-book-tags compact"><span data-i18n="library_filter_downloadable">Downloadable</span><span data-i18n="library_curated_recommended">Recommended</span></div>
+</div>
+</article>
+<article class="library-book-card compact" data-collection="german-learning" data-country="germany" data-description="A useful language-support book for learners preparing to study chemistry and science in German-speaking academic contexts." data-download="#" data-external="https://example.com" data-id="deutsch-naturwissenschaft" data-keywords="deutsch chemie naturwissenschaft studium german language science" data-language="german" data-level="Language Support" data-subtitle="German Learning · German · Germany" data-tags="recommended german-learning science-language" data-title="Deutsch für naturwissenschaftliche Studiengänge" data-type="book" tabindex="0">
+<div class="library-book-cover-frame">
+<div class="library-cover german-cover">
+<span class="library-cover-badge" data-i18n="resource_library_book">Book</span>
+<span class="library-cover-title" data-i18n="resource_library_deutsch_f_r_naturwissenschaftliche_studieng_nge">Deutsch für naturwissenschaftliche Studiengänge</span>
+</div>
+</div>
+<div class="library-book-meta compact">
+<h3 data-i18n="resource_library_deutsch_f_r_naturwissenschaftliche_studieng_nge">Deutsch für naturwissenschaftliche Studiengänge</h3>
+<p data-i18n="resource_library_german_learning_german_germany">German Learning · German · Germany</p>
+<div class="library-book-tags compact"><span data-i18n="library_curated_recommended">Recommended</span><span data-i18n="library_teaching_german">German Learning</span></div>
+</div>
+</article>
+<article class="library-book-card compact" data-collection="comparative-curriculum" data-country="switzerland" data-description="A comparative curriculum resource used for understanding chemistry teaching expectations, levels, and educational context in Switzerland." data-download="#" data-external="https://example.com" data-id="swiss-curriculum-reference" data-keywords="switzerland chemistry curriculum swiss gymnasium teaching comparison german" data-language="german" data-level="Comparative Curriculum" data-subtitle="Comparative Materials · German · Switzerland" data-tags="comparative-curriculum external comparative-resource core-teaching-materials" data-title="Swiss Chemistry Curriculum Reference" data-type="comparative-resource" tabindex="0">
+<div class="library-book-cover-frame">
+<div class="library-cover swiss-cover">
+<span class="library-cover-badge" data-i18n="resource_library_compare">Compare</span>
+<span class="library-cover-title" data-i18n="resource_library_swiss_chemistry_curriculum_reference">Swiss Chemistry Curriculum Reference</span>
+</div>
+</div>
+<div class="library-book-meta compact">
+<h3 data-i18n="resource_library_swiss_chemistry_curriculum_reference">Swiss Chemistry Curriculum Reference</h3>
+<p data-i18n="resource_library_comparative_materials_german_switzerland">Comparative Materials · German · Switzerland</p>
+<div class="library-book-tags compact"><span data-i18n="library_curated_curriculum">Comparative Curriculum</span><span data-i18n="resource_library_external">External</span></div>
+</div>
+</article>
+<article class="library-book-card compact" data-collection="university-beginners" data-country="international" data-description="A visual support resource for learners who need a clearer overview of organic chemistry structures, reactions, and conceptual patterns." data-download="#" data-external="https://example.com" data-id="organic-visual-guide" data-keywords="organic chemistry visual guide beginner university english reactions structures" data-language="english" data-level="University Beginner" data-subtitle="University Beginners · English · International" data-tags="downloadable recommended university-beginners organic chemistry" data-title="Organic Chemistry Visual Guide" data-type="pdf" tabindex="0">
+<div class="library-book-cover-frame">
+<div class="library-cover organic-cover">
+<span class="library-cover-badge" data-i18n="resource_library_pdf">PDF</span>
+<span class="library-cover-title" data-i18n="resource_library_organic_chemistry_visual_guide">Organic Chemistry Visual Guide</span>
+</div>
+</div>
+<div class="library-book-meta compact">
+<h3 data-i18n="resource_library_organic_chemistry_visual_guide">Organic Chemistry Visual Guide</h3>
+<p data-i18n="resource_library_university_beginners_english_international">University Beginners · English · International</p>
+<div class="library-book-tags compact"><span data-i18n="library_filter_downloadable">Downloadable</span><span data-i18n="library_curated_recommended">Recommended</span></div>
+</div>
+</article>
+<article class="library-book-card compact" data-collection="didactics-pedagogy" data-country="france" data-description="A teaching-methodology resource that supports lesson planning, science instruction, and student-centered educational design." data-download="#" data-external="https://example.com" data-id="science-didactics-practice" data-keywords="didactics pedagogy science teaching france french lesson planning" data-language="french" data-level="Teaching Methodology" data-subtitle="Didactics &amp; Pedagogy · French · France" data-tags="favorite didactics-pedagogy pedagogy teaching practice" data-title="Practical Didactics in Science Teaching" data-type="book" tabindex="0">
+<div class="library-book-cover-frame">
+<div class="library-cover pedagogy-cover">
+<span class="library-cover-badge" data-i18n="resource_library_book">Book</span>
+<span class="library-cover-title" data-i18n="resource_library_practical_didactics_in_science_teaching">Practical Didactics in Science Teaching</span>
+</div>
+</div>
+<div class="library-book-meta compact">
+<h3 data-i18n="resource_library_practical_didactics_in_science_teaching">Practical Didactics in Science Teaching</h3>
+<p data-i18n="resource_library_didactics_pedagogy_french_france">Didactics &amp; Pedagogy · French · France</p>
+<div class="library-book-tags compact"><span data-i18n="resource_library_favorite">Favorite</span><span data-i18n="resource_library_didactics_pedagogy">Didactics Pedagogy</span></div>
+</div>
+</article>
+<article class="library-book-card compact" data-collection="study-support" data-country="international" data-description="A digital interactive tool for concept-building, visualization, and guided independent practice in stoichiometry." data-download="#" data-external="https://example.com" data-id="stoichiometry-simulator" data-keywords="interactive stoichiometry simulator chemistry tool calculations visual english" data-language="english" data-level="Study Support" data-subtitle="Interactive Tools · English · International" data-tags="external interactive-tool study-support recommended" data-title="Interactive Stoichiometry Simulator" data-type="interactive-tool" tabindex="0">
+<div class="library-book-cover-frame">
+<div class="library-cover tool-cover">
+<span class="library-cover-badge" data-i18n="resource_library_tool">Tool</span>
+<span class="library-cover-title" data-i18n="resource_library_interactive_stoichiometry_simulator">Interactive Stoichiometry Simulator</span>
+</div>
+</div>
+<div class="library-book-meta compact">
+<h3 data-i18n="resource_library_interactive_stoichiometry_simulator">Interactive Stoichiometry Simulator</h3>
+<p data-i18n="resource_library_interactive_tools_english_international">Interactive Tools · English · International</p>
+<div class="library-book-tags compact"><span data-i18n="resource_library_external">External</span><span data-i18n="resource_library_interactive_tool">Interactive Tool</span></div>
+</div>
+</article>
+<article class="library-book-card compact" data-collection="german-learning" data-country="germany" data-description="A regularly used workbook for structured beginner German support, especially helpful for learners building academic language foundations." data-download="#" data-external="https://example.com" data-id="german-a1-workbook" data-keywords="german a1 workbook beginner grammar vocabulary chemistry learners" data-language="german" data-level="Beginner Language" data-subtitle="German Learning · German · Germany" data-tags="frequently-used downloadable german-learning beginner" data-title="German A1.1 Core Workbook" data-type="pdf" tabindex="0">
+<div class="library-book-cover-frame">
+<div class="library-cover a1-cover">
+<span class="library-cover-badge" data-i18n="resource_library_pdf">PDF</span>
+<span class="library-cover-title" data-i18n="resource_library_german_a1_1_core_workbook">German A1.1 Core Workbook</span>
+</div>
+</div>
+<div class="library-book-meta compact">
+<h3 data-i18n="resource_library_german_a1_1_core_workbook">German A1.1 Core Workbook</h3>
+<p data-i18n="resource_library_german_learning_german_germany">German Learning · German · Germany</p>
+<div class="library-book-tags compact"><span data-i18n="library_curated_used">Frequently Used</span><span data-i18n="library_filter_downloadable">Downloadable</span></div>
+</div>
+</article>
+<article class="library-book-card compact" data-collection="study-support" data-country="international" data-description="A compact preparation pack for review, self-check, and structured revision before chemistry tests and demanding assessments." data-download="#" data-external="https://example.com" data-id="exam-preparation-pack" data-keywords="exam preparation chemistry revision guide study support self-check" data-language="english" data-level="Exam Preparation" data-subtitle="Study Support · English · International" data-tags="recommended study-support exam-preparation downloadable" data-title="Chemistry Exam Preparation Pack" data-type="guide" tabindex="0">
+<div class="library-book-cover-frame">
+<div class="library-cover exam-cover">
+<span class="library-cover-badge" data-i18n="resource_library_guide">Guide</span>
+<span class="library-cover-title" data-i18n="resource_library_chemistry_exam_preparation_pack">Chemistry Exam Preparation Pack</span>
+</div>
+</div>
+<div class="library-book-meta compact">
+<h3 data-i18n="resource_library_chemistry_exam_preparation_pack">Chemistry Exam Preparation Pack</h3>
+<p data-i18n="resource_library_study_support_english_international">Study Support · English · International</p>
+<div class="library-book-tags compact"><span data-i18n="library_curated_recommended">Recommended</span><span data-i18n="library_teaching_support">Study Support</span></div>
+</div>
+</article>
+<article class="library-book-card compact" data-collection="university-beginners" data-country="france" data-description="A foundational text supporting physical chemistry concepts, mathematical framing, and theoretical understanding for early higher education." data-download="#" data-external="https://example.com" data-id="physical-chemistry-foundations" data-keywords="physical chemistry beginner french france thermodynamics kinetics" data-language="french" data-level="University Beginner" data-subtitle="University Beginners · French · France" data-tags="external university-beginners physical chemistry" data-title="Physical Chemistry Foundations" data-type="book" tabindex="0">
+<div class="library-book-cover-frame">
+<div class="library-cover physical-cover">
+<span class="library-cover-badge" data-i18n="resource_library_book">Book</span>
+<span class="library-cover-title" data-i18n="resource_library_physical_chemistry_foundations">Physical Chemistry Foundations</span>
+</div>
+</div>
+<div class="library-book-meta compact">
+<h3 data-i18n="resource_library_physical_chemistry_foundations">Physical Chemistry Foundations</h3>
+<p data-i18n="resource_library_university_beginners_french_france">University Beginners · French · France</p>
+<div class="library-book-tags compact"><span data-i18n="resource_library_external">External</span><span data-i18n="library_teaching_university">University Beginners</span></div>
+</div>
+</article>
+<article class="library-book-card compact" data-collection="comparative-curriculum" data-country="europe" data-description="A synthetic overview of chemistry teaching approaches, curricular emphasis, and progression patterns across multiple European educational systems." data-download="#" data-external="https://example.com" data-id="comparative-programs-europe" data-keywords="comparative chemistry europe curriculum countries teaching systems analysis" data-language="english" data-level="Comparative Curriculum" data-subtitle="Comparative Materials · English · Europe" data-tags="core-teaching-materials comparative-curriculum recommended" data-title="Comparative Chemistry Programs: Europe" data-type="comparative-resource" tabindex="0">
+<div class="library-book-cover-frame">
+<div class="library-cover compare-cover">
+<span class="library-cover-badge" data-i18n="resource_library_compare">Compare</span>
+<span class="library-cover-title" data-i18n="resource_library_comparative_chemistry_programs_europe">Comparative Chemistry Programs: Europe</span>
+</div>
+</div>
+<div class="library-book-meta compact">
+<h3 data-i18n="resource_library_comparative_chemistry_programs_europe">Comparative Chemistry Programs: Europe</h3>
+<p data-i18n="resource_library_comparative_materials_english_europe">Comparative Materials · English · Europe</p>
+<div class="library-book-tags compact"><span data-i18n="library_curated_core">Core Teaching Materials</span><span data-i18n="library_curated_curriculum">Comparative Curriculum</span></div>
+</div>
+</article>
+</div>
+<p class="ext-note library-empty-state" data-i18n="resource_library_no_resources_match_the_current_search" hidden="" id="libraryEmptyState">No resources match the current search and filter combination.</p>
 </section>
-
-<div class="library-modal-backdrop" id="libraryModalBackdrop" hidden>
-  <div class="library-modal" role="dialog" aria-modal="true" aria-labelledby="libraryModalTitle">
-    <button class="library-modal-close" id="libraryModalClose" type="button" aria-label="Close">×</button>
-    <div class="library-modal-inner">
-      <div class="library-modal-top">
-        <div class="library-modal-cover-wrap">
-          <div class="library-detail-cover compact" id="libraryDetailCover">
-            <span class="library-cover-badge">PDF</span>
-            <span class="library-cover-title">School Chemistry Starter</span>
-          </div>
-        </div>
-        <div class="library-modal-summary">
-          <div class="library-detail-kicker" data-i18n="library_detail_kicker">Selected resource</div>
-          <h3 id="libraryModalTitle">School Chemistry Starter</h3>
-          <p class="library-detail-subtitle" id="libraryDetailSubtitle">School Chemistry · Ukrainian · Ukraine</p>
-          <div class="library-detail-meta compact" id="libraryDetailMeta"></div>
-          <div class="button-row library-detail-actions">
-            <a class="btn btn-primary" href="#" id="libraryDownloadBtn">Download PDF</a>
-            <a class="btn btn-secondary" href="#" id="libraryExternalBtn" target="_blank" rel="noreferrer">Open External Source</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="library-modal-accordion">
-        <details class="library-info-accordion" open>
-          <summary>Description</summary>
-          <div class="library-info-accordion-body">
-            <p class="library-detail-description" id="libraryDetailDescription">A practical starting resource for school learners who need stronger fundamentals, clearer explanations, and topic-based revision support in chemistry.</p>
-          </div>
-        </details>
-        <details class="library-info-accordion">
-          <summary>Teaching Use</summary>
-          <div class="library-info-accordion-body">
-            <p id="libraryDetailUse">Use this area to explain why a particular resource matters, how it can be used in teaching, and which learner group it supports best.</p>
-          </div>
-        </details>
-        <details class="library-info-accordion">
-          <summary>Metadata & Keywords</summary>
-          <div class="library-info-accordion-body">
-            <div class="library-detail-meta-grid compact">
-              <div><span class="library-detail-meta-label">Type</span><strong id="libraryDetailType">PDF</strong></div>
-              <div><span class="library-detail-meta-label">Level</span><strong id="libraryDetailLevel">School</strong></div>
-              <div><span class="library-detail-meta-label">Language</span><strong id="libraryDetailLanguage">Ukrainian</strong></div>
-              <div><span class="library-detail-meta-label">Country</span><strong id="libraryDetailCountry">Ukraine</strong></div>
-            </div>
-            <div class="library-detail-badges" id="libraryDetailBadges"></div>
-            <div class="tag-row library-detail-keywords" id="libraryDetailKeywords"></div>
-          </div>
-        </details>
-      </div>
-    </div>
-  </div>
+</div>
+</div>
+</section>
+<div class="library-modal-backdrop" hidden="" id="libraryModalBackdrop">
+<div aria-labelledby="libraryModalTitle" aria-modal="true" class="library-modal" role="dialog">
+<button aria-label="Close" class="library-modal-close" data-i18n-aria-label="resource_library_close_aria_label" id="libraryModalClose" type="button">×</button>
+<div class="library-modal-inner">
+<div class="library-modal-top">
+<div class="library-modal-cover-wrap">
+<div class="library-detail-cover compact" id="libraryDetailCover">
+<span class="library-cover-badge" data-i18n="resource_library_pdf">PDF</span>
+<span class="library-cover-title" data-i18n="resource_library_school_chemistry_starter">School Chemistry Starter</span>
+</div>
+</div>
+<div class="library-modal-summary">
+<div class="library-detail-kicker" data-i18n="library_detail_kicker">Selected resource</div>
+<h3 data-i18n="resource_library_school_chemistry_starter" id="libraryModalTitle">School Chemistry Starter</h3>
+<p class="library-detail-subtitle" data-i18n="resource_library_school_chemistry_ukrainian_ukraine" id="libraryDetailSubtitle">School Chemistry · Ukrainian · Ukraine</p>
+<div class="library-detail-meta compact" id="libraryDetailMeta"></div>
+<div class="button-row library-detail-actions">
+<a class="btn btn-primary" data-i18n="resource_library_download_pdf" href="#" id="libraryDownloadBtn">Download PDF</a>
+<a class="btn btn-secondary" data-i18n="resource_library_open_external_source" href="#" id="libraryExternalBtn" rel="noreferrer" target="_blank">Open External Source</a>
+</div>
+</div>
+</div>
+<div class="library-modal-accordion">
+<details class="library-info-accordion" open="">
+<summary data-i18n="resource_library_description">Description</summary>
+<div class="library-info-accordion-body">
+<p class="library-detail-description" data-i18n="resource_library_a_practical_starting_resource_for_school" id="libraryDetailDescription">A practical starting resource for school learners who need stronger fundamentals, clearer explanations, and topic-based revision support in chemistry.</p>
+</div>
+</details>
+<details class="library-info-accordion">
+<summary data-i18n="resource_library_teaching_use">Teaching Use</summary>
+<div class="library-info-accordion-body">
+<p data-i18n="resource_library_use_this_area_to_explain_why" id="libraryDetailUse">Use this area to explain why a particular resource matters, how it can be used in teaching, and which learner group it supports best.</p>
+</div>
+</details>
+<details class="library-info-accordion">
+<summary data-i18n="resource_library_metadata_keywords">Metadata &amp; Keywords</summary>
+<div class="library-info-accordion-body">
+<div class="library-detail-meta-grid compact">
+<div><span class="library-detail-meta-label" data-i18n="resource_library_type">Type</span><strong data-i18n="resource_library_pdf" id="libraryDetailType">PDF</strong></div>
+<div><span class="library-detail-meta-label" data-i18n="resource_library_level">Level</span><strong data-i18n="resource_library_school" id="libraryDetailLevel">School</strong></div>
+<div><span class="library-detail-meta-label" data-i18n="library_sort_language">Language</span><strong data-i18n="teaching_ukrainian" id="libraryDetailLanguage">Ukrainian</strong></div>
+<div><span class="library-detail-meta-label" data-i18n="library_sort_country">Country</span><strong data-i18n="hero_mini_geo_1" id="libraryDetailCountry">Ukraine</strong></div>
+</div>
+<div class="library-detail-badges" id="libraryDetailBadges"></div>
+<div class="tag-row library-detail-keywords" id="libraryDetailKeywords"></div>
+</div>
+</details>
+</div>
+</div>
+</div>
 </div>
 </main>
-
 <footer>
 <div class="container">
 <div class="footer-grid">
@@ -594,70 +441,74 @@
 <h3 class="footer-title" data-i18n="footer_meta">Contact &amp; Info</h3>
 <ul class="footer-meta">
 <li>
-<a class="icon-link footer-contact-link" data-contact-email-link="true" href="mailto:your.email@example.com">
+<a class="icon-link footer-contact-link" data-contact-email-link="true" data-i18n-html="index_email" href="mailto:your.email@example.com">
 <span class="icon-badge icon-badge-mail"></span>
-<span>Email</span>
+<span data-i18n="index_email">Email</span>
 </a>
 </li>
-<li>
+<li data-i18n-html="index_in_linkedin">
 <a class="icon-link footer-contact-link" href="https://www.linkedin.com/in/shvedvadym" rel="noreferrer" target="_blank">
-<span class="icon-badge">in</span>
-<span>LinkedIn</span>
+<span class="icon-badge" data-i18n="index_in">in</span>
+<span data-i18n="index_linkedin">LinkedIn</span>
 </a>
 </li>
-<li>
+<li data-i18n-html="index_ig_instagram">
 <a class="icon-link footer-contact-link" href="https://www.instagram.com/vadymtravels" rel="noreferrer" target="_blank">
-<span class="icon-badge">IG</span>
-<span>Instagram</span>
+<span class="icon-badge" data-i18n="index_ig">IG</span>
+<span data-i18n="index_instagram">Instagram</span>
 </a>
 </li>
-<li>
+<li data-i18n-html="index_t24_tutor24">
 <a class="icon-link footer-contact-link" href="https://tutor24.ch/de/providers/3301791?public_view=true" rel="noreferrer" target="_blank">
-<span class="icon-badge">T24</span>
-<span>Tutor24</span>
+<span class="icon-badge" data-i18n="index_t24">T24</span>
+<span data-i18n="index_tutor24">Tutor24</span>
 </a>
 </li>
-<li>
+<li data-i18n-html="index_bu_buki">
 <a class="icon-link footer-contact-link" href="https://buki.com.ua/user-21753/" rel="noreferrer" target="_blank">
-<span class="icon-badge">BU</span>
-<span>BUKI</span>
+<span class="icon-badge" data-i18n="index_bu">BU</span>
+<span data-i18n="index_buki">BUKI</span>
 </a>
 </li>
-<li>
+<li data-i18n-html="index_ar_repetitor_org_ua">
 <a class="icon-link footer-contact-link" href="https://repetitor.org.ua/uk-id8693" rel="noreferrer" target="_blank">
-<span class="icon-badge">AR</span>
-<span>Repetitor.org.ua</span>
+<span class="icon-badge" data-i18n="index_ar">AR</span>
+<span data-i18n="index_repetitor_org_ua">Repetitor.org.ua</span>
 </a>
 </li>
-<li>
+<li data-i18n-html="index_cv_cv_download">
 <a class="icon-link footer-contact-link" data-cv-link="true" href="#">
-<span class="icon-badge">CV</span>
-<span>CV download</span>
+<span class="icon-badge" data-i18n="index_cv">CV</span>
+<span data-i18n="index_cv_download">CV download</span>
 </a>
 </li>
-<li>
+<li data-i18n-html="index_legal_business_info_2">
 <a class="icon-link footer-contact-link" href="#">
-<span class="icon-badge">§</span>
-<span>Legal / Business Info</span>
+<span class="icon-badge" data-i18n="index_text">§</span>
+<span data-i18n="index_legal_business_info">Legal / Business Info</span>
 </a>
 </li>
 </ul>
 </div>
 </div>
 <div class="button-row" style="margin-top: 1.2rem; margin-bottom: 0;">
-<a class="btn btn-primary btn-booking" data-booking-link="true" href="contact.html#booking">Book a Lesson</a>
-<a class="btn btn-secondary btn-contact footer-cta-btn" data-i18n="final_btn_1" href="contact.html"><span class="btn-inline-icon" aria-hidden="true">✉️</span><span>Contact Me</span></a>
+<a class="btn btn-primary btn-booking" data-booking-link="true" data-i18n="hero_btn_book" href="contact.html#booking">Book a Lesson</a>
+<a class="btn btn-secondary btn-contact footer-cta-btn" data-i18n="final_btn_1" href="contact.html"><span aria-hidden="true" class="btn-inline-icon">✉️</span><span>Contact Me</span></a>
 </div>
 <div class="copyright" data-i18n="footer_copy">© Vadym Shved — Multilingual personal professional website</div>
 </div>
 </footer>
-<script src="assets/js/site.js?v=i18n3">
-</script>
+<script src="assets/js/i18n-inline.js?v=langfix1"></script>
+<script src="assets/js/site.js?v=langfix1"></script>
+<script src="assets/js/ui.js?v=langfix1"></script>
 </body>
 </html>
-<script src="assets/js/site.js?v=i18n3"></script>
-</body>
-</html>
-<script src="assets/js/site.js?v=i18n3"></script>
-</body>
-</html>
+<script src="assets/js/i18n-inline.js?v=langfix1"></script>
+<script src="assets/js/site.js?v=langfix1"></script>
+<script src="assets/js/ui.js?v=langfix1"></script>
+
+
+<script src="assets/js/i18n-inline.js?v=langfix1"></script>
+<script src="assets/js/site.js?v=langfix1"></script>
+<script src="assets/js/ui.js?v=langfix1"></script>
+

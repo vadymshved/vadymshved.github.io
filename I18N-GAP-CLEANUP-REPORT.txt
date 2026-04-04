@@ -1,0 +1,22 @@
+I18N GAP CLEANUP REPORT
+
+What was checked:
+- all HTML pages
+- visible English fallback content already connected through data-i18n / data-i18n-html / related attributes
+- additional hardcoded visible labels in assets/js/ui.js
+
+What was improved:
+- added canonical translation keys for JS-generated institution / organization labels
+- added canonical translation keys for resource-library dynamic labels
+- added canonical translation key for the professional portrait alt text
+- added data-i18n to institution links in about.html where those labels were still hardcoded
+
+Result:
+- HTML fallback English remains preserved
+- en.json contains the new canonical source keys
+- uk/de/fr/es/pl mirror the same new keys with empty values when no translation was available yet
+- ui.js now reads those labels through the central i18n system instead of hardcoding them
+
+Note:
+- empty values in non-English files intentionally fall back to English
+- this keeps the site stable while leaving space for future manual translation work

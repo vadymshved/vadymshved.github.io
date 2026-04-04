@@ -4,9 +4,27 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Vadym Shved — About</title>
-<link href="assets/css/style.css?v=i18n3" rel="stylesheet"/>
-<link href="assets/css/multipage.css?v=i18n3" rel="stylesheet"/>
+<title data-i18n="page_title_about">Vadym Shved — About</title>
+<link href="assets/css/style.css?v=i18n7" rel="stylesheet"/>
+<link href="assets/css/multipage.css?v=i18n7" rel="stylesheet"/>
+<style id="i18n-antiflicker-style">
+  html.i18n-preload body { visibility: hidden; }
+</style>
+<script id="i18n-antiflicker-bootstrap">
+(function () {
+  try {
+    var raw = localStorage.getItem('siteLanguage') || 'en';
+    var lang = ({ua:'uk', uk:'uk', en:'en', de:'de', fr:'fr', es:'es', pl:'pl'})[raw] || 'en';
+    document.documentElement.classList.add('i18n-preload');
+    document.documentElement.setAttribute('data-initial-lang', lang);
+    document.documentElement.lang = lang;
+  } catch (e) {
+    document.documentElement.classList.add('i18n-preload');
+    document.documentElement.setAttribute('data-initial-lang', 'en');
+    document.documentElement.lang = 'en';
+  }
+})();
+</script>
 </head>
 <body class="page-shell">
 <header class="topbar">
@@ -16,7 +34,7 @@
 <span class="brand-role" data-i18n="brand_role">Chemist · Teacher · Educator</span>
 </a>
 <div class="nav-shell">
-<nav aria-label="Main navigation" class="desktop-nav" id="main-nav">
+<nav aria-label="Main navigation" class="desktop-nav" data-i18n-aria-label="index_main_navigation_aria_label" id="main-nav">
 <ul>
 <li>
 <a class="nav-link" data-i18n="nav_home" href="index.html">Home</a>
@@ -44,19 +62,19 @@
 </div>
 <div class="lang-switcher">
 <button aria-controls="langMenu" aria-expanded="false" aria-haspopup="true" class="lang-toggle" id="langToggle" type="button">
-<span class="lang-label">EN</span>
+<span class="lang-label" data-i18n="index_en">EN</span>
 <span aria-hidden="true">▾</span>
 </button>
 <div class="lang-menu" id="langMenu" role="menu">
-<button class="lang-option active" data-lang="en" type="button">English (EN)</button>
-<button class="lang-option" data-lang="ua" type="button">Українська (UA)</button>
-<button class="lang-option" data-lang="de" type="button">Deutsch (DE)</button>
-<button class="lang-option" data-lang="fr" type="button">Français (FR)</button>
-<button class="lang-option" data-lang="es" type="button">Español (ES)</button>
-<button class="lang-option" data-lang="pl" type="button">Polski (PL)</button>
+<button class="lang-option active" data-i18n="index_english_en" data-lang="en" type="button">English (EN)</button>
+<button class="lang-option" data-i18n="index_ua" data-lang="ua" type="button">Українська (UA)</button>
+<button class="lang-option" data-i18n="index_deutsch_de" data-lang="de" type="button">Deutsch (DE)</button>
+<button class="lang-option" data-i18n="index_fran_ais_fr" data-lang="fr" type="button">Français (FR)</button>
+<button class="lang-option" data-i18n="index_espa_ol_es" data-lang="es" type="button">Español (ES)</button>
+<button class="lang-option" data-i18n="index_polski_pl" data-lang="pl" type="button">Polski (PL)</button>
 </div>
 </div>
-<button aria-label="Open Menu" aria-controls="main-nav" aria-expanded="false" class="mobile-toggle" id="mobile-toggle" type="button">
+<button aria-controls="main-nav" aria-expanded="false" aria-label="Open Menu" class="mobile-toggle" data-i18n-aria-label="index_open_menu_aria_label" id="mobile-toggle" type="button">
 <span>
 </span>
 <span>
@@ -71,369 +89,367 @@
 <div class="container">
 <div class="section-header">
 <h2 data-i18n="about_title">About</h2>
-<p class="section-intro">A personal but polished introduction that presents science, teaching, and international development as one connected professional story.</p>
+<p class="section-intro" data-i18n="about_a_personal_but_polished_introduction_that">A personal but polished introduction that presents science, teaching, and international development as one connected professional story.</p>
 </div>
-
 <div class="detail-card gallery-preview-card gallery-preview-card--inline" style="margin:0 0 1rem;">
-  <div class="section-header">
-    <h3 class="gallery-preview-title" data-i18n="gallery_preview_about_title">A visual side of my profile</h3>
-    <p class="section-intro" data-i18n="gallery_preview_about_text">Selected moments from teaching, science, and everyday professional life that add a more personal dimension to the site.</p>
-  </div>
-  <div class="gallery-preview-grid">
-    <a class="gallery-preview-tile" href="gallery.html#teaching"><figure><img alt="Teaching preview" src="assets/images/gallery/teaching/teaching-2.svg"/></figure><span class="gallery-preview-label" data-i18n="gallery_cat_teaching">Teaching</span></a>
-    <a class="gallery-preview-tile" href="gallery.html#science"><figure><img alt="Science preview" src="assets/images/gallery/science/science-2.svg"/></figure><span class="gallery-preview-label" data-i18n="gallery_cat_science">Science</span></a>
-    <a class="gallery-preview-tile" href="gallery.html#life"><figure><img alt="Life preview" src="assets/images/gallery/life/life-2.svg"/></figure><span class="gallery-preview-label" data-i18n="gallery_cat_life">Life</span></a>
-  </div>
-  <div class="button-row gallery-preview-actions">
-    <a class="btn btn-secondary btn-view-gallery btn-gallery-open" href="gallery.html" data-i18n="gallery_view_cta">View Gallery</a>
-  </div>
+<div class="section-header">
+<h3 class="gallery-preview-title" data-i18n="gallery_preview_about_title">A visual side of my profile</h3>
+<p class="section-intro" data-i18n="gallery_preview_about_text">Selected moments from teaching, science, and everyday professional life that add a more personal dimension to the site.</p>
 </div>
-
+<div class="gallery-preview-grid" data-i18n-html="index_teaching_science_life">
+<a class="gallery-preview-tile" href="gallery.html#teaching"><figure><img alt="Teaching preview" src="assets/images/gallery/teaching/teaching-2.svg"/></figure><span class="gallery-preview-label" data-i18n="gallery_cat_teaching">Teaching</span></a>
+<a class="gallery-preview-tile" href="gallery.html#science"><figure><img alt="Science preview" src="assets/images/gallery/science/science-2.svg"/></figure><span class="gallery-preview-label" data-i18n="gallery_cat_science">Science</span></a>
+<a class="gallery-preview-tile" href="gallery.html#life"><figure><img alt="Life preview" src="assets/images/gallery/life/life-2.svg"/></figure><span class="gallery-preview-label" data-i18n="gallery_cat_life">Life</span></a>
+</div>
+<div class="button-row gallery-preview-actions">
+<a class="btn btn-secondary btn-view-gallery btn-gallery-open" data-i18n="gallery_view_cta" href="gallery.html">View Gallery</a>
+</div>
+</div>
 <div class="grid-2">
 <article class="detail-card soft-panel detail-card--summary">
-<h3 class="with-icon with-icon--summary">Professional summary</h3>
-<p>I am an interdisciplinary chemist, chemistry educator, and teacher in training with an academic background spanning Ukraine, France, and Switzerland. My educational path includes a Bachelor’s degree in Chemistry, a Master’s degree in Applied Physics and Nanomaterials, and a second Master’s degree in Nanoscale Engineering from <a href="https://www.ec-lyon.fr/en/academics/international-master-nanoscale-engineering" rel="noreferrer" target="_blank">École Centrale de Lyon</a>. I am currently enrolled at <a href="https://www.phbern.ch/studium/sekundarstufe-ii/studienuebersicht/monofachdiplom-fuer-maturitaetsschulen-mit-berufspaedagogischer-qualifikation" rel="noreferrer" target="_blank">PHBern</a> in the teaching diploma programme for upper secondary schools in chemistry, further strengthening my profile at the intersection of science, pedagogy, and international education.</p>
+<h3 class="with-icon with-icon--summary" data-i18n="about_professional_summary">Professional summary</h3>
+<p data-i18n-html="about_summary_html">I am an interdisciplinary chemist, chemistry educator, and teacher in training with an academic background spanning Ukraine, France, and Switzerland. My educational path includes a Bachelor’s degree in Chemistry, a Master’s degree in Applied Physics and Nanomaterials, and a second Master’s degree in Nanoscale Engineering from <a data-i18n="institution_ecole_centrale_de_lyon" href="https://www.ec-lyon.fr/en/academics/international-master-nanoscale-engineering" rel="noreferrer" target="_blank">École Centrale de Lyon</a>. I am currently enrolled at <a data-i18n="institution_phbern" href="https://www.phbern.ch/studium/sekundarstufe-ii/studienuebersicht/monofachdiplom-fuer-maturitaetsschulen-mit-berufspaedagogischer-qualifikation" rel="noreferrer" target="_blank">PHBern</a> in the teaching diploma programme for upper secondary schools in chemistry, further strengthening my profile at the intersection of science, pedagogy, and international education.</p>
 </article>
 <article class="detail-card accent-panel detail-card--values">
-<h3 class="with-icon with-icon--values">Values and orientation</h3>
-<p>My work is shaped by clarity, curiosity, precision, openness, and long-term growth. I care about scientific depth, but I also care about how people understand, feel, and develop while learning. This gives my work a distinctly multilingual and intercultural dimension.</p>
+<h3 class="with-icon with-icon--values" data-i18n="about_values_and_orientation">Values and orientation</h3>
+<p data-i18n="about_my_work_is_shaped_by_clarity">My work is shaped by clarity, curiosity, precision, openness, and long-term growth. I care about scientific depth, but I also care about how people understand, feel, and develop while learning. This gives my work a distinctly multilingual and intercultural dimension.</p>
 <div class="tag-row" style="margin-top:1rem;">
-<span class="tag">Clarity</span>
-<span class="tag">Curiosity</span>
-<span class="tag">Precision</span>
-<span class="tag">Openness</span>
-<span class="tag">Long-term growth</span>
+<span class="tag" data-i18n="about_clarity">Clarity</span>
+<span class="tag" data-i18n="about_curiosity">Curiosity</span>
+<span class="tag" data-i18n="about_precision">Precision</span>
+<span class="tag" data-i18n="about_openness">Openness</span>
+<span class="tag" data-i18n="about_long_term_growth">Long-term growth</span>
 </div>
 </article>
 </div>
 <details class="detail-card bio-accordion" style="margin-top:1rem;">
 <summary>
-<h3 class="with-icon with-icon--biography">Longer biography</h3>
-<p class="bio-accordion-preview">A fuller biographical narrative connecting early scientific interests, university studies, interdisciplinary research, and the long-term development of my teaching profile.</p>
+<h3 class="with-icon with-icon--biography" data-i18n="about_longer_biography">Longer biography</h3>
+<p class="bio-accordion-preview" data-i18n="about_a_fuller_biographical_narrative_connecting_early">A fuller biographical narrative connecting early scientific interests, university studies, interdisciplinary research, and the long-term development of my teaching profile.</p>
 </summary>
 <div class="bio-accordion-body">
-<p>From an early age, I was drawn to science and especially to chemistry. During my school years, that interest grew through Olympiads, advanced study, and a lasting curiosity about how the natural world works. My school path was already deeply connected with science: I studied in a chemistry- and biology-focused environment, took part in regional and national chemistry competitions, and gradually discovered that chemistry was not only a subject I enjoyed, but a field that truly shaped the way I think.</p>
-<p>This early passion led me to study Chemistry at <a href="https://iht.knu.ua/" rel="noreferrer" target="_blank">Taras Shevchenko National University of Kyiv</a>, where I built a strong scientific foundation and developed a growing interest in interdisciplinary science. Later, I continued with a Master’s degree in Applied Physics and Nanomaterials, and then completed a second Master’s degree in Nanoscale Engineering in France at <a href="https://www.ec-lyon.fr/en/academics/international-master-nanoscale-engineering" rel="noreferrer" target="_blank">École Centrale de Lyon</a>. These studies gave me an academic path that connects chemistry with physics, nanotechnology, biology, materials science, and modern laboratory research. Today, I continue this journey in Switzerland, where I am training as a chemistry teacher for upper secondary schools at <a href="https://www.phbern.ch/studium/sekundarstufe-ii/studienuebersicht/monofachdiplom-fuer-maturitaetsschulen-mit-berufspaedagogischer-qualifikation" rel="noreferrer" target="_blank">PHBern</a>.</p>
-<p>Alongside my studies, I have been teaching chemistry since the age of eighteen. What started with helping classmates and younger students gradually became a long-term commitment to tutoring, mentoring, and teaching learners from different countries and educational systems. Over the years, I have worked with school students, high school students, and university beginners, including preparation for demanding programs such as IB Diploma Chemistry. My teaching approach is shaped by both science and empathy: I believe chemistry should be taught clearly, patiently, and with real understanding, not just memorization.</p>
+<p data-i18n="about_from_an_early_age_i_was">From an early age, I was drawn to science and especially to chemistry. During my school years, that interest grew through Olympiads, advanced study, and a lasting curiosity about how the natural world works. My school path was already deeply connected with science: I studied in a chemistry- and biology-focused environment, took part in regional and national chemistry competitions, and gradually discovered that chemistry was not only a subject I enjoyed, but a field that truly shaped the way I think.</p>
+<p data-i18n-html="about_bio_studies_html">This early passion led me to study Chemistry at <a data-i18n="institution_taras_shevchenko_national_university_of_kyiv" href="https://iht.knu.ua/" rel="noreferrer" target="_blank">Taras Shevchenko National University of Kyiv</a>, where I built a strong scientific foundation and developed a growing interest in interdisciplinary science. Later, I continued with a Master’s degree in Applied Physics and Nanomaterials, and then completed a second Master’s degree in Nanoscale Engineering in France at <a data-i18n="institution_ecole_centrale_de_lyon" href="https://www.ec-lyon.fr/en/academics/international-master-nanoscale-engineering" rel="noreferrer" target="_blank">École Centrale de Lyon</a>. These studies gave me an academic path that connects chemistry with physics, nanotechnology, biology, materials science, and modern laboratory research. Today, I continue this journey in Switzerland, where I am training as a chemistry teacher for upper secondary schools at <a data-i18n="institution_phbern" href="https://www.phbern.ch/studium/sekundarstufe-ii/studienuebersicht/monofachdiplom-fuer-maturitaetsschulen-mit-berufspaedagogischer-qualifikation" rel="noreferrer" target="_blank">PHBern</a>.</p>
+<p data-i18n="about_alongside_my_studies_i_have_been">Alongside my studies, I have been teaching chemistry since the age of eighteen. What started with helping classmates and younger students gradually became a long-term commitment to tutoring, mentoring, and teaching learners from different countries and educational systems. Over the years, I have worked with school students, high school students, and university beginners, including preparation for demanding programs such as IB Diploma Chemistry. My teaching approach is shaped by both science and empathy: I believe chemistry should be taught clearly, patiently, and with real understanding, not just memorization.</p>
 </div>
 </details>
 <div class="section-header" style="margin-top:2rem; margin-bottom:1rem;">
-<h3 style="font-size:1.45rem; margin:0;">Academic journey timeline</h3>
+<h3 data-i18n="about_academic_journey_timeline" style="font-size:1.45rem; margin:0;">Academic journey timeline</h3>
 </div>
 <div class="timeline timeline--journey">
 <div class="timeline-item timeline-journey-item">
 <div class="timeline-year">
-<span>School years</span>
+<span data-i18n="about_school_years">School years</span>
 </div>
 <div class="timeline-content">
-<strong>School science and Olympiad background</strong>
-<p>Early scientific orientation, advanced study, and chemistry-focused school development.</p>
+<strong data-i18n="about_school_science_and_olympiad_background">School science and Olympiad background</strong>
+<p data-i18n="about_early_scientific_orientation_advanced_study_and">Early scientific orientation, advanced study, and chemistry-focused school development.</p>
 </div>
 </div>
 <div class="timeline-item timeline-journey-item">
 <div class="timeline-year">
-<span>Kyiv</span>
+<span data-i18n="about_kyiv">Kyiv</span>
 </div>
 <div class="timeline-content">
-<strong>Bachelor in Chemistry</strong>
-<p>Scientific foundation built at <a href="https://iht.knu.ua/" rel="noreferrer" target="_blank">Taras Shevchenko National University of Kyiv</a>.</p>
+<strong data-i18n="highlight_2_title">Bachelor in Chemistry</strong>
+<p data-i18n-html="about_timeline_kyiv_html">Scientific foundation built at <a data-i18n="institution_taras_shevchenko_national_university_of_kyiv" href="https://iht.knu.ua/" rel="noreferrer" target="_blank">Taras Shevchenko National University of Kyiv</a>.</p>
 </div>
 </div>
 <div class="timeline-item timeline-journey-item">
 <div class="timeline-year">
-<span>Advanced study</span>
+<span data-i18n="about_advanced_study">Advanced study</span>
 </div>
 <div class="timeline-content">
-<strong>Master in Applied Physics and Nanomaterials</strong>
-<p>Interdisciplinary work connecting chemistry, materials, and physics.</p>
+<strong data-i18n="about_master_in_applied_physics_and_nanomaterials">Master in Applied Physics and Nanomaterials</strong>
+<p data-i18n="about_interdisciplinary_work_connecting_chemistry_materials_and">Interdisciplinary work connecting chemistry, materials, and physics.</p>
 </div>
 </div>
 <div class="timeline-item timeline-journey-item">
 <div class="timeline-year">
-<span>France</span>
+<span data-i18n="hero_mini_geo_2">France</span>
 </div>
 <div class="timeline-content">
-<strong>Master in Nanoscale Engineering</strong>
-<p>Completed at <a href="https://www.ec-lyon.fr/en/academics/international-master-nanoscale-engineering" rel="noreferrer" target="_blank">École Centrale de Lyon</a> with international scientific exposure.</p>
+<strong data-i18n="about_master_in_nanoscale_engineering">Master in Nanoscale Engineering</strong>
+<p data-i18n-html="about_timeline_france_html">Completed at <a data-i18n="institution_ecole_centrale_de_lyon" href="https://www.ec-lyon.fr/en/academics/international-master-nanoscale-engineering" rel="noreferrer" target="_blank">École Centrale de Lyon</a> with international scientific exposure.</p>
 </div>
 </div>
 <div class="timeline-item timeline-journey-item">
 <div class="timeline-year">
-<span>Switzerland</span>
+<span data-i18n="hero_mini_geo_3">Switzerland</span>
 </div>
 <div class="timeline-content">
-<strong>Teacher education in chemistry</strong>
-<p>Professional pedagogical development at <a href="https://www.phbern.ch/studium/sekundarstufe-ii/studienuebersicht/monofachdiplom-fuer-maturitaetsschulen-mit-berufspaedagogischer-qualifikation" rel="noreferrer" target="_blank">PHBern</a>.</p>
+<strong data-i18n="about_teacher_education_in_chemistry">Teacher education in chemistry</strong>
+<p data-i18n-html="about_timeline_switzerland_html">Professional pedagogical development at <a data-i18n="institution_phbern" href="https://www.phbern.ch/studium/sekundarstufe-ii/studienuebersicht/monofachdiplom-fuer-maturitaetsschulen-mit-berufspaedagogischer-qualifikation" rel="noreferrer" target="_blank">PHBern</a>.</p>
 </div>
 </div>
 </div>
 <div class="skills-section">
 <div class="section-header skills-section-header">
-<h3>Skills &amp; Expertise</h3>
-<p class="section-intro">A structured overview of my scientific, pedagogical, analytical, and interdisciplinary competencies developed through academic training, laboratory work, and teaching experience.</p>
+<h3 data-i18n="about_skills_expertise">Skills &amp; Expertise</h3>
+<p class="section-intro" data-i18n="about_a_structured_overview_of_my_scientific">A structured overview of my scientific, pedagogical, analytical, and interdisciplinary competencies developed through academic training, laboratory work, and teaching experience.</p>
 </div>
 <div class="skills-grid">
 <details class="skills-card skills-accordion">
 <summary>
-<h4 class="skills-card-title">Teaching &amp; Didactics</h4>
-<p class="skills-card-intro">Focus on chemistry teaching, interdisciplinary instruction, and student-centered learning across different educational contexts.</p>
+<h4 class="skills-card-title" data-i18n="about_teaching_didactics">Teaching &amp; Didactics</h4>
+<p class="skills-card-intro" data-i18n="about_focus_on_chemistry_teaching_interdisciplinary_instruction">Focus on chemistry teaching, interdisciplinary instruction, and student-centered learning across different educational contexts.</p>
 </summary>
 <div class="skills-accordion-body">
 <ul class="skills-list">
-<li>Chemistry teaching at secondary and upper-secondary level</li>
-<li>Interdisciplinary teaching of chemistry with links to biology, medicine, and materials science</li>
-<li>Experimental teaching and laboratory-based instruction</li>
-<li>Individual learning support and exam preparation</li>
-<li>Clear explanation of demanding scientific content</li>
-<li>Teaching experience with Swiss cantonal curricula</li>
-<li>Teaching experience with IB Diploma Chemistry</li>
-<li>Teaching experience connected to the Ukrainian school system</li>
-<li>Support for university students in general chemistry</li>
-<li>Lesson planning, assessment, and feedback</li>
-<li>Communication with parents</li>
-<li>School-based logistics and chemistry classroom organisation</li>
+<li data-i18n="about_chemistry_teaching_at_secondary_and_upper">Chemistry teaching at secondary and upper-secondary level</li>
+<li data-i18n="about_interdisciplinary_teaching_of_chemistry_with_links">Interdisciplinary teaching of chemistry with links to biology, medicine, and materials science</li>
+<li data-i18n="about_experimental_teaching_and_laboratory_based_instruction">Experimental teaching and laboratory-based instruction</li>
+<li data-i18n="about_individual_learning_support_and_exam_preparation">Individual learning support and exam preparation</li>
+<li data-i18n="about_clear_explanation_of_demanding_scientific_content">Clear explanation of demanding scientific content</li>
+<li data-i18n="about_teaching_experience_with_swiss_cantonal_curricula">Teaching experience with Swiss cantonal curricula</li>
+<li data-i18n="about_teaching_experience_with_ib_diploma_chemistry">Teaching experience with IB Diploma Chemistry</li>
+<li data-i18n="about_teaching_experience_connected_to_the_ukrainian">Teaching experience connected to the Ukrainian school system</li>
+<li data-i18n="about_support_for_university_students_in_general">Support for university students in general chemistry</li>
+<li data-i18n="about_lesson_planning_assessment_and_feedback">Lesson planning, assessment, and feedback</li>
+<li data-i18n="about_communication_with_parents">Communication with parents</li>
+<li data-i18n="about_school_based_logistics_and_chemistry_classroom">School-based logistics and chemistry classroom organisation</li>
 </ul>
 </div>
 </details>
 <details class="skills-card skills-accordion">
 <summary>
-<h4 class="skills-card-title">Chemistry Specializations</h4>
-<p class="skills-card-intro">Scientific profile developed at the intersection of chemistry, nanotechnology, applied physics, and interdisciplinary research.</p>
+<h4 class="skills-card-title" data-i18n="about_chemistry_specializations">Chemistry Specializations</h4>
+<p class="skills-card-intro" data-i18n="about_scientific_profile_developed_at_the_intersection">Scientific profile developed at the intersection of chemistry, nanotechnology, applied physics, and interdisciplinary research.</p>
 </summary>
 <div class="skills-accordion-body">
 <ul class="skills-list">
-<li>Nanochemistry in drug design</li>
-<li>EDC/NHS bioconjugation techniques</li>
-<li>Strain-promoted click chemistry</li>
-<li>Supramolecular chemistry and molecular interactions</li>
-<li>Organic chemistry and synthesis</li>
-<li>Organic synthesis on scales up to 50 g</li>
-<li>Molecular modelling using molecular mechanics and quantum chemistry methods</li>
-<li>Interdisciplinary work connecting chemistry, physics, and materials science</li>
-<li>Familiarity with GMP-related infrastructure</li>
-<li>Familiarity with USP, Ph. Eur., and ICH quality guidelines</li>
-<li>Interest in pharmaceutical, biomedical, and oncology-oriented applications</li>
+<li data-i18n="about_nanochemistry_in_drug_design">Nanochemistry in drug design</li>
+<li data-i18n="about_edc_nhs_bioconjugation_techniques">EDC/NHS bioconjugation techniques</li>
+<li data-i18n="about_strain_promoted_click_chemistry">Strain-promoted click chemistry</li>
+<li data-i18n="about_supramolecular_chemistry_and_molecular_interactions">Supramolecular chemistry and molecular interactions</li>
+<li data-i18n="about_organic_chemistry_and_synthesis">Organic chemistry and synthesis</li>
+<li data-i18n="about_organic_synthesis_on_scales_up_to">Organic synthesis on scales up to 50 g</li>
+<li data-i18n="about_molecular_modelling_using_molecular_mechanics_and">Molecular modelling using molecular mechanics and quantum chemistry methods</li>
+<li data-i18n="about_interdisciplinary_work_connecting_chemistry_physics_and">Interdisciplinary work connecting chemistry, physics, and materials science</li>
+<li data-i18n="about_familiarity_with_gmp_related_infrastructure">Familiarity with GMP-related infrastructure</li>
+<li data-i18n="about_familiarity_with_usp_ph_eur_and">Familiarity with USP, Ph. Eur., and ICH quality guidelines</li>
+<li data-i18n="about_interest_in_pharmaceutical_biomedical_and_oncology">Interest in pharmaceutical, biomedical, and oncology-oriented applications</li>
 </ul>
 </div>
 </details>
 <details class="skills-card skills-accordion">
 <summary>
-<h4 class="skills-card-title">Analytical &amp; Laboratory Methods</h4>
-<p class="skills-card-intro">Hands-on experience with analytical, instrumental, and laboratory methods used in chemistry and interdisciplinary scientific work.</p>
+<h4 class="skills-card-title" data-i18n="about_analytical_laboratory_methods">Analytical &amp; Laboratory Methods</h4>
+<p class="skills-card-intro" data-i18n="about_hands_on_experience_with_analytical_instrumental">Hands-on experience with analytical, instrumental, and laboratory methods used in chemistry and interdisciplinary scientific work.</p>
 </summary>
 <div class="skills-accordion-body">
 <ul class="skills-list">
-<li>SEC/RP-HPLC</li>
-<li>LC-MS</li>
-<li>ICP-MS</li>
-<li>MALDI-ToF</li>
-<li>UV-Vis spectroscopy</li>
-<li>IR spectroscopy</li>
-<li>NMR</li>
-<li>X-ray methods</li>
-<li>PES</li>
-<li>DLS and zeta potential</li>
-<li>AES</li>
-<li>AAS</li>
-<li>pH measurement</li>
-<li>TLC</li>
-<li>Column chromatography</li>
-<li>Qualitative and quantitative analysis</li>
-<li>Volumetric titrations (acid-base, redox, EDTA)</li>
-<li>Potentiometric titrations</li>
-<li>Electrochemistry and electrolysis</li>
-<li>SPR biosensors</li>
-<li>PCR</li>
+<li data-i18n="about_sec_rp_hplc">SEC/RP-HPLC</li>
+<li data-i18n="about_lc_ms">LC-MS</li>
+<li data-i18n="about_icp_ms">ICP-MS</li>
+<li data-i18n="about_maldi_tof">MALDI-ToF</li>
+<li data-i18n="about_uv_vis_spectroscopy">UV-Vis spectroscopy</li>
+<li data-i18n="about_ir_spectroscopy">IR spectroscopy</li>
+<li data-i18n="about_nmr">NMR</li>
+<li data-i18n="about_x_ray_methods">X-ray methods</li>
+<li data-i18n="about_pes">PES</li>
+<li data-i18n="about_dls_and_zeta_potential">DLS and zeta potential</li>
+<li data-i18n="about_aes">AES</li>
+<li data-i18n="about_aas">AAS</li>
+<li data-i18n="about_ph_measurement">pH measurement</li>
+<li data-i18n="about_tlc">TLC</li>
+<li data-i18n="about_column_chromatography">Column chromatography</li>
+<li data-i18n="about_qualitative_and_quantitative_analysis">Qualitative and quantitative analysis</li>
+<li data-i18n="about_volumetric_titrations_acid_base_redox_edta">Volumetric titrations (acid-base, redox, EDTA)</li>
+<li data-i18n="about_potentiometric_titrations">Potentiometric titrations</li>
+<li data-i18n="about_electrochemistry_and_electrolysis">Electrochemistry and electrolysis</li>
+<li data-i18n="about_spr_biosensors">SPR biosensors</li>
+<li data-i18n="about_pcr">PCR</li>
 </ul>
 </div>
 </details>
 <details class="skills-card skills-accordion">
 <summary>
-<h4 class="skills-card-title">Digital &amp; Scientific Tools</h4>
-<p class="skills-card-intro">Digital, scientific, and visualisation tools used for chemistry, research support, teaching, and data-related work.</p>
+<h4 class="skills-card-title" data-i18n="about_digital_scientific_tools">Digital &amp; Scientific Tools</h4>
+<p class="skills-card-intro" data-i18n="about_digital_scientific_and_visualisation_tools_used">Digital, scientific, and visualisation tools used for chemistry, research support, teaching, and data-related work.</p>
 </summary>
 <div class="skills-accordion-body">
 <ul class="skills-list">
-<li>RCSB PDB</li>
-<li>UniProt</li>
-<li>DrugBank</li>
-<li>PCModel</li>
-<li>HyperChem</li>
-<li>Avogadro</li>
-<li>Mercury by CCDC</li>
-<li>BIOVIA Draw</li>
-<li>Discovery Studio Visualizer</li>
-<li>ChemDraw</li>
-<li>ACD/ChemSketch</li>
-<li>MNova</li>
-<li>Wolfram Mathematica</li>
-<li>MagicPlot</li>
-<li>ImageJ</li>
-<li>OriginLab</li>
-<li>Microsoft Office &amp; Google Docs, Slides and Sheets</li>
-<li>Google Antigravity</li>
-<li>NotebookLM</li>
-<li>AI tools such as ChatGPT, Claude, and Gemini for teaching, data analysis, content creation, web development, study support, and structured data-related tasks</li>
+<li data-i18n="about_rcsb_pdb">RCSB PDB</li>
+<li data-i18n="about_uniprot">UniProt</li>
+<li data-i18n="about_drugbank">DrugBank</li>
+<li data-i18n="about_pcmodel">PCModel</li>
+<li data-i18n="about_hyperchem">HyperChem</li>
+<li data-i18n="about_avogadro">Avogadro</li>
+<li data-i18n="about_mercury_by_ccdc">Mercury by CCDC</li>
+<li data-i18n="about_biovia_draw">BIOVIA Draw</li>
+<li data-i18n="about_discovery_studio_visualizer">Discovery Studio Visualizer</li>
+<li data-i18n="about_chemdraw">ChemDraw</li>
+<li data-i18n="about_acd_chemsketch">ACD/ChemSketch</li>
+<li data-i18n="about_mnova">MNova</li>
+<li data-i18n="about_wolfram_mathematica">Wolfram Mathematica</li>
+<li data-i18n="about_magicplot">MagicPlot</li>
+<li data-i18n="about_imagej">ImageJ</li>
+<li data-i18n="about_originlab">OriginLab</li>
+<li data-i18n="about_microsoft_office_google_docs_slides_and">Microsoft Office &amp; Google Docs, Slides and Sheets</li>
+<li data-i18n="about_google_antigravity">Google Antigravity</li>
+<li data-i18n="about_notebooklm">NotebookLM</li>
+<li data-i18n="about_ai_tools_such_as_chatgpt_claude">AI tools such as ChatGPT, Claude, and Gemini for teaching, data analysis, content creation, web development, study support, and structured data-related tasks</li>
 </ul>
 </div>
 </details>
 <details class="skills-card skills-accordion">
 <summary>
-<h4 class="skills-card-title">Organisation &amp; Coordination</h4>
-<p class="skills-card-intro">Experience in academic coordination, educational organisation, and responsibility in teaching and student-related environments.</p>
+<h4 class="skills-card-title" data-i18n="about_organisation_coordination">Organisation &amp; Coordination</h4>
+<p class="skills-card-intro" data-i18n="about_experience_in_academic_coordination_educational_organisation">Experience in academic coordination, educational organisation, and responsibility in teaching and student-related environments.</p>
 </summary>
 <div class="skills-accordion-body">
 <ul class="skills-list">
-<li>Logistics and educational management as a chemistry teacher</li>
-<li>Preparation and supervision of student activities</li>
-<li>Substitute teaching and support for school continuity</li>
-<li>Management of chemicals and materials for school use</li>
-<li>Maintaining safety and order in chemistry teaching environments</li>
-<li>Leadership of an academic student group for 5 years</li>
-<li>Coordination of academic group productivity and communication</li>
-<li>Revision of schedules and communication with professors</li>
-<li>Support for university administration</li>
-<li>Leadership experience in student residence council work</li>
-<li>Mediation between students and administration</li>
-<li>Coordination and support in residence settings involving large student groups</li>
-<li>Training of company employees in social media-related work</li>
+<li data-i18n="about_logistics_and_educational_management_as_a">Logistics and educational management as a chemistry teacher</li>
+<li data-i18n="about_preparation_and_supervision_of_student_activities">Preparation and supervision of student activities</li>
+<li data-i18n="about_substitute_teaching_and_support_for_school">Substitute teaching and support for school continuity</li>
+<li data-i18n="about_management_of_chemicals_and_materials_for">Management of chemicals and materials for school use</li>
+<li data-i18n="about_maintaining_safety_and_order_in_chemistry">Maintaining safety and order in chemistry teaching environments</li>
+<li data-i18n="about_leadership_of_an_academic_student_group">Leadership of an academic student group for 5 years</li>
+<li data-i18n="about_coordination_of_academic_group_productivity_and">Coordination of academic group productivity and communication</li>
+<li data-i18n="about_revision_of_schedules_and_communication_with">Revision of schedules and communication with professors</li>
+<li data-i18n="about_support_for_university_administration">Support for university administration</li>
+<li data-i18n="about_leadership_experience_in_student_residence_council">Leadership experience in student residence council work</li>
+<li data-i18n="about_mediation_between_students_and_administration">Mediation between students and administration</li>
+<li data-i18n="about_coordination_and_support_in_residence_settings">Coordination and support in residence settings involving large student groups</li>
+<li data-i18n="about_training_of_company_employees_in_social">Training of company employees in social media-related work</li>
 </ul>
 </div>
 </details>
 <details class="skills-card skills-accordion">
 <summary>
-<h4 class="skills-card-title">Languages</h4>
-<p class="skills-card-intro">Multilingual profile that supports both teaching and communication across different academic and cultural environments.</p>
+<h4 class="skills-card-title" data-i18n="library_sidebar_languages">Languages</h4>
+<p class="skills-card-intro" data-i18n="about_multilingual_profile_that_supports_both_teaching">Multilingual profile that supports both teaching and communication across different academic and cultural environments.</p>
 </summary>
 <div class="skills-accordion-body">
 <ul class="skills-list">
-<li>Ukrainian — native</li>
-<li>Russian — native</li>
-<li>German — C1</li>
-<li>English — C1</li>
-<li>Polish — B1</li>
-<li>Spanish — B1</li>
-<li>French — A2</li>
-<li>Swiss German — A2</li>
-<li>Portuguese — A1</li>
+<li data-i18n="about_ukrainian_native">Ukrainian — native</li>
+<li data-i18n="about_russian_native">Russian — native</li>
+<li data-i18n="about_german_c1">German — C1</li>
+<li data-i18n="about_english_c1">English — C1</li>
+<li data-i18n="about_polish_b1">Polish — B1</li>
+<li data-i18n="about_spanish_b1">Spanish — B1</li>
+<li data-i18n="about_french_a2">French — A2</li>
+<li data-i18n="about_swiss_german_a2">Swiss German — A2</li>
+<li data-i18n="about_portuguese_a1">Portuguese — A1</li>
 </ul>
 </div>
 </details>
 </div>
 <div class="section-header" style="margin-top:2.2rem; margin-bottom:1rem;">
-<h3 style="font-size:1.45rem; margin:0;">Professional Experience</h3>
-<p class="section-intro">My professional background brings together two closely connected paths: teaching and education, and chemistry-based scientific work. Over the years, I have developed both as an educator and as an interdisciplinary chemist, combining classroom teaching, private tutoring, laboratory work, and research-oriented project experience in Ukraine, France, and Switzerland.</p>
+<h3 data-i18n="about_professional_experience" style="font-size:1.45rem; margin:0;">Professional Experience</h3>
+<p class="section-intro" data-i18n="about_my_professional_background_brings_together_two">My professional background brings together two closely connected paths: teaching and education, and chemistry-based scientific work. Over the years, I have developed both as an educator and as an interdisciplinary chemist, combining classroom teaching, private tutoring, laboratory work, and research-oriented project experience in Ukraine, France, and Switzerland.</p>
 </div>
 <div class="tabs-shell" data-tabs="">
-<div aria-label="Professional experience tabs" class="tab-buttons" role="tablist">
-<button aria-selected="true" class="tab-btn active" data-tab-target="teaching-experience" role="tab" type="button">Teaching Experience</button>
-<button aria-selected="false" class="tab-btn" data-tab-target="scientific-experience" role="tab" type="button">Chemistry &amp; Scientific Experience</button>
+<div aria-label="Professional experience tabs" class="tab-buttons" data-i18n-aria-label="about_professional_experience_tabs_aria_label" role="tablist">
+<button aria-selected="true" class="tab-btn active" data-i18n="about_teaching_experience" data-tab-target="teaching-experience" role="tab" type="button">Teaching Experience</button>
+<button aria-selected="false" class="tab-btn" data-i18n="about_chemistry_scientific_experience" data-tab-target="scientific-experience" role="tab" type="button">Chemistry &amp; Scientific Experience</button>
 </div>
 <div class="tab-panel active" id="teaching-experience" role="tabpanel">
 <div class="experience-grid">
 <article class="experience-card">
 <div class="experience-meta">
-<div class="experience-role">Chemistry Teacher</div>
+<div class="experience-role" data-i18n="about_chemistry_teacher">Chemistry Teacher</div>
 <div class="experience-place">
-<a class="experience-link" href="https://brobots.org.ua/" rel="noreferrer" target="_blank">#brobots Engineering School</a>
+<a class="experience-link" data-i18n="about_brobots_engineering_school" href="https://brobots.org.ua/" rel="noreferrer" target="_blank">#brobots Engineering School</a>
 </div>
-<div class="experience-location">Kyiv, Ukraine</div>
-<div class="experience-dates">September 2020 – May 2022</div>
+<div class="experience-location" data-i18n="about_kyiv_ukraine">Kyiv, Ukraine</div>
+<div class="experience-dates" data-i18n="about_september_2020_may_2022">September 2020 – May 2022</div>
 </div>
-<p>Worked as a chemistry teacher in a private engineering school in Kyiv. Taught chemistry in an applied and student-oriented way, helping learners develop stronger scientific understanding through structured explanation and practical examples.</p>
+<p data-i18n="about_worked_as_a_chemistry_teacher_in">Worked as a chemistry teacher in a private engineering school in Kyiv. Taught chemistry in an applied and student-oriented way, helping learners develop stronger scientific understanding through structured explanation and practical examples.</p>
 </article>
 <article class="experience-card">
 <div class="experience-meta">
-<div class="experience-role">Private Chemistry Tutor</div>
-<div class="experience-place">Independent / Online</div>
-<div class="experience-location">Ukraine</div>
-<div class="experience-dates">Since 2018</div>
+<div class="experience-role" data-i18n="about_private_chemistry_tutor">Private Chemistry Tutor</div>
+<div class="experience-place" data-i18n="about_independent_online">Independent / Online</div>
+<div class="experience-location" data-i18n="hero_mini_geo_1">Ukraine</div>
+<div class="experience-dates" data-i18n="about_since_2018">Since 2018</div>
 </div>
-<p>Provided long-term private tutoring in chemistry for school students and other learners. This work included regular subject support, concept explanation, and exam-oriented preparation, and became the foundation of my broader teaching practice.</p>
+<p data-i18n="about_provided_long_term_private_tutoring_in">Provided long-term private tutoring in chemistry for school students and other learners. This work included regular subject support, concept explanation, and exam-oriented preparation, and became the foundation of my broader teaching practice.</p>
 </article>
 <article class="experience-card">
 <div class="experience-meta">
-<div class="experience-role">Private Chemistry Tutor</div>
-<div class="experience-place">Independent / Online</div>
-<div class="experience-location">Switzerland</div>
-<div class="experience-dates">Since August 2023</div>
+<div class="experience-role" data-i18n="about_private_chemistry_tutor">Private Chemistry Tutor</div>
+<div class="experience-place" data-i18n="about_independent_online">Independent / Online</div>
+<div class="experience-location" data-i18n="hero_mini_geo_3">Switzerland</div>
+<div class="experience-dates" data-i18n="about_since_august_2023">Since August 2023</div>
 </div>
-<p>Offering online chemistry tutoring for learners in Switzerland, including support for school-level chemistry, upper-secondary chemistry, and individualized academic guidance.</p>
+<p data-i18n="about_offering_online_chemistry_tutoring_for_learners">Offering online chemistry tutoring for learners in Switzerland, including support for school-level chemistry, upper-secondary chemistry, and individualized academic guidance.</p>
 </article>
 <article class="experience-card">
 <div class="experience-meta">
-<div class="experience-role">Introductory Teaching Internship in Chemistry</div>
+<div class="experience-role" data-i18n="about_introductory_teaching_internship_in_chemistry">Introductory Teaching Internship in Chemistry</div>
 <div class="experience-place">
-<a class="experience-link" href="https://gymneufeld.ch/" rel="noreferrer" target="_blank">Gymnasium Neufeld</a>
+<a class="experience-link" data-i18n="about_gymnasium_neufeld" href="https://gymneufeld.ch/" rel="noreferrer" target="_blank">Gymnasium Neufeld</a>
 </div>
-<div class="experience-location">Bern, Switzerland</div>
-<div class="experience-dates">August 2024 – September 2024</div>
+<div class="experience-location" data-i18n="about_bern_switzerland">Bern, Switzerland</div>
+<div class="experience-dates" data-i18n="about_august_2024_september_2024">August 2024 – September 2024</div>
 </div>
-<p>Completed an introductory teaching internship in chemistry at Gymnasium Neufeld, gaining direct classroom experience in the Swiss upper-secondary school context.</p>
+<p data-i18n="about_completed_an_introductory_teaching_internship_in">Completed an introductory teaching internship in chemistry at Gymnasium Neufeld, gaining direct classroom experience in the Swiss upper-secondary school context.</p>
 </article>
 <article class="experience-card">
 <div class="experience-meta">
-<div class="experience-role">Substitute Chemistry Teacher</div>
+<div class="experience-role" data-i18n="about_substitute_chemistry_teacher">Substitute Chemistry Teacher</div>
 <div class="experience-place">
-<a class="experience-link" href="https://www.muristalden.ch/" rel="noreferrer" target="_blank">Gymnasium Campus Muristalden</a>
+<a class="experience-link" data-i18n="about_gymnasium_campus_muristalden" href="https://www.muristalden.ch/" rel="noreferrer" target="_blank">Gymnasium Campus Muristalden</a>
 </div>
-<div class="experience-location">Bern, Switzerland</div>
-<div class="experience-dates">August 2024 – September 2024</div>
+<div class="experience-location" data-i18n="about_bern_switzerland">Bern, Switzerland</div>
+<div class="experience-dates" data-i18n="about_august_2024_september_2024">August 2024 – September 2024</div>
 </div>
-<p>Worked as a substitute chemistry teacher in high school classes, teaching in a Swiss school environment and supporting continuity in subject instruction, laboratory experiments, and a project week.</p>
+<p data-i18n="about_worked_as_a_substitute_chemistry_teacher">Worked as a substitute chemistry teacher in high school classes, teaching in a Swiss school environment and supporting continuity in subject instruction, laboratory experiments, and a project week.</p>
 </article>
 <article class="experience-card">
 <div class="experience-meta">
-<div class="experience-role">Substitute Teacher</div>
+<div class="experience-role" data-i18n="about_substitute_teacher">Substitute Teacher</div>
 <div class="experience-place">
-<a class="experience-link" href="https://kirchenfeld-schosshalde.ch/manuel" rel="noreferrer" target="_blank">Schulhaus Manuel</a>
+<a class="experience-link" data-i18n="about_schulhaus_manuel" href="https://kirchenfeld-schosshalde.ch/manuel" rel="noreferrer" target="_blank">Schulhaus Manuel</a>
 </div>
-<div class="experience-location">Bern, Switzerland</div>
-<div class="experience-dates">November 2024 – December 2024</div>
+<div class="experience-location" data-i18n="about_bern_switzerland">Bern, Switzerland</div>
+<div class="experience-dates" data-i18n="about_november_2024_december_2024">November 2024 – December 2024</div>
 </div>
-<p>Worked as a substitute teacher in a secondary school setting (Nature &amp; Technology, Mathematics, Individual Preparation, Physical Education), gaining broader practical teaching experience in the Swiss education system.</p>
+<p data-i18n="about_worked_as_a_substitute_teacher_in">Worked as a substitute teacher in a secondary school setting (Nature &amp; Technology, Mathematics, Individual Preparation, Physical Education), gaining broader practical teaching experience in the Swiss education system.</p>
 </article>
 <article class="experience-card">
 <div class="experience-meta">
-<div class="experience-role">German as a Foreign Language Teacher for Ukrainians</div>
-<div class="experience-place">Community-Based</div>
-<div class="experience-location">Online</div>
-<div class="experience-dates">2024 – 2025</div>
+<div class="experience-role" data-i18n="about_german_as_a_foreign_language_teacher">German as a Foreign Language Teacher for Ukrainians</div>
+<div class="experience-place" data-i18n="about_community_based">Community-Based</div>
+<div class="experience-location" data-i18n="about_online">Online</div>
+<div class="experience-dates" data-i18n="about_2024_2025">2024 – 2025</div>
 </div>
-<p>Taught German as a foreign language (A1–B2) to Ukrainian learners, supporting language development and practical communication skills in a multilingual and intercultural context.</p>
+<p data-i18n="about_taught_german_as_a_foreign_language">Taught German as a foreign language (A1–B2) to Ukrainian learners, supporting language development and practical communication skills in a multilingual and intercultural context.</p>
 </article>
 <article class="experience-card">
 <div class="experience-meta">
-<div class="experience-role">Substitute Teacher</div>
+<div class="experience-role" data-i18n="about_substitute_teacher">Substitute Teacher</div>
 <div class="experience-place">
-<a class="experience-link" href="https://laenggasse-felsenau.ch/hochfeld_1" rel="noreferrer" target="_blank">Sekundarschule Hochfeld 1</a>
+<a class="experience-link" data-i18n="about_sekundarschule_hochfeld_1" href="https://laenggasse-felsenau.ch/hochfeld_1" rel="noreferrer" target="_blank">Sekundarschule Hochfeld 1</a>
 </div>
-<div class="experience-location">Bern, Switzerland</div>
-<div class="experience-dates">March 2025 – May 2025</div>
+<div class="experience-location" data-i18n="about_bern_switzerland">Bern, Switzerland</div>
+<div class="experience-dates" data-i18n="about_march_2025_may_2025">March 2025 – May 2025</div>
 </div>
-<p>Worked as a substitute teacher in a Swiss secondary school (Nature &amp; Technology), gaining broader classroom experience across different learner groups.</p>
+<p data-i18n="about_worked_as_a_substitute_teacher_in_2">Worked as a substitute teacher in a Swiss secondary school (Nature &amp; Technology), gaining broader classroom experience across different learner groups.</p>
 </article>
 <article class="experience-card">
 <div class="experience-meta">
-<div class="experience-role">Substitute Teacher</div>
+<div class="experience-role" data-i18n="about_substitute_teacher">Substitute Teacher</div>
 <div class="experience-place">
-<a class="experience-link" href="https://www.buchholz.ch/" rel="noreferrer" target="_blank">Oberstufenschule Buchholz</a>
+<a class="experience-link" data-i18n="about_oberstufenschule_buchholz" href="https://www.buchholz.ch/" rel="noreferrer" target="_blank">Oberstufenschule Buchholz</a>
 </div>
-<div class="experience-location">Thun, Switzerland</div>
-<div class="experience-dates">October 2025</div>
+<div class="experience-location" data-i18n="about_thun_switzerland">Thun, Switzerland</div>
+<div class="experience-dates" data-i18n="about_october_2025">October 2025</div>
 </div>
-<p>Worked as a substitute teacher in English and German, broadening my teaching profile beyond chemistry and strengthening my multilingual educational practice.</p>
+<p data-i18n="about_worked_as_a_substitute_teacher_in_3">Worked as a substitute teacher in English and German, broadening my teaching profile beyond chemistry and strengthening my multilingual educational practice.</p>
 </article>
 <article class="experience-card">
 <div class="experience-meta">
-<div class="experience-role">Substitute Chemistry Teacher</div>
+<div class="experience-role" data-i18n="about_substitute_chemistry_teacher">Substitute Chemistry Teacher</div>
 <div class="experience-place">
-<a class="experience-link" href="https://gymneufeld.ch/" rel="noreferrer" target="_blank">Gymnasium Neufeld</a>
+<a class="experience-link" data-i18n="about_gymnasium_neufeld" href="https://gymneufeld.ch/" rel="noreferrer" target="_blank">Gymnasium Neufeld</a>
 </div>
-<div class="experience-location">Bern, Switzerland</div>
-<div class="experience-dates">October 2025 – November 2025</div>
+<div class="experience-location" data-i18n="about_bern_switzerland">Bern, Switzerland</div>
+<div class="experience-dates" data-i18n="about_october_2025_november_2025">October 2025 – November 2025</div>
 </div>
-<p>Taught chemistry as a substitute teacher in FMS classes, including the Fachmaturität Pädagogik track.</p>
+<p data-i18n="about_taught_chemistry_as_a_substitute_teacher">Taught chemistry as a substitute teacher in FMS classes, including the Fachmaturität Pädagogik track.</p>
 </article>
 </div>
 </div>
@@ -441,47 +457,47 @@
 <div class="experience-grid">
 <article class="experience-card">
 <div class="experience-meta">
-<div class="experience-role">Marketing Department Engineer</div>
+<div class="experience-role" data-i18n="about_marketing_department_engineer">Marketing Department Engineer</div>
 <div class="experience-place">
-<a class="experience-link" href="https://iflab.com/" rel="noreferrer" target="_blank">LLC I.F.LAB</a> / <a class="experience-link" href="https://lifechemicals.com/" rel="noreferrer" target="_blank">Life Chemicals</a>
+<a class="experience-link" data-i18n="about_llc_i_f_lab" href="https://iflab.com/" rel="noreferrer" target="_blank">LLC I.F.LAB</a> / <a class="experience-link" data-i18n="about_life_chemicals" href="https://lifechemicals.com/" rel="noreferrer" target="_blank">Life Chemicals</a>
 </div>
-<div class="experience-location">Paris, France / Kyiv, Ukraine</div>
-<div class="experience-dates">November 2022 – October 2023</div>
+<div class="experience-location" data-i18n="about_paris_france_kyiv_ukraine">Paris, France / Kyiv, Ukraine</div>
+<div class="experience-dates" data-i18n="about_november_2022_october_2023">November 2022 – October 2023</div>
 </div>
-<p>Worked in an interdisciplinary project environment connected to Horizon 2020 MILEAGE. This role combined project support, scientific communication, and interdisciplinary work in an international innovation environment.</p>
+<p data-i18n="about_worked_in_an_interdisciplinary_project_environment">Worked in an interdisciplinary project environment connected to Horizon 2020 MILEAGE. This role combined project support, scientific communication, and interdisciplinary work in an international innovation environment.</p>
 </article>
 <article class="experience-card">
 <div class="experience-meta">
-<div class="experience-role">Master’s Thesis Research in Nanochemistry</div>
+<div class="experience-role" data-i18n="about_master_s_thesis_research_in_nanochemistry">Master’s Thesis Research in Nanochemistry</div>
 <div class="experience-place">
-<a class="experience-link" href="https://ilm.univ-lyon1.fr/" rel="noreferrer" target="_blank">Institut Lumière Matière</a>
+<a class="experience-link" data-i18n="about_institut_lumi_re_mati_re" href="https://ilm.univ-lyon1.fr/" rel="noreferrer" target="_blank">Institut Lumière Matière</a>
 </div>
-<div class="experience-location">Lyon, France</div>
-<div class="experience-dates">March 2022 – July 2022</div>
+<div class="experience-location" data-i18n="about_lyon_france">Lyon, France</div>
+<div class="experience-dates" data-i18n="about_march_2022_july_2022">March 2022 – July 2022</div>
 </div>
-<p>Completed a Master’s thesis focused on the functionalization of ultrafine nanoparticles for active targeting of receptors of interest in oncology. This work strengthened my research profile in nanochemistry, biomedical applications, and interdisciplinary laboratory science.</p>
+<p data-i18n="about_completed_a_master_s_thesis_focused">Completed a Master’s thesis focused on the functionalization of ultrafine nanoparticles for active targeting of receptors of interest in oncology. This work strengthened my research profile in nanochemistry, biomedical applications, and interdisciplinary laboratory science.</p>
 </article>
 <article class="experience-card">
 <div class="experience-meta">
-<div class="experience-role">Chemist / Bachelor’s Thesis in Supramolecular Chemistry</div>
+<div class="experience-role" data-i18n="about_chemist_bachelor_s_thesis_in_supramolecular">Chemist / Bachelor’s Thesis in Supramolecular Chemistry</div>
 <div class="experience-place">
-<a class="experience-link" href="https://iflab.com/" rel="noreferrer" target="_blank">LLC I.F.LAB</a> / <a class="experience-link" href="https://lifechemicals.com/" rel="noreferrer" target="_blank">Life Chemicals</a>
+<a class="experience-link" data-i18n="about_llc_i_f_lab" href="https://iflab.com/" rel="noreferrer" target="_blank">LLC I.F.LAB</a> / <a class="experience-link" data-i18n="about_life_chemicals" href="https://lifechemicals.com/" rel="noreferrer" target="_blank">Life Chemicals</a>
 </div>
-<div class="experience-location">Kyiv, Ukraine</div>
-<div class="experience-dates">April 2019 – December 2021</div>
+<div class="experience-location" data-i18n="about_kyiv_ukraine">Kyiv, Ukraine</div>
+<div class="experience-dates" data-i18n="about_april_2019_december_2021">April 2019 – December 2021</div>
 </div>
-<p>Worked in supramolecular chemistry while developing my Bachelor’s thesis, gaining early research experience in molecular interactions, synthesis, and practical laboratory work.</p>
+<p data-i18n="about_worked_in_supramolecular_chemistry_while_developing">Worked in supramolecular chemistry while developing my Bachelor’s thesis, gaining early research experience in molecular interactions, synthesis, and practical laboratory work.</p>
 </article>
 <article class="experience-card">
 <div class="experience-meta">
-<div class="experience-role">Part-Time Chemical Laboratory Assistant in Organic Chemistry</div>
+<div class="experience-role" data-i18n="about_part_time_chemical_laboratory_assistant_in">Part-Time Chemical Laboratory Assistant in Organic Chemistry</div>
 <div class="experience-place">
-<a class="experience-link" href="https://ioch.org.ua/en" rel="noreferrer" target="_blank">Institute of Organic Chemistry NAS of Ukraine</a> &amp; <a class="experience-link" href="https://enamine.net/" rel="noreferrer" target="_blank">Enamine Ltd</a>
+<a class="experience-link" data-i18n="about_institute_of_organic_chemistry_nas_of" href="https://ioch.org.ua/en" rel="noreferrer" target="_blank">Institute of Organic Chemistry NAS of Ukraine</a> &amp; <a class="experience-link" data-i18n="about_enamine_ltd" href="https://enamine.net/" rel="noreferrer" target="_blank">Enamine Ltd</a>
 </div>
-<div class="experience-location">Kyiv, Ukraine</div>
-<div class="experience-dates">April 2017 – December 2017</div>
+<div class="experience-location" data-i18n="about_kyiv_ukraine">Kyiv, Ukraine</div>
+<div class="experience-dates" data-i18n="about_april_2017_december_2017">April 2017 – December 2017</div>
 </div>
-<p>Worked as a part-time laboratory assistant in organic chemistry, gaining early practical experience in chemical laboratory procedures and research-related work.</p>
+<p data-i18n="about_worked_as_a_part_time_laboratory">Worked as a part-time laboratory assistant in organic chemistry, gaining early practical experience in chemical laboratory procedures and research-related work.</p>
 </article>
 </div>
 </div>
@@ -492,29 +508,29 @@
 <section id="approach-principles">
 <div class="container">
 <div class="section-header">
-<h2>Approach &amp; Professional Principles</h2>
-<p class="section-intro">A compact overview of the principles that shape my teaching, communication, and long-term work with learners.</p>
+<h2 data-i18n="about_approach_professional_principles">Approach &amp; Professional Principles</h2>
+<p class="section-intro" data-i18n="about_a_compact_overview_of_the_principles">A compact overview of the principles that shape my teaching, communication, and long-term work with learners.</p>
 </div>
 <div class="grid-4 principles-grid">
 <div class="list-card principle-card principle-card--science">
-<div class="principle-card__icon" aria-hidden="true"></div>
-<h3 class="principle-card__title">Science-based teaching</h3>
-<p>Chemistry and related subjects are taught with depth, structure, and conceptual clarity rather than memorisation alone.</p>
+<div aria-hidden="true" class="principle-card__icon"></div>
+<h3 class="principle-card__title" data-i18n="about_science_based_teaching">Science-based teaching</h3>
+<p data-i18n="about_chemistry_and_related_subjects_are_taught">Chemistry and related subjects are taught with depth, structure, and conceptual clarity rather than memorisation alone.</p>
 </div>
 <div class="list-card principle-card principle-card--structure">
-<div class="principle-card__icon" aria-hidden="true"></div>
-<h3 class="principle-card__title">Structured guidance</h3>
-<p>Lessons and support are organised around clear steps, realistic goals, and steady academic progression.</p>
+<div aria-hidden="true" class="principle-card__icon"></div>
+<h3 class="principle-card__title" data-i18n="about_structured_guidance">Structured guidance</h3>
+<p data-i18n="about_lessons_and_support_are_organised_around">Lessons and support are organised around clear steps, realistic goals, and steady academic progression.</p>
 </div>
 <div class="list-card principle-card principle-card--international">
-<div class="principle-card__icon" aria-hidden="true"></div>
-<h3 class="principle-card__title">International perspective</h3>
-<p>My academic and teaching path across Ukraine, France, and Switzerland informs a flexible and intercultural approach.</p>
+<div aria-hidden="true" class="principle-card__icon"></div>
+<h3 class="principle-card__title" data-i18n="about_international_perspective">International perspective</h3>
+<p data-i18n="about_my_academic_and_teaching_path_across">My academic and teaching path across Ukraine, France, and Switzerland informs a flexible and intercultural approach.</p>
 </div>
 <div class="list-card principle-card principle-card--support">
-<div class="principle-card__icon" aria-hidden="true"></div>
-<h3 class="principle-card__title">Reliable long-term support</h3>
-<p>I value continuity, trust, and the kind of support that helps learners grow with confidence over time.</p>
+<div aria-hidden="true" class="principle-card__icon"></div>
+<h3 class="principle-card__title" data-i18n="about_reliable_long_term_support">Reliable long-term support</h3>
+<p data-i18n="about_i_value_continuity_trust_and_the">I value continuity, trust, and the kind of support that helps learners grow with confidence over time.</p>
 </div>
 </div>
 </div>
@@ -568,64 +584,65 @@
 <h3 class="footer-title" data-i18n="footer_meta">Contact &amp; Info</h3>
 <ul class="footer-meta">
 <li>
-<a class="icon-link footer-contact-link" data-contact-email-link="true" href="mailto:your.email@example.com">
+<a class="icon-link footer-contact-link" data-contact-email-link="true" data-i18n-html="index_email" href="mailto:your.email@example.com">
 <span class="icon-badge icon-badge-mail"></span>
-<span>Email</span>
+<span data-i18n="index_email">Email</span>
 </a>
 </li>
-<li>
+<li data-i18n-html="index_in_linkedin">
 <a class="icon-link footer-contact-link" href="https://www.linkedin.com/in/shvedvadym" rel="noreferrer" target="_blank">
-<span class="icon-badge">in</span>
-<span>LinkedIn</span>
+<span class="icon-badge" data-i18n="index_in">in</span>
+<span data-i18n="index_linkedin">LinkedIn</span>
 </a>
 </li>
-<li>
+<li data-i18n-html="index_ig_instagram">
 <a class="icon-link footer-contact-link" href="https://www.instagram.com/vadymtravels" rel="noreferrer" target="_blank">
-<span class="icon-badge">IG</span>
-<span>Instagram</span>
+<span class="icon-badge" data-i18n="index_ig">IG</span>
+<span data-i18n="index_instagram">Instagram</span>
 </a>
 </li>
-<li>
+<li data-i18n-html="index_t24_tutor24">
 <a class="icon-link footer-contact-link" href="https://tutor24.ch/de/providers/3301791?public_view=true" rel="noreferrer" target="_blank">
-<span class="icon-badge">T24</span>
-<span>Tutor24</span>
+<span class="icon-badge" data-i18n="index_t24">T24</span>
+<span data-i18n="index_tutor24">Tutor24</span>
 </a>
 </li>
-<li>
+<li data-i18n-html="index_bu_buki">
 <a class="icon-link footer-contact-link" href="https://buki.com.ua/user-21753/" rel="noreferrer" target="_blank">
-<span class="icon-badge">BU</span>
-<span>BUKI</span>
+<span class="icon-badge" data-i18n="index_bu">BU</span>
+<span data-i18n="index_buki">BUKI</span>
 </a>
 </li>
-<li>
+<li data-i18n-html="index_ar_repetitor_org_ua">
 <a class="icon-link footer-contact-link" href="https://repetitor.org.ua/uk-id8693" rel="noreferrer" target="_blank">
-<span class="icon-badge">AR</span>
-<span>Repetitor.org.ua</span>
+<span class="icon-badge" data-i18n="index_ar">AR</span>
+<span data-i18n="index_repetitor_org_ua">Repetitor.org.ua</span>
 </a>
 </li>
-<li>
+<li data-i18n-html="index_cv_cv_download">
 <a class="icon-link footer-contact-link" data-cv-link="true" href="#">
-<span class="icon-badge">CV</span>
-<span>CV download</span>
+<span class="icon-badge" data-i18n="index_cv">CV</span>
+<span data-i18n="index_cv_download">CV download</span>
 </a>
 </li>
-<li>
+<li data-i18n-html="index_legal_business_info_2">
 <a class="icon-link footer-contact-link" href="#">
-<span class="icon-badge">§</span>
-<span>Legal / Business Info</span>
+<span class="icon-badge" data-i18n="index_text">§</span>
+<span data-i18n="index_legal_business_info">Legal / Business Info</span>
 </a>
 </li>
 </ul>
 </div>
 </div>
 <div class="button-row" style="margin-top: 1.2rem; margin-bottom: 0;">
-<a class="btn btn-primary btn-booking" data-booking-link="true" href="contact.html#booking">Book a Lesson</a>
-<a class="btn btn-secondary btn-contact footer-cta-btn" data-i18n="final_btn_1" href="contact.html"><span class="btn-inline-icon" aria-hidden="true">✉️</span><span>Contact Me</span></a>
+<a class="btn btn-primary btn-booking" data-booking-link="true" data-i18n="hero_btn_book" href="contact.html#booking">Book a Lesson</a>
+<a class="btn btn-secondary btn-contact footer-cta-btn" data-i18n="final_btn_1" href="contact.html"><span aria-hidden="true" class="btn-inline-icon">✉️</span><span>Contact Me</span></a>
 </div>
 <div class="copyright" data-i18n="footer_copy">© Vadym Shved — Multilingual personal professional website</div>
 </div>
 </footer>
-<script src="assets/js/site.js?v=i18n3">
-</script>
+<script src="assets/js/i18n-inline.js?v=langfix1"></script>
+<script src="assets/js/site.js?v=langfix1"></script>
+<script src="assets/js/ui.js?v=langfix1"></script>
 </body>
 </html>

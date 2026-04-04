@@ -4,9 +4,27 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Vadym Shved — Academic Background</title>
-<link href="assets/css/style.css?v=i18n3" rel="stylesheet"/>
-<link href="assets/css/multipage.css?v=i18n3" rel="stylesheet"/>
+<title data-i18n="page_title_academic">Vadym Shved — Academic Background</title>
+<link href="assets/css/style.css?v=i18n7" rel="stylesheet"/>
+<link href="assets/css/multipage.css?v=i18n7" rel="stylesheet"/>
+<style id="i18n-antiflicker-style">
+  html.i18n-preload body { visibility: hidden; }
+</style>
+<script id="i18n-antiflicker-bootstrap">
+(function () {
+  try {
+    var raw = localStorage.getItem('siteLanguage') || 'en';
+    var lang = ({ua:'uk', uk:'uk', en:'en', de:'de', fr:'fr', es:'es', pl:'pl'})[raw] || 'en';
+    document.documentElement.classList.add('i18n-preload');
+    document.documentElement.setAttribute('data-initial-lang', lang);
+    document.documentElement.lang = lang;
+  } catch (e) {
+    document.documentElement.classList.add('i18n-preload');
+    document.documentElement.setAttribute('data-initial-lang', 'en');
+    document.documentElement.lang = 'en';
+  }
+})();
+</script>
 </head>
 <body class="page-shell">
 <header class="topbar">
@@ -16,7 +34,7 @@
 <span class="brand-role" data-i18n="brand_role">Chemist · Teacher · Educator</span>
 </a>
 <div class="nav-shell">
-<nav aria-label="Main navigation" class="desktop-nav" id="main-nav">
+<nav aria-label="Main navigation" class="desktop-nav" data-i18n-aria-label="index_main_navigation_aria_label" id="main-nav">
 <ul>
 <li>
 <a class="nav-link" data-i18n="nav_home" href="index.html">Home</a>
@@ -44,19 +62,19 @@
 </div>
 <div class="lang-switcher">
 <button aria-controls="langMenu" aria-expanded="false" aria-haspopup="true" class="lang-toggle" id="langToggle" type="button">
-<span class="lang-label">EN</span>
+<span class="lang-label" data-i18n="index_en">EN</span>
 <span aria-hidden="true">▾</span>
 </button>
 <div class="lang-menu" id="langMenu" role="menu">
-<button class="lang-option active" data-lang="en" type="button">English (EN)</button>
-<button class="lang-option" data-lang="ua" type="button">Українська (UA)</button>
-<button class="lang-option" data-lang="de" type="button">Deutsch (DE)</button>
-<button class="lang-option" data-lang="fr" type="button">Français (FR)</button>
-<button class="lang-option" data-lang="es" type="button">Español (ES)</button>
-<button class="lang-option" data-lang="pl" type="button">Polski (PL)</button>
+<button class="lang-option active" data-i18n="index_english_en" data-lang="en" type="button">English (EN)</button>
+<button class="lang-option" data-i18n="index_ua" data-lang="ua" type="button">Українська (UA)</button>
+<button class="lang-option" data-i18n="index_deutsch_de" data-lang="de" type="button">Deutsch (DE)</button>
+<button class="lang-option" data-i18n="index_fran_ais_fr" data-lang="fr" type="button">Français (FR)</button>
+<button class="lang-option" data-i18n="index_espa_ol_es" data-lang="es" type="button">Español (ES)</button>
+<button class="lang-option" data-i18n="index_polski_pl" data-lang="pl" type="button">Polski (PL)</button>
 </div>
 </div>
-<button aria-label="Open Menu" aria-controls="main-nav" aria-expanded="false" class="mobile-toggle" id="mobile-toggle" type="button">
+<button aria-controls="main-nav" aria-expanded="false" aria-label="Open Menu" class="mobile-toggle" data-i18n-aria-label="index_open_menu_aria_label" id="mobile-toggle" type="button">
 <span>
 </span>
 <span>
@@ -67,206 +85,187 @@
 </div>
 </header>
 <main>
-
 <section id="academic">
 <div class="container">
 <div class="section-header">
 <h2 data-i18n="academic_title">Science &amp; Academic Background</h2>
-<p class="section-intro">A more academically focused area built around degrees, research interests, laboratory methods, interdisciplinary development, and academic positioning across multiple institutions and research contexts.</p>
+<p class="section-intro" data-i18n="academic_a_more_academically_focused_area_built">A more academically focused area built around degrees, research interests, laboratory methods, interdisciplinary development, and academic positioning across multiple institutions and research contexts.</p>
 </div>
-
 <div class="grid-2 academic-overview-grid">
-  <article class="detail-card soft-panel academic-summary-card academic-summary-card--enhanced">
-    <div class="academic-summary-copy academic-summary-copy--top">
-      <h3 class="section-title-with-icon"><span class="icon-badge icon-badge-academic-summary"></span><span>Academic Summary</span></h3>
-      <p>My scientific profile combines chemistry, applied physics, nanomaterials, biomedical context, and an international academic path developed across Ukraine, France, and Switzerland. It connects fundamental science, interdisciplinary research, laboratory work, and pedagogy in a coherent academic trajectory.</p>
-      <div class="tag-row academic-summary-tags" style="margin-top:0.15rem;">
-        <span class="tag">Chemistry</span>
-        <span class="tag">Applied Physics</span>
-        <span class="tag">Nanomaterials</span>
-        <span class="tag">Biomedical Context</span>
-        <span class="tag">International Path</span>
-      </div>
-    </div>
-    
+<article class="detail-card soft-panel academic-summary-card academic-summary-card--enhanced">
+<div class="academic-summary-copy academic-summary-copy--top">
+<h3 class="section-title-with-icon" data-i18n-html="academic_academic_summary"><span class="icon-badge icon-badge-academic-summary"></span><span data-i18n="academic_academic_summary">Academic Summary</span></h3>
+<p data-i18n="academic_my_scientific_profile_combines_chemistry_applied">My scientific profile combines chemistry, applied physics, nanomaterials, biomedical context, and an international academic path developed across Ukraine, France, and Switzerland. It connects fundamental science, interdisciplinary research, laboratory work, and pedagogy in a coherent academic trajectory.</p>
+<div class="tag-row academic-summary-tags" style="margin-top:0.15rem;">
+<span class="tag" data-i18n="hero_mini_science_1">Chemistry</span>
+<span class="tag" data-i18n="hero_mini_science_3">Applied Physics</span>
+<span class="tag" data-i18n="academic_nanomaterials">Nanomaterials</span>
+<span class="tag" data-i18n="academic_biomedical_context">Biomedical Context</span>
+<span class="tag" data-i18n="academic_international_path">International Path</span>
+</div>
+</div>
 <div aria-hidden="true" class="academic-summary-visual academic-summary-visual--chemistry">
-  <svg class="academic-summary-svg" viewBox="0 0 520 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
-    <defs>
-      <linearGradient id="chemBg" x1="0" x2="1" y1="0" y2="1">
-        <stop offset="0%" stop-color="#ffffff"/>
-        <stop offset="100%" stop-color="#f4fbfb"/>
-      </linearGradient>
-      <linearGradient id="flaskFill" x1="0" x2="0" y1="0" y2="1">
-        <stop offset="0%" stop-color="#23CED9" stop-opacity="0.35"/>
-        <stop offset="100%" stop-color="#097C87" stop-opacity="0.18"/>
-      </linearGradient>
-      <linearGradient id="tubeFill" x1="0" x2="0" y1="0" y2="1">
-        <stop offset="0%" stop-color="#FCA47C" stop-opacity="0.34"/>
-        <stop offset="100%" stop-color="#F9D779" stop-opacity="0.18"/>
-      </linearGradient>
-      <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
-        <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#0f172a" flood-opacity="0.08"/>
-      </filter>
-    </defs>
-
-    <rect x="0" y="0" width="520" height="320" rx="26" fill="url(#chemBg)"/>
-    <g opacity="0.28">
-      <path d="M56 36H468" stroke="#097C87" stroke-opacity="0.14" stroke-width="1.5"/>
-      <path d="M56 88H468" stroke="#097C87" stroke-opacity="0.10" stroke-width="1.5"/>
-      <path d="M56 140H468" stroke="#097C87" stroke-opacity="0.10" stroke-width="1.5"/>
-      <path d="M56 192H468" stroke="#097C87" stroke-opacity="0.10" stroke-width="1.5"/>
-      <path d="M56 244H468" stroke="#097C87" stroke-opacity="0.10" stroke-width="1.5"/>
-      <path d="M96 24V288" stroke="#097C87" stroke-opacity="0.08" stroke-width="1.5"/>
-      <path d="M172 24V288" stroke="#097C87" stroke-opacity="0.08" stroke-width="1.5"/>
-      <path d="M248 24V288" stroke="#097C87" stroke-opacity="0.08" stroke-width="1.5"/>
-      <path d="M324 24V288" stroke="#097C87" stroke-opacity="0.08" stroke-width="1.5"/>
-      <path d="M400 24V288" stroke="#097C87" stroke-opacity="0.08" stroke-width="1.5"/>
-    </g>
-
-    <g filter="url(#softShadow)">
-      <path d="M154 74h28v30l34 82c8 20-6 42-27 42h-72c-21 0-35-22-27-42l34-82V74h30" fill="none" stroke="#097C87" stroke-width="8" stroke-linejoin="round"/>
-      <path d="M132 154h76" stroke="#097C87" stroke-width="8" stroke-linecap="round"/>
-      <path d="M122 185c12 10 24 14 38 14 15 0 27-5 40-12 11-6 17-7 27-6-2 23-15 47-46 47h-72c-29 0-43-22-46-47 20-3 35 8 59 8z" fill="url(#flaskFill)"/>
-      <circle cx="164" cy="177" r="8" fill="#23CED9" fill-opacity="0.55"/>
-      <circle cx="186" cy="195" r="6" fill="#097C87" fill-opacity="0.30"/>
-    </g>
-
-    <g filter="url(#softShadow)">
-      <rect x="308" y="72" width="42" height="126" rx="16" fill="none" stroke="#097C87" stroke-width="8"/>
-      <path d="M316 142h26v44c0 10-8 18-18 18h-8c-10 0-18-8-18-18v-44z" fill="url(#tubeFill)"/>
-      <circle cx="329" cy="130" r="5" fill="#FCA47C" fill-opacity="0.55"/>
-      <circle cx="332" cy="157" r="4" fill="#F9D779" fill-opacity="0.55"/>
-    </g>
-
-    <g opacity="0.88">
-      <circle cx="410" cy="110" r="15" fill="#ffffff" stroke="#097C87" stroke-width="5"/>
-      <circle cx="454" cy="86" r="13" fill="#ffffff" stroke="#097C87" stroke-width="5"/>
-      <circle cx="456" cy="144" r="13" fill="#ffffff" stroke="#097C87" stroke-width="5"/>
-      <circle cx="390" cy="160" r="13" fill="#ffffff" stroke="#097C87" stroke-width="5"/>
-      <path d="M424 103l20-11M423 117l22 18M402 121l-8 25M401 100l-53 2" stroke="#097C87" stroke-width="5" stroke-linecap="round"/>
-      <circle cx="348" cy="102" r="9" fill="#A1CCA6" fill-opacity="0.9" stroke="#097C87" stroke-width="4"/>
-    </g>
-
-    <g opacity="0.7">
-      <circle cx="118" cy="54" r="4.5" fill="#23CED9"/>
-      <circle cx="436" cy="224" r="4.5" fill="#FCA47C"/>
-      <circle cx="386" cy="58" r="3.8" fill="#A1CCA6"/>
-      <circle cx="236" cy="248" r="5" fill="#F9D779"/>
-      <path d="M92 266c38-18 79-28 121-28 62 0 97 15 145 30" stroke="#097C87" stroke-opacity="0.18" stroke-width="4" stroke-linecap="round"/>
-    </g>
-  </svg>
+<svg aria-hidden="true" class="academic-summary-svg" role="img" viewbox="0 0 520 320" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<lineargradient id="chemBg" x1="0" x2="1" y1="0" y2="1">
+<stop offset="0%" stop-color="#ffffff"></stop>
+<stop offset="100%" stop-color="#f4fbfb"></stop>
+</lineargradient>
+<lineargradient id="flaskFill" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#23CED9" stop-opacity="0.35"></stop>
+<stop offset="100%" stop-color="#097C87" stop-opacity="0.18"></stop>
+</lineargradient>
+<lineargradient id="tubeFill" x1="0" x2="0" y1="0" y2="1">
+<stop offset="0%" stop-color="#FCA47C" stop-opacity="0.34"></stop>
+<stop offset="100%" stop-color="#F9D779" stop-opacity="0.18"></stop>
+</lineargradient>
+<filter height="140%" id="softShadow" width="140%" x="-20%" y="-20%">
+<fedropshadow dx="0" dy="12" flood-color="#0f172a" flood-opacity="0.08" stddeviation="12"></fedropshadow>
+</filter>
+</defs>
+<rect fill="url(#chemBg)" height="320" rx="26" width="520" x="0" y="0"></rect>
+<g opacity="0.28">
+<path d="M56 36H468" stroke="#097C87" stroke-opacity="0.14" stroke-width="1.5"></path>
+<path d="M56 88H468" stroke="#097C87" stroke-opacity="0.10" stroke-width="1.5"></path>
+<path d="M56 140H468" stroke="#097C87" stroke-opacity="0.10" stroke-width="1.5"></path>
+<path d="M56 192H468" stroke="#097C87" stroke-opacity="0.10" stroke-width="1.5"></path>
+<path d="M56 244H468" stroke="#097C87" stroke-opacity="0.10" stroke-width="1.5"></path>
+<path d="M96 24V288" stroke="#097C87" stroke-opacity="0.08" stroke-width="1.5"></path>
+<path d="M172 24V288" stroke="#097C87" stroke-opacity="0.08" stroke-width="1.5"></path>
+<path d="M248 24V288" stroke="#097C87" stroke-opacity="0.08" stroke-width="1.5"></path>
+<path d="M324 24V288" stroke="#097C87" stroke-opacity="0.08" stroke-width="1.5"></path>
+<path d="M400 24V288" stroke="#097C87" stroke-opacity="0.08" stroke-width="1.5"></path>
+</g>
+<g filter="url(#softShadow)">
+<path d="M154 74h28v30l34 82c8 20-6 42-27 42h-72c-21 0-35-22-27-42l34-82V74h30" fill="none" stroke="#097C87" stroke-linejoin="round" stroke-width="8"></path>
+<path d="M132 154h76" stroke="#097C87" stroke-linecap="round" stroke-width="8"></path>
+<path d="M122 185c12 10 24 14 38 14 15 0 27-5 40-12 11-6 17-7 27-6-2 23-15 47-46 47h-72c-29 0-43-22-46-47 20-3 35 8 59 8z" fill="url(#flaskFill)"></path>
+<circle cx="164" cy="177" fill="#23CED9" fill-opacity="0.55" r="8"></circle>
+<circle cx="186" cy="195" fill="#097C87" fill-opacity="0.30" r="6"></circle>
+</g>
+<g filter="url(#softShadow)">
+<rect fill="none" height="126" rx="16" stroke="#097C87" stroke-width="8" width="42" x="308" y="72"></rect>
+<path d="M316 142h26v44c0 10-8 18-18 18h-8c-10 0-18-8-18-18v-44z" fill="url(#tubeFill)"></path>
+<circle cx="329" cy="130" fill="#FCA47C" fill-opacity="0.55" r="5"></circle>
+<circle cx="332" cy="157" fill="#F9D779" fill-opacity="0.55" r="4"></circle>
+</g>
+<g opacity="0.88">
+<circle cx="410" cy="110" fill="#ffffff" r="15" stroke="#097C87" stroke-width="5"></circle>
+<circle cx="454" cy="86" fill="#ffffff" r="13" stroke="#097C87" stroke-width="5"></circle>
+<circle cx="456" cy="144" fill="#ffffff" r="13" stroke="#097C87" stroke-width="5"></circle>
+<circle cx="390" cy="160" fill="#ffffff" r="13" stroke="#097C87" stroke-width="5"></circle>
+<path d="M424 103l20-11M423 117l22 18M402 121l-8 25M401 100l-53 2" stroke="#097C87" stroke-linecap="round" stroke-width="5"></path>
+<circle cx="348" cy="102" fill="#A1CCA6" fill-opacity="0.9" r="9" stroke="#097C87" stroke-width="4"></circle>
+</g>
+<g opacity="0.7">
+<circle cx="118" cy="54" fill="#23CED9" r="4.5"></circle>
+<circle cx="436" cy="224" fill="#FCA47C" r="4.5"></circle>
+<circle cx="386" cy="58" fill="#A1CCA6" r="3.8"></circle>
+<circle cx="236" cy="248" fill="#F9D779" r="5"></circle>
+<path d="M92 266c38-18 79-28 121-28 62 0 97 15 145 30" stroke="#097C87" stroke-linecap="round" stroke-opacity="0.18" stroke-width="4"></path>
+</g>
+</svg>
 </div>
 </article>
-
-
-  <article class="detail-card accent-panel academic-degrees-card">
-    <h3 class="section-title-with-icon"><span class="icon-badge icon-badge-degree"></span><span>Degrees and Qualifications</span></h3>
-    <div class="academic-degree-list">
-      <div class="academic-degree-item">
-        <a class="academic-degree-pill academic-degree-pill--download" href="assets/docs/academic/bachelor-degree-chemistry.pdf" download>Bachelor’s Degree in Chemistry</a>
-        <a class="academic-degree-institution-link" href="https://iht.knu.ua/" rel="noreferrer" target="_blank">Educational Scientific Institute of High Technologies, Taras Shevchenko National University of Kyiv</a>
-      </div>
-      <div class="academic-degree-item">
-        <a class="academic-degree-pill academic-degree-pill--download" href="assets/docs/academic/master-degree-applied-physics-nanomaterials.pdf" download>Master’s Degree in Applied Physics and Nanomaterials</a>
-        <a class="academic-degree-institution-link" href="https://iht.knu.ua/" rel="noreferrer" target="_blank">Educational Scientific Institute of High Technologies, Taras Shevchenko National University of Kyiv</a>
-      </div>
-      <div class="academic-degree-item">
-        <a class="academic-degree-pill academic-degree-pill--download" href="assets/docs/academic/master-degree-nanoscale-engineering.pdf" download>Master’s Degree in Nanoscale Engineering</a>
-        <a class="academic-degree-institution-link" href="https://www.ec-lyon.fr/en/academics/international-master-nanoscale-engineering" rel="noreferrer" target="_blank">École Centrale de Lyon · INSA Lyon · Université Claude Bernard Lyon 1</a>
-      </div>
-      <div class="academic-degree-item">
-        <a class="academic-degree-pill academic-degree-pill--download" href="assets/docs/academic/teaching-diploma-upper-secondary.pdf" download>Teaching Diploma for Upper Secondary Education and Vocational Schools</a>
-        <a class="academic-degree-institution-link" href="https://www.phbern.ch/studium/sekundarstufe-ii/studienuebersicht/monofachdiplom-fuer-maturitaetsschulen-mit-berufspaedagogischer-qualifikation" rel="noreferrer" target="_blank">Pädagogische Hochschule PHBern, Switzerland</a>
-      </div>
-    </div>
-  </article>
+<article class="detail-card accent-panel academic-degrees-card">
+<h3 class="section-title-with-icon" data-i18n-html="academic_degrees_and_qualifications"><span class="icon-badge icon-badge-degree"></span><span data-i18n="academic_degrees_and_qualifications">Degrees and Qualifications</span></h3>
+<div class="academic-degree-list">
+<div class="academic-degree-item">
+<a class="academic-degree-pill academic-degree-pill--download" data-i18n="academic_degree_1" download="" href="assets/docs/academic/bachelor-degree-chemistry.pdf">Bachelor’s Degree in Chemistry</a>
+<a class="academic-degree-institution-link" data-i18n="academic_educational_scientific_institute_of_high_technologies" href="https://iht.knu.ua/" rel="noreferrer" target="_blank">Educational Scientific Institute of High Technologies, Taras Shevchenko National University of Kyiv</a>
 </div>
-
-
+<div class="academic-degree-item">
+<a class="academic-degree-pill academic-degree-pill--download" data-i18n="academic_degree_2" download="" href="assets/docs/academic/master-degree-applied-physics-nanomaterials.pdf">Master’s Degree in Applied Physics and Nanomaterials</a>
+<a class="academic-degree-institution-link" data-i18n="academic_educational_scientific_institute_of_high_technologies" href="https://iht.knu.ua/" rel="noreferrer" target="_blank">Educational Scientific Institute of High Technologies, Taras Shevchenko National University of Kyiv</a>
+</div>
+<div class="academic-degree-item">
+<a class="academic-degree-pill academic-degree-pill--download" data-i18n="academic_degree_3" download="" href="assets/docs/academic/master-degree-nanoscale-engineering.pdf">Master’s Degree in Nanoscale Engineering</a>
+<a class="academic-degree-institution-link" data-i18n="academic_cole_centrale_de_lyon_insa_lyon" href="https://www.ec-lyon.fr/en/academics/international-master-nanoscale-engineering" rel="noreferrer" target="_blank">École Centrale de Lyon · INSA Lyon · Université Claude Bernard Lyon 1</a>
+</div>
+<div class="academic-degree-item">
+<a class="academic-degree-pill academic-degree-pill--download" data-i18n="academic_teaching_diploma_for_upper_secondary_education" download="" href="assets/docs/academic/teaching-diploma-upper-secondary.pdf">Teaching Diploma for Upper Secondary Education and Vocational Schools</a>
+<a class="academic-degree-institution-link" data-i18n="academic_p_dagogische_hochschule_phbern_switzerland" href="https://www.phbern.ch/studium/sekundarstufe-ii/studienuebersicht/monofachdiplom-fuer-maturitaetsschulen-mit-berufspaedagogischer-qualifikation" rel="noreferrer" target="_blank">Pädagogische Hochschule PHBern, Switzerland</a>
+</div>
+</div>
+</article>
+</div>
 <div class="detail-card gallery-preview-card gallery-preview-card--inline gallery-preview-card--academic" style="margin:1rem 0 0;">
-  <div class="section-header">
-    <h3 class="gallery-preview-title" data-i18n="gallery_preview_academic_title">Academic Environment</h3>
-    <p class="section-intro" data-i18n="gallery_preview_academic_text">A visual overview of laboratory work, academic context, and research-related environments connected with chemistry and science.</p>
-  </div>
-  <div class="gallery-preview-grid">
-    <a class="gallery-preview-tile" href="gallery.html#science"><figure><img alt="Laboratory preview" src="assets/images/gallery/science/science-1.svg"/></figure><span class="gallery-preview-label" data-i18n="gallery_academic_lab">Laboratory</span></a>
-    <a class="gallery-preview-tile" href="gallery.html#science"><figure><img alt="Research preview" src="assets/images/gallery/science/science-2.svg"/></figure><span class="gallery-preview-label" data-i18n="gallery_academic_research">Research</span></a>
-    <a class="gallery-preview-tile" href="gallery.html#science"><figure><img alt="Academic context preview" src="assets/images/gallery/science/science-3.svg"/></figure><span class="gallery-preview-label" data-i18n="gallery_academic_context">Academic Context</span></a>
-  </div>
-  <div class="button-row gallery-preview-actions">
-    <a class="btn btn-secondary btn-view-gallery btn-gallery-open" href="gallery.html#science" data-i18n="gallery_view_cta">View Gallery</a>
-  </div>
+<div class="section-header">
+<h3 class="gallery-preview-title" data-i18n="gallery_preview_academic_title">Academic Environment</h3>
+<p class="section-intro" data-i18n="gallery_preview_academic_text">A visual overview of laboratory work, academic context, and research-related environments connected with chemistry and science.</p>
 </div>
-
-
+<div class="gallery-preview-grid" data-i18n-html="academic_laboratory_research_academic_context">
+<a class="gallery-preview-tile" href="gallery.html#science"><figure><img alt="Laboratory preview" src="assets/images/gallery/science/science-1.svg"/></figure><span class="gallery-preview-label" data-i18n="gallery_academic_lab">Laboratory</span></a>
+<a class="gallery-preview-tile" href="gallery.html#science"><figure><img alt="Research preview" src="assets/images/gallery/science/science-2.svg"/></figure><span class="gallery-preview-label" data-i18n="gallery_academic_research">Research</span></a>
+<a class="gallery-preview-tile" href="gallery.html#science"><figure><img alt="Academic context preview" src="assets/images/gallery/science/science-3.svg"/></figure><span class="gallery-preview-label" data-i18n="gallery_academic_context">Academic Context</span></a>
+</div>
+<div class="button-row gallery-preview-actions">
+<a class="btn btn-secondary btn-view-gallery btn-gallery-open" data-i18n="gallery_view_cta" href="gallery.html#science">View Gallery</a>
+</div>
+</div>
 <div class="grid-2" style="margin-top:1rem;">
-  <article class="detail-card">
-    <h3 class="section-title-with-icon section-title-with-icon--small"><span class="icon-badge icon-badge-research"></span><span>Research Interests</span></h3>
-    <p>Organic chemistry, supramolecular chemistry, nanochemistry, functionalization of ultrafine nanoparticles, oncology-related targeting, interdisciplinary science education, and the interface between chemistry and applied biomedical contexts.</p>
-  </article>
-  <article class="detail-card">
-    <h3 class="section-title-with-icon section-title-with-icon--small"><span class="icon-badge icon-badge-lab"></span><span>Laboratory &amp; Analytical Methods</span></h3>
-    <p>Laboratory chemistry, nanomaterials work, spectroscopy-related analytical methods, synthesis workflows, academic laboratory practice, and research-oriented scientific documentation.</p>
-  </article>
+<article class="detail-card">
+<h3 class="section-title-with-icon section-title-with-icon--small" data-i18n-html="academic_research_interests"><span class="icon-badge icon-badge-research"></span><span data-i18n="academic_research_interests">Research Interests</span></h3>
+<p data-i18n="academic_organic_chemistry_supramolecular_chemistry_nanochemistry_functionalization">Organic chemistry, supramolecular chemistry, nanochemistry, functionalization of ultrafine nanoparticles, oncology-related targeting, interdisciplinary science education, and the interface between chemistry and applied biomedical contexts.</p>
+</article>
+<article class="detail-card">
+<h3 class="section-title-with-icon section-title-with-icon--small" data-i18n-html="academic_laboratory_analytical_methods"><span class="icon-badge icon-badge-lab"></span><span data-i18n="academic_laboratory_analytical_methods">Laboratory &amp; Analytical Methods</span></h3>
+<p data-i18n="academic_laboratory_chemistry_nanomaterials_work_spectroscopy_related">Laboratory chemistry, nanomaterials work, spectroscopy-related analytical methods, synthesis workflows, academic laboratory practice, and research-oriented scientific documentation.</p>
+</article>
 </div>
-
 <div class="grid-3" style="margin-top:1rem;">
-  <article class="detail-card">
-    <h3 class="section-title-with-icon section-title-with-icon--small"><span class="icon-badge icon-badge-network"></span><span>Interdisciplinary Scientific Profile</span></h3>
-    <p>Chemistry connected with applied physics, nanomaterials engineering, biomedical context, and science teaching.</p>
-  </article>
-  <article class="detail-card">
-    <h3 class="section-title-with-icon section-title-with-icon--small"><span class="icon-badge icon-badge-highlights"></span><span>Selected Academic Highlights</span></h3>
-    <p>Degrees, international academic mobility, laboratory practice, and teacher training in Switzerland.</p>
-  </article>
-  <article class="detail-card">
-    <h3 class="section-title-with-icon section-title-with-icon--small"><span class="icon-badge icon-badge-reference"></span><span>Recommendation or Reference Area</span></h3>
-    <p>Reserved for selected academic or institutional references and recommendation highlights.</p>
-  </article>
+<article class="detail-card">
+<h3 class="section-title-with-icon section-title-with-icon--small" data-i18n-html="academic_interdisciplinary_scientific_profile"><span class="icon-badge icon-badge-network"></span><span data-i18n="academic_interdisciplinary_scientific_profile">Interdisciplinary Scientific Profile</span></h3>
+<p data-i18n="academic_chemistry_connected_with_applied_physics_nanomaterials">Chemistry connected with applied physics, nanomaterials engineering, biomedical context, and science teaching.</p>
+</article>
+<article class="detail-card">
+<h3 class="section-title-with-icon section-title-with-icon--small" data-i18n-html="academic_selected_academic_highlights"><span class="icon-badge icon-badge-highlights"></span><span data-i18n="academic_selected_academic_highlights">Selected Academic Highlights</span></h3>
+<p data-i18n="academic_degrees_international_academic_mobility_laboratory_practice">Degrees, international academic mobility, laboratory practice, and teacher training in Switzerland.</p>
+</article>
+<article class="detail-card">
+<h3 class="section-title-with-icon section-title-with-icon--small" data-i18n-html="academic_recommendation_or_reference_area"><span class="icon-badge icon-badge-reference"></span><span data-i18n="academic_recommendation_or_reference_area">Recommendation or Reference Area</span></h3>
+<p data-i18n="academic_reserved_for_selected_academic_or_institutional">Reserved for selected academic or institutional references and recommendation highlights.</p>
+</article>
 </div>
-
 <div class="cta-box academic-cv-box" style="margin-top:1rem;">
-  <div>
-    <h3 class="section-title-with-icon"><span class="icon-badge icon-badge-cv"></span><span>Downloadable CV Section</span></h3>
-    <p class="section-intro">A strong academic page benefits from a direct CV download and selected reference materials that support professional credibility.</p>
-  </div>
-  <div class="button-row" style="margin-bottom:0;">
-    <a class="btn btn-primary" data-cv-link="true" href="assets/docs/CV.pdf">Download CV</a>
-    <a class="btn btn-secondary btn-portfolio-open" href="research-teaching-portfolio.html">Open Research &amp; Teaching Portfolio</a>
-  </div>
+<div>
+<h3 class="section-title-with-icon" data-i18n-html="academic_downloadable_cv_section"><span class="icon-badge icon-badge-cv"></span><span data-i18n="academic_downloadable_cv_section">Downloadable CV Section</span></h3>
+<p class="section-intro" data-i18n="academic_a_strong_academic_page_benefits_from">A strong academic page benefits from a direct CV download and selected reference materials that support professional credibility.</p>
 </div>
-
+<div class="button-row" style="margin-bottom:0;">
+<a class="btn btn-primary" data-cv-link="true" data-i18n="academic_download_cv" href="assets/docs/CV.pdf">Download CV</a>
+<a class="btn btn-secondary btn-portfolio-open" data-i18n="academic_open_research_teaching_portfolio" href="research-teaching-portfolio.html">Open Research &amp; Teaching Portfolio</a>
+</div>
+</div>
 <div class="section-header academic-focus-header" style="margin-top:2rem;">
-  <h2>Academic Focus &amp; Direction</h2>
-  <p class="section-intro">A concise overview of the two central academic research tracks that shaped my scientific development and interdisciplinary orientation.</p>
+<h2 data-i18n="academic_academic_focus_direction">Academic Focus &amp; Direction</h2>
+<p class="section-intro" data-i18n="academic_a_concise_overview_of_the_two">A concise overview of the two central academic research tracks that shaped my scientific development and interdisciplinary orientation.</p>
 </div>
-
 <div class="grid-2 academic-focus-grid">
-  <article class="detail-card academic-focus-card">
-    <div class="academic-focus-head">
-      <h3 class="section-title-with-icon"><span class="icon-badge icon-badge-bachelor-work"></span><span>Bachelor Research Project</span></h3>
-      <a class="btn btn-secondary btn-view-project" href="bachelor-research.html">Open Bachelor Project</a>
-    </div>
-    <p class="academic-focus-abstract">Reserved for a concise abstract of the bachelor research work, including topic, scientific problem, methods used, and the core academic outcome. This block can later link to a dedicated page with a richer visual presentation of the project.</p>
-    <div class="tag-row">
-      <span class="tag">Bachelor Thesis</span>
-      <span class="tag">Research Abstract</span>
-      <span class="tag">Methods & Outcomes</span>
-    </div>
-  </article>
-
-  <article class="detail-card academic-focus-card">
-    <div class="academic-focus-head">
-      <h3 class="section-title-with-icon"><span class="icon-badge icon-badge-master-work"></span><span>Master Research Project</span></h3>
-      <a class="btn btn-secondary btn-view-project" href="master-research.html">Open Master Project</a>
-    </div>
-    <p class="academic-focus-abstract">Reserved for a concise abstract of the master research work, including advanced scientific orientation, interdisciplinary context, technical methods, and the broader significance of the project. This block can later lead to a dedicated detailed project page.</p>
-    <div class="tag-row">
-      <span class="tag">Master Thesis</span>
-      <span class="tag">Interdisciplinary</span>
-      <span class="tag">Scientific Direction</span>
-    </div>
-  </article>
+<article class="detail-card academic-focus-card">
+<div class="academic-focus-head">
+<h3 class="section-title-with-icon" data-i18n-html="portfolio_bachelor_title"><span class="icon-badge icon-badge-bachelor-work"></span><span data-i18n="portfolio_bachelor_title">Bachelor Research Project</span></h3>
+<a class="btn btn-secondary btn-view-project" data-i18n="academic_open_bachelor_project" href="bachelor-research.html">Open Bachelor Project</a>
+</div>
+<p class="academic-focus-abstract" data-i18n="academic_reserved_for_a_concise_abstract_of">Reserved for a concise abstract of the bachelor research work, including topic, scientific problem, methods used, and the core academic outcome. This block can later link to a dedicated page with a richer visual presentation of the project.</p>
+<div class="tag-row">
+<span class="tag" data-i18n="academic_bachelor_thesis">Bachelor Thesis</span>
+<span class="tag" data-i18n="academic_research_abstract">Research Abstract</span>
+<span class="tag" data-i18n="academic_methods_outcomes">Methods &amp; Outcomes</span>
+</div>
+</article>
+<article class="detail-card academic-focus-card">
+<div class="academic-focus-head">
+<h3 class="section-title-with-icon" data-i18n-html="portfolio_master_title"><span class="icon-badge icon-badge-master-work"></span><span data-i18n="portfolio_master_title">Master Research Project</span></h3>
+<a class="btn btn-secondary btn-view-project" data-i18n="academic_open_master_project" href="master-research.html">Open Master Project</a>
+</div>
+<p class="academic-focus-abstract" data-i18n="academic_reserved_for_a_concise_abstract_of_2">Reserved for a concise abstract of the master research work, including advanced scientific orientation, interdisciplinary context, technical methods, and the broader significance of the project. This block can later lead to a dedicated detailed project page.</p>
+<div class="tag-row">
+<span class="tag" data-i18n="academic_master_thesis">Master Thesis</span>
+<span class="tag" data-i18n="academic_interdisciplinary">Interdisciplinary</span>
+<span class="tag" data-i18n="academic_scientific_direction">Scientific Direction</span>
+</div>
+</article>
 </div>
 </div>
 </section>
@@ -319,64 +318,65 @@
 <h3 class="footer-title" data-i18n="footer_meta">Contact &amp; Info</h3>
 <ul class="footer-meta">
 <li>
-<a class="icon-link footer-contact-link" data-contact-email-link="true" href="mailto:your.email@example.com">
+<a class="icon-link footer-contact-link" data-contact-email-link="true" data-i18n-html="index_email" href="mailto:your.email@example.com">
 <span class="icon-badge icon-badge-mail"></span>
-<span>Email</span>
+<span data-i18n="index_email">Email</span>
 </a>
 </li>
-<li>
+<li data-i18n-html="index_in_linkedin">
 <a class="icon-link footer-contact-link" href="https://www.linkedin.com/in/shvedvadym" rel="noreferrer" target="_blank">
-<span class="icon-badge">in</span>
-<span>LinkedIn</span>
+<span class="icon-badge" data-i18n="index_in">in</span>
+<span data-i18n="index_linkedin">LinkedIn</span>
 </a>
 </li>
-<li>
+<li data-i18n-html="index_ig_instagram">
 <a class="icon-link footer-contact-link" href="https://www.instagram.com/vadymtravels" rel="noreferrer" target="_blank">
-<span class="icon-badge">IG</span>
-<span>Instagram</span>
+<span class="icon-badge" data-i18n="index_ig">IG</span>
+<span data-i18n="index_instagram">Instagram</span>
 </a>
 </li>
-<li>
+<li data-i18n-html="index_t24_tutor24">
 <a class="icon-link footer-contact-link" href="https://tutor24.ch/de/providers/3301791?public_view=true" rel="noreferrer" target="_blank">
-<span class="icon-badge">T24</span>
-<span>Tutor24</span>
+<span class="icon-badge" data-i18n="index_t24">T24</span>
+<span data-i18n="index_tutor24">Tutor24</span>
 </a>
 </li>
-<li>
+<li data-i18n-html="index_bu_buki">
 <a class="icon-link footer-contact-link" href="https://buki.com.ua/user-21753/" rel="noreferrer" target="_blank">
-<span class="icon-badge">BU</span>
-<span>BUKI</span>
+<span class="icon-badge" data-i18n="index_bu">BU</span>
+<span data-i18n="index_buki">BUKI</span>
 </a>
 </li>
-<li>
+<li data-i18n-html="index_ar_repetitor_org_ua">
 <a class="icon-link footer-contact-link" href="https://repetitor.org.ua/uk-id8693" rel="noreferrer" target="_blank">
-<span class="icon-badge">AR</span>
-<span>Repetitor.org.ua</span>
+<span class="icon-badge" data-i18n="index_ar">AR</span>
+<span data-i18n="index_repetitor_org_ua">Repetitor.org.ua</span>
 </a>
 </li>
-<li>
+<li data-i18n-html="index_cv_cv_download">
 <a class="icon-link footer-contact-link" data-cv-link="true" href="#">
-<span class="icon-badge">CV</span>
-<span>CV download</span>
+<span class="icon-badge" data-i18n="index_cv">CV</span>
+<span data-i18n="index_cv_download">CV download</span>
 </a>
 </li>
-<li>
+<li data-i18n-html="index_legal_business_info_2">
 <a class="icon-link footer-contact-link" href="#">
-<span class="icon-badge">§</span>
-<span>Legal / Business Info</span>
+<span class="icon-badge" data-i18n="index_text">§</span>
+<span data-i18n="index_legal_business_info">Legal / Business Info</span>
 </a>
 </li>
 </ul>
 </div>
 </div>
 <div class="button-row" style="margin-top: 1.2rem; margin-bottom: 0;">
-<a class="btn btn-primary btn-booking" data-booking-link="true" href="contact.html#booking">Book a Lesson</a>
-<a class="btn btn-secondary btn-contact footer-cta-btn" data-i18n="final_btn_1" href="contact.html"><span class="btn-inline-icon" aria-hidden="true">✉️</span><span>Contact Me</span></a>
+<a class="btn btn-primary btn-booking" data-booking-link="true" data-i18n="hero_btn_book" href="contact.html#booking">Book a Lesson</a>
+<a class="btn btn-secondary btn-contact footer-cta-btn" data-i18n="final_btn_1" href="contact.html"><span aria-hidden="true" class="btn-inline-icon">✉️</span><span>Contact Me</span></a>
 </div>
 <div class="copyright" data-i18n="footer_copy">© Vadym Shved — Multilingual personal professional website</div>
 </div>
 </footer>
-<script src="assets/js/site.js?v=i18n3">
-</script>
+<script src="assets/js/i18n-inline.js?v=langfix1"></script>
+<script src="assets/js/site.js?v=langfix1"></script>
+<script src="assets/js/ui.js?v=langfix1"></script>
 </body>
 </html>

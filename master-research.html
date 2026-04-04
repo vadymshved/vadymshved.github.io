@@ -1,11 +1,30 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Vadym Shved — Master Research Project</title>
-<link href="assets/css/style.css?v=i18n3" rel="stylesheet"/>
-<link href="assets/css/multipage.css?v=i18n3" rel="stylesheet"/>
+<title data-i18n="page_title_master">Vadym Shved — Master Research Project</title>
+<link href="assets/css/style.css?v=i18n7" rel="stylesheet"/>
+<link href="assets/css/multipage.css?v=i18n7" rel="stylesheet"/>
+<style id="i18n-antiflicker-style">
+  html.i18n-preload body { visibility: hidden; }
+</style>
+<script id="i18n-antiflicker-bootstrap">
+(function () {
+  try {
+    var raw = localStorage.getItem('siteLanguage') || 'en';
+    var lang = ({ua:'uk', uk:'uk', en:'en', de:'de', fr:'fr', es:'es', pl:'pl'})[raw] || 'en';
+    document.documentElement.classList.add('i18n-preload');
+    document.documentElement.setAttribute('data-initial-lang', lang);
+    document.documentElement.lang = lang;
+  } catch (e) {
+    document.documentElement.classList.add('i18n-preload');
+    document.documentElement.setAttribute('data-initial-lang', 'en');
+    document.documentElement.lang = 'en';
+  }
+})();
+</script>
 </head>
 <body class="page-shell">
 <header class="topbar">
@@ -15,7 +34,7 @@
 <span class="brand-role" data-i18n="brand_role">Chemist · Teacher · Educator</span>
 </a>
 <div class="nav-shell">
-<nav aria-label="Main navigation" class="desktop-nav" id="main-nav">
+<nav aria-label="Main navigation" class="desktop-nav" data-i18n-aria-label="index_main_navigation_aria_label" id="main-nav">
 <ul>
 <li>
 <a class="nav-link" data-i18n="nav_home" href="index.html">Home</a>
@@ -43,19 +62,19 @@
 </div>
 <div class="lang-switcher">
 <button aria-controls="langMenu" aria-expanded="false" aria-haspopup="true" class="lang-toggle" id="langToggle" type="button">
-<span class="lang-label">EN</span>
+<span class="lang-label" data-i18n="index_en">EN</span>
 <span aria-hidden="true">▾</span>
 </button>
 <div class="lang-menu" id="langMenu" role="menu">
-<button class="lang-option active" data-lang="en" type="button">English (EN)</button>
-<button class="lang-option" data-lang="ua" type="button">Українська (UA)</button>
-<button class="lang-option" data-lang="de" type="button">Deutsch (DE)</button>
-<button class="lang-option" data-lang="fr" type="button">Français (FR)</button>
-<button class="lang-option" data-lang="es" type="button">Español (ES)</button>
-<button class="lang-option" data-lang="pl" type="button">Polski (PL)</button>
+<button class="lang-option active" data-i18n="index_english_en" data-lang="en" type="button">English (EN)</button>
+<button class="lang-option" data-i18n="index_ua" data-lang="ua" type="button">Українська (UA)</button>
+<button class="lang-option" data-i18n="index_deutsch_de" data-lang="de" type="button">Deutsch (DE)</button>
+<button class="lang-option" data-i18n="index_fran_ais_fr" data-lang="fr" type="button">Français (FR)</button>
+<button class="lang-option" data-i18n="index_espa_ol_es" data-lang="es" type="button">Español (ES)</button>
+<button class="lang-option" data-i18n="index_polski_pl" data-lang="pl" type="button">Polski (PL)</button>
 </div>
 </div>
-<button aria-label="Open Menu" class="mobile-toggle" id="mobile-toggle" type="button">
+<button aria-label="Open Menu" class="mobile-toggle" data-i18n-aria-label="index_open_menu_aria_label" id="mobile-toggle" type="button">
 <span>
 </span>
 <span>
@@ -65,121 +84,110 @@
 </button>
 </div>
 </header>
-
 <main>
 <section class="project-page-section">
-  <div class="container">
-    <div class="project-top-back-row"><a class="btn btn-secondary btn-back-portfolio btn-back-portfolio--top" href="research-teaching-portfolio.html">Back to Portfolio</a></div>
-    <div class="portfolio-dev-banner portfolio-dev-banner--small">
-      <strong data-i18n="portfolio_dev_label">Work in progress:</strong>
-      <span data-i18n="portfolio_project_dev_text">this project page is currently a structured draft. Texts, visuals, and technical details will be refined over time.</span>
-    </div>
-
-    <div class="project-hero-grid">
-      <div class="project-hero-copy">
-        <div class="portfolio-type-badge">Thesis</div>
-        <h2>Master Research Project</h2>
-        <p class="project-page-subtitle">Bioconjugation of AGuIX Nanoparticles for Targeted Cancer Therapy</p>
-        <p class="project-page-meta-line">Nanochemistry · Biomedical Context · Master Thesis</p>
-      </div>
-      <div class="detail-card project-hero-visual">
-        <div class="project-hero-visual-card">
-          <span class="project-hero-visual-label">Nanomedicine</span>
-          <div class="project-hero-orbit project-hero-orbit--one"></div>
-          <div class="project-hero-orbit project-hero-orbit--two"></div>
-          <div class="project-hero-node project-hero-node--one"></div>
-          <div class="project-hero-node project-hero-node--two"></div>
-          <div class="project-hero-node project-hero-node--three"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="project-meta-grid">
-      <article class="detail-card"><span class="project-mini-label">Degree</span><strong>Master</strong></article>
-      <article class="detail-card"><span class="project-mini-label">Year</span><strong>Year to be specified</strong></article>
-      <article class="detail-card"><span class="project-mini-label">Field</span><strong>Nanochemistry / Biomedical</strong></article>
-      <article class="detail-card"><span class="project-mini-label">Focus</span><strong>Nanomedicine</strong></article>
-      <article class="detail-card"><span class="project-mini-label">Type</span><strong>Thesis</strong></article>
-    </div>
-
-    <article class="detail-card project-context-card project-card-context">
-      <h3>Academic Context</h3>
-      <div class="project-context-grid">
-        <div><span class="project-mini-label">Institution</span><strong>Institution to be finalized</strong></div>
-        <div><span class="project-mini-label">Institute / Department</span><strong>Program / Laboratory to be finalized</strong></div>
-        <div><span class="project-mini-label">Academic Program</span><strong>Master-level interdisciplinary research context</strong></div>
-        <div><span class="project-mini-label">Supervisor</span><a class="project-supervisor-link" href="https://scholar.google.com/" rel="noreferrer" target="_blank">Supervisor profile placeholder</a></div>
-      </div>
-    </article>
-
-    <article class="detail-card project-content-card project-card-abstract">
-      <h3>Abstract</h3>
-      <p>This page is reserved for a structured summary of the master research project focused on the bioconjugation of AGuIX nanoparticles with antibody-based targeting elements using click chemistry in a cancer-therapy-oriented biomedical context.</p>
-    </article>
-
-    <article class="detail-card project-content-card project-card-keywords">
-      <h3>Keywords</h3>
-      <div class="tag-row"><span class="tag">Nanochemistry</span><span class="tag">Nanomedicine</span><span class="tag">Click Chemistry</span><span class="tag">Cancer Therapy</span><span class="tag">Bioconjugation</span><span class="tag">AGuIX Nanoparticles</span></div>
-    </article>
-
-    <article class="detail-card project-content-card project-card-skills">
-      <details class="project-accordion">
-        <summary>Skills &amp; Methods</summary>
-        <div class="project-accordion-body">
-          <div class="grid-3 project-skills-grid">
-            <div>
-              <h4>Applied Skills</h4>
-              <ul><li>Scientific project development</li><li>Academic summarization of biomedical context</li><li>Interdisciplinary scientific communication</li><li>Research interpretation</li></ul>
-            </div>
-            <div>
-              <h4>Research Methods</h4>
-              <ul><li>Click chemistry</li><li>Nanoparticle functionalization</li><li>Bioconjugation strategy</li><li>Targeting concept development</li></ul>
-            </div>
-            <div>
-              <h4>Developed Competencies</h4>
-              <ul><li>Biomedical context analysis</li><li>Nanomedicine reasoning</li><li>Interdisciplinary communication</li><li>Scientific abstraction</li></ul>
-            </div>
-          </div>
-        </div>
-      </details>
-    </article>
-
-    <div class="grid-2 project-main-grid">
-      <article class="detail-card project-content-card project-card-background">
-        <h3>Background &amp; Context</h3>
-        <p>The background section can later explain the immune-therapy context, the biological rationale for receptor blocking, and the broader scientific motivation for nanoparticle-assisted targeted therapeutic strategies.</p>
-      </article>
-      <article class="detail-card project-content-card project-card-objectives">
-        <h3>Objectives</h3>
-        <p>The objectives block is reserved for the project aims: functionalization of nanoparticles, attachment of biologically active targeting elements, and development of a relevant bioconjugation concept for future therapeutic application.</p>
-      </article>
-    </div>
-
-    <div class="grid-2 project-main-grid">
-      <article class="detail-card project-content-card project-card-methods">
-        <h3>Methods</h3>
-        <p>The methods section is reserved for a concise description of click chemistry, nanoparticle functionalization, and the logic of bioconjugate formation in an interdisciplinary nanochemistry and biomedical research setting.</p>
-      </article>
-      <article class="detail-card project-content-card project-card-results">
-        <h3>Results &amp; Direction</h3>
-        <p>The results and direction section is reserved for a summary of the project logic, scientific direction, and the relevance of the bioconjugation concept for selective targeting and potential cancer-therapy applications.</p>
-      </article>
-    </div>
-
-    <article class="detail-card project-content-card project-card-visuals">
-      <h3>Visual Materials</h3>
-      <p>This section is reserved for nanoparticle diagrams, click-chemistry workflows, conceptual biomedical figures, or project-specific visual explanations prepared for portfolio presentation.</p>
-    </article>
-
-    <article class="detail-card project-content-card project-card-related">
-      <h3>Related Projects</h3>
-      <p>This page can later be linked to the bachelor thesis, related nanochemistry presentations, and future mini-project pages in biomedical and chemistry-oriented topics.</p>
-      <div class="button-row">
-        <a class="btn btn-secondary btn-back-portfolio btn-back-portfolio--bottom" href="research-teaching-portfolio.html">Back to Portfolio</a>
-        <a class="btn btn-primary btn-academic-bg" href="academic.html">Academic Background</a>
-      </div>
-    </article>
-  </div>
+<div class="container">
+<div class="project-top-back-row"><a class="btn btn-secondary btn-back-portfolio btn-back-portfolio--top" data-i18n="bachelor_research_back_to_portfolio" href="research-teaching-portfolio.html">Back to Portfolio</a></div>
+<div class="portfolio-dev-banner portfolio-dev-banner--small">
+<strong data-i18n="portfolio_dev_label">Work in progress:</strong>
+<span data-i18n="portfolio_project_dev_text">this project page is currently a structured draft. Texts, visuals, and technical details will be refined over time.</span>
+</div>
+<div class="project-hero-grid">
+<div class="project-hero-copy">
+<div class="portfolio-type-badge" data-i18n="portfolio_type_thesis">Thesis</div>
+<h2 data-i18n="portfolio_master_title">Master Research Project</h2>
+<p class="project-page-subtitle" data-i18n="portfolio_master_subtitle">Bioconjugation of AGuIX Nanoparticles for Targeted Cancer Therapy</p>
+<p class="project-page-meta-line" data-i18n="master_research_nanochemistry_biomedical_context_master_thesis">Nanochemistry · Biomedical Context · Master Thesis</p>
+</div>
+<div class="detail-card project-hero-visual">
+<div class="project-hero-visual-card">
+<span class="project-hero-visual-label" data-i18n="research_teaching_portfolio_nanomedicine">Nanomedicine</span>
+<div class="project-hero-orbit project-hero-orbit--one"></div>
+<div class="project-hero-orbit project-hero-orbit--two"></div>
+<div class="project-hero-node project-hero-node--one"></div>
+<div class="project-hero-node project-hero-node--two"></div>
+<div class="project-hero-node project-hero-node--three"></div>
+</div>
+</div>
+</div>
+<div class="project-meta-grid">
+<article class="detail-card"><span class="project-mini-label" data-i18n="bachelor_research_degree">Degree</span><strong data-i18n="master_research_master">Master</strong></article>
+<article class="detail-card"><span class="project-mini-label" data-i18n="bachelor_research_year">Year</span><strong data-i18n="master_research_year_to_be_specified">Year to be specified</strong></article>
+<article class="detail-card"><span class="project-mini-label" data-i18n="bachelor_research_field">Field</span><strong data-i18n="master_research_nanochemistry_biomedical">Nanochemistry / Biomedical</strong></article>
+<article class="detail-card"><span class="project-mini-label" data-i18n="bachelor_research_focus">Focus</span><strong data-i18n="research_teaching_portfolio_nanomedicine">Nanomedicine</strong></article>
+<article class="detail-card"><span class="project-mini-label" data-i18n="resource_library_type">Type</span><strong data-i18n="portfolio_type_thesis">Thesis</strong></article>
+</div>
+<article class="detail-card project-context-card project-card-context">
+<h3 data-i18n="gallery_academic_context">Academic Context</h3>
+<div class="project-context-grid">
+<div><span class="project-mini-label" data-i18n="bachelor_research_institution">Institution</span><strong data-i18n="master_research_institution_to_be_finalized">Institution to be finalized</strong></div>
+<div><span class="project-mini-label" data-i18n="bachelor_research_institute_department">Institute / Department</span><strong data-i18n="master_research_program_laboratory_to_be_finalized">Program / Laboratory to be finalized</strong></div>
+<div><span class="project-mini-label" data-i18n="bachelor_research_academic_program">Academic Program</span><strong data-i18n="master_research_master_level_interdisciplinary_research_context">Master-level interdisciplinary research context</strong></div>
+<div><span class="project-mini-label" data-i18n="bachelor_research_supervisor">Supervisor</span><a class="project-supervisor-link" data-i18n="bachelor_research_supervisor_profile_placeholder" href="https://scholar.google.com/" rel="noreferrer" target="_blank">Supervisor profile placeholder</a></div>
+</div>
+</article>
+<article class="detail-card project-content-card project-card-abstract">
+<h3 data-i18n="bachelor_research_abstract">Abstract</h3>
+<p data-i18n="master_research_this_page_is_reserved_for_a">This page is reserved for a structured summary of the master research project focused on the bioconjugation of AGuIX nanoparticles with antibody-based targeting elements using click chemistry in a cancer-therapy-oriented biomedical context.</p>
+</article>
+<article class="detail-card project-content-card project-card-keywords">
+<h3 data-i18n="bachelor_research_keywords">Keywords</h3>
+<div class="tag-row"><span class="tag" data-i18n="research_teaching_portfolio_nanochemistry">Nanochemistry</span><span class="tag" data-i18n="research_teaching_portfolio_nanomedicine">Nanomedicine</span><span class="tag" data-i18n="research_teaching_portfolio_click_chemistry">Click Chemistry</span><span class="tag" data-i18n="research_teaching_portfolio_cancer_therapy">Cancer Therapy</span><span class="tag" data-i18n="master_research_bioconjugation">Bioconjugation</span><span class="tag" data-i18n="master_research_aguix_nanoparticles">AGuIX Nanoparticles</span></div>
+</article>
+<article class="detail-card project-content-card project-card-skills">
+<details class="project-accordion">
+<summary data-i18n="bachelor_research_skills_methods">Skills &amp; Methods</summary>
+<div class="project-accordion-body">
+<div class="grid-3 project-skills-grid">
+<div>
+<h4 data-i18n="bachelor_research_applied_skills">Applied Skills</h4>
+<ul><li data-i18n="master_research_scientific_project_development">Scientific project development</li><li data-i18n="master_research_academic_summarization_of_biomedical_context">Academic summarization of biomedical context</li><li data-i18n="master_research_interdisciplinary_scientific_communication">Interdisciplinary scientific communication</li><li data-i18n="bachelor_research_research_interpretation">Research interpretation</li></ul>
+</div>
+<div>
+<h4 data-i18n="bachelor_research_research_methods">Research Methods</h4>
+<ul><li data-i18n="master_research_click_chemistry">Click chemistry</li><li data-i18n="master_research_nanoparticle_functionalization">Nanoparticle functionalization</li><li data-i18n="master_research_bioconjugation_strategy">Bioconjugation strategy</li><li data-i18n="master_research_targeting_concept_development">Targeting concept development</li></ul>
+</div>
+<div>
+<h4 data-i18n="bachelor_research_developed_competencies">Developed Competencies</h4>
+<ul><li data-i18n="master_research_biomedical_context_analysis">Biomedical context analysis</li><li data-i18n="master_research_nanomedicine_reasoning">Nanomedicine reasoning</li><li data-i18n="master_research_interdisciplinary_communication">Interdisciplinary communication</li><li data-i18n="master_research_scientific_abstraction">Scientific abstraction</li></ul>
+</div>
+</div>
+</div>
+</details>
+</article>
+<div class="grid-2 project-main-grid">
+<article class="detail-card project-content-card project-card-background">
+<h3 data-i18n="bachelor_research_background_context">Background &amp; Context</h3>
+<p data-i18n="master_research_the_background_section_can_later_explain">The background section can later explain the immune-therapy context, the biological rationale for receptor blocking, and the broader scientific motivation for nanoparticle-assisted targeted therapeutic strategies.</p>
+</article>
+<article class="detail-card project-content-card project-card-objectives">
+<h3 data-i18n="bachelor_research_objectives">Objectives</h3>
+<p data-i18n="master_research_the_objectives_block_is_reserved_for">The objectives block is reserved for the project aims: functionalization of nanoparticles, attachment of biologically active targeting elements, and development of a relevant bioconjugation concept for future therapeutic application.</p>
+</article>
+</div>
+<div class="grid-2 project-main-grid">
+<article class="detail-card project-content-card project-card-methods">
+<h3 data-i18n="bachelor_research_methods">Methods</h3>
+<p data-i18n="master_research_the_methods_section_is_reserved_for">The methods section is reserved for a concise description of click chemistry, nanoparticle functionalization, and the logic of bioconjugate formation in an interdisciplinary nanochemistry and biomedical research setting.</p>
+</article>
+<article class="detail-card project-content-card project-card-results">
+<h3 data-i18n="bachelor_research_results_direction">Results &amp; Direction</h3>
+<p data-i18n="master_research_the_results_and_direction_section_is">The results and direction section is reserved for a summary of the project logic, scientific direction, and the relevance of the bioconjugation concept for selective targeting and potential cancer-therapy applications.</p>
+</article>
+</div>
+<article class="detail-card project-content-card project-card-visuals">
+<h3 data-i18n="bachelor_research_visual_materials">Visual Materials</h3>
+<p data-i18n="master_research_this_section_is_reserved_for_nanoparticle">This section is reserved for nanoparticle diagrams, click-chemistry workflows, conceptual biomedical figures, or project-specific visual explanations prepared for portfolio presentation.</p>
+</article>
+<article class="detail-card project-content-card project-card-related">
+<h3 data-i18n="bachelor_research_related_projects">Related Projects</h3>
+<p data-i18n="master_research_this_page_can_later_be_linked">This page can later be linked to the bachelor thesis, related nanochemistry presentations, and future mini-project pages in biomedical and chemistry-oriented topics.</p>
+<div class="button-row">
+<a class="btn btn-secondary btn-back-portfolio btn-back-portfolio--bottom" data-i18n="bachelor_research_back_to_portfolio" href="research-teaching-portfolio.html">Back to Portfolio</a>
+<a class="btn btn-primary btn-academic-bg" data-i18n="nav_academic" href="academic.html">Academic Background</a>
+</div>
+</article>
+</div>
 </section>
 </main>
 <footer>
@@ -216,67 +224,65 @@
 <h3 class="footer-title" data-i18n="footer_meta">Contact &amp; Info</h3>
 <ul class="footer-meta">
 <li>
-<a class="icon-link footer-contact-link" data-contact-email-link="true" href="mailto:your.email@example.com">
+<a class="icon-link footer-contact-link" data-contact-email-link="true" data-i18n-html="index_email" href="mailto:your.email@example.com">
 <span class="icon-badge icon-badge-mail"></span>
-<span>Email</span>
+<span data-i18n="index_email">Email</span>
 </a>
 </li>
-<li>
+<li data-i18n-html="index_in_linkedin">
 <a class="icon-link footer-contact-link" href="https://www.linkedin.com/in/shvedvadym" rel="noreferrer" target="_blank">
-<span class="icon-badge">in</span>
-<span>LinkedIn</span>
+<span class="icon-badge" data-i18n="index_in">in</span>
+<span data-i18n="index_linkedin">LinkedIn</span>
 </a>
 </li>
-<li>
+<li data-i18n-html="index_ig_instagram">
 <a class="icon-link footer-contact-link" href="https://www.instagram.com/vadymtravels" rel="noreferrer" target="_blank">
-<span class="icon-badge">IG</span>
-<span>Instagram</span>
+<span class="icon-badge" data-i18n="index_ig">IG</span>
+<span data-i18n="index_instagram">Instagram</span>
 </a>
 </li>
-<li>
+<li data-i18n-html="index_t24_tutor24">
 <a class="icon-link footer-contact-link" href="https://tutor24.ch/de/providers/3301791?public_view=true" rel="noreferrer" target="_blank">
-<span class="icon-badge">T24</span>
-<span>Tutor24</span>
+<span class="icon-badge" data-i18n="index_t24">T24</span>
+<span data-i18n="index_tutor24">Tutor24</span>
 </a>
 </li>
-<li>
+<li data-i18n-html="index_bu_buki">
 <a class="icon-link footer-contact-link" href="https://buki.com.ua/user-21753/" rel="noreferrer" target="_blank">
-<span class="icon-badge">BU</span>
-<span>BUKI</span>
+<span class="icon-badge" data-i18n="index_bu">BU</span>
+<span data-i18n="index_buki">BUKI</span>
 </a>
 </li>
-<li>
+<li data-i18n-html="index_ar_repetitor_org_ua">
 <a class="icon-link footer-contact-link" href="https://repetitor.org.ua/uk-id8693" rel="noreferrer" target="_blank">
-<span class="icon-badge">AR</span>
-<span>Repetitor.org.ua</span>
+<span class="icon-badge" data-i18n="index_ar">AR</span>
+<span data-i18n="index_repetitor_org_ua">Repetitor.org.ua</span>
 </a>
 </li>
-<li>
+<li data-i18n-html="index_cv_cv_download">
 <a class="icon-link footer-contact-link" data-cv-link="true" href="#">
-<span class="icon-badge">CV</span>
-<span>CV download</span>
+<span class="icon-badge" data-i18n="index_cv">CV</span>
+<span data-i18n="index_cv_download">CV download</span>
 </a>
 </li>
-<li>
+<li data-i18n-html="index_legal_business_info_2">
 <a class="icon-link footer-contact-link" href="#">
-<span class="icon-badge">§</span>
-<span>Legal / Business Info</span>
+<span class="icon-badge" data-i18n="index_text">§</span>
+<span data-i18n="index_legal_business_info">Legal / Business Info</span>
 </a>
 </li>
 </ul>
 </div>
 </div>
 <div class="button-row" style="margin-top: 1.2rem; margin-bottom: 0;">
-<a class="btn btn-primary btn-booking" data-booking-link="true" href="contact.html#booking">Book a Lesson</a>
-<a class="btn btn-secondary btn-contact footer-cta-btn" data-i18n="final_btn_1" href="contact.html"><span class="btn-inline-icon" aria-hidden="true">✉️</span><span>Contact Me</span></a>
+<a class="btn btn-primary btn-booking" data-booking-link="true" data-i18n="hero_btn_book" href="contact.html#booking">Book a Lesson</a>
+<a class="btn btn-secondary btn-contact footer-cta-btn" data-i18n="final_btn_1" href="contact.html"><span aria-hidden="true" class="btn-inline-icon">✉️</span><span>Contact Me</span></a>
 </div>
 <div class="copyright" data-i18n="footer_copy">© Vadym Shved — Multilingual personal professional website</div>
 </div>
 </footer>
-<script src="assets/js/site.js?v=i18n3">
-</script>
-</body>
-</html>
-<script src="assets/js/site.js?v=i18n3"></script>
+<script src="assets/js/i18n-inline.js?v=langfix1"></script>
+<script src="assets/js/site.js?v=langfix1"></script>
+<script src="assets/js/ui.js?v=langfix1"></script>
 </body>
 </html>

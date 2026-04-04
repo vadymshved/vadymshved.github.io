@@ -4,9 +4,27 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Vadym Shved — Resources</title>
-<link href="assets/css/style.css?v=i18n3" rel="stylesheet"/>
-<link href="assets/css/multipage.css?v=i18n3" rel="stylesheet"/>
+<title data-i18n="page_title_resources">Vadym Shved — Resources</title>
+<link href="assets/css/style.css?v=i18n7" rel="stylesheet"/>
+<link href="assets/css/multipage.css?v=i18n7" rel="stylesheet"/>
+<style id="i18n-antiflicker-style">
+  html.i18n-preload body { visibility: hidden; }
+</style>
+<script id="i18n-antiflicker-bootstrap">
+(function () {
+  try {
+    var raw = localStorage.getItem('siteLanguage') || 'en';
+    var lang = ({ua:'uk', uk:'uk', en:'en', de:'de', fr:'fr', es:'es', pl:'pl'})[raw] || 'en';
+    document.documentElement.classList.add('i18n-preload');
+    document.documentElement.setAttribute('data-initial-lang', lang);
+    document.documentElement.lang = lang;
+  } catch (e) {
+    document.documentElement.classList.add('i18n-preload');
+    document.documentElement.setAttribute('data-initial-lang', 'en');
+    document.documentElement.lang = 'en';
+  }
+})();
+</script>
 </head>
 <body class="page-shell">
 <header class="topbar">
@@ -16,7 +34,7 @@
 <span class="brand-role" data-i18n="brand_role">Chemist · Teacher · Educator</span>
 </a>
 <div class="nav-shell">
-<nav aria-label="Main navigation" class="desktop-nav" id="main-nav">
+<nav aria-label="Main navigation" class="desktop-nav" data-i18n-aria-label="index_main_navigation_aria_label" id="main-nav">
 <ul>
 <li>
 <a class="nav-link" data-i18n="nav_home" href="index.html">Home</a>
@@ -44,19 +62,19 @@
 </div>
 <div class="lang-switcher">
 <button aria-controls="langMenu" aria-expanded="false" aria-haspopup="true" class="lang-toggle" id="langToggle" type="button">
-<span class="lang-label">EN</span>
+<span class="lang-label" data-i18n="index_en">EN</span>
 <span aria-hidden="true">▾</span>
 </button>
 <div class="lang-menu" id="langMenu" role="menu">
-<button class="lang-option active" data-lang="en" type="button">English (EN)</button>
-<button class="lang-option" data-lang="ua" type="button">Українська (UA)</button>
-<button class="lang-option" data-lang="de" type="button">Deutsch (DE)</button>
-<button class="lang-option" data-lang="fr" type="button">Français (FR)</button>
-<button class="lang-option" data-lang="es" type="button">Español (ES)</button>
-<button class="lang-option" data-lang="pl" type="button">Polski (PL)</button>
+<button class="lang-option active" data-i18n="index_english_en" data-lang="en" type="button">English (EN)</button>
+<button class="lang-option" data-i18n="index_ua" data-lang="ua" type="button">Українська (UA)</button>
+<button class="lang-option" data-i18n="index_deutsch_de" data-lang="de" type="button">Deutsch (DE)</button>
+<button class="lang-option" data-i18n="index_fran_ais_fr" data-lang="fr" type="button">Français (FR)</button>
+<button class="lang-option" data-i18n="index_espa_ol_es" data-lang="es" type="button">Español (ES)</button>
+<button class="lang-option" data-i18n="index_polski_pl" data-lang="pl" type="button">Polski (PL)</button>
 </div>
 </div>
-<button aria-label="Open Menu" aria-controls="main-nav" aria-expanded="false" class="mobile-toggle" id="mobile-toggle" type="button">
+<button aria-controls="main-nav" aria-expanded="false" aria-label="Open Menu" class="mobile-toggle" data-i18n-aria-label="index_open_menu_aria_label" id="mobile-toggle" type="button">
 <span>
 </span>
 <span>
@@ -71,49 +89,49 @@
 <div class="container">
 <div class="section-header">
 <h2 data-i18n="resources_title">Resources</h2>
-<p class="section-intro">A curated collection of materials, tools, and recommended resources grouped by learning purpose and level.</p>
+<p class="section-intro" data-i18n="resources_a_curated_collection_of_materials_tools">A curated collection of materials, tools, and recommended resources grouped by learning purpose and level.</p>
 </div>
 <details class="resource-menu">
-<summary>Browse resource categories</summary>
+<summary data-i18n="resources_browse_resource_categories">Browse resource categories</summary>
 <div class="resource-menu-links">
-<a class="link-pill" href="#resource-school">School Chemistry</a>
-<a class="link-pill" href="#resource-advanced">IB / Advanced</a>
-<a class="link-pill" href="#resource-german">German Learning</a>
-<a class="link-pill" href="#resource-tools">Interactive Tools</a>
-<a class="link-pill" href="#resource-notes">Notes</a>
-<a class="link-pill" href="#resource-guides">Guides</a>
+<a class="link-pill" data-i18n="library_teaching_school" href="#resource-school">School Chemistry</a>
+<a class="link-pill" data-i18n="library_teaching_ib" href="#resource-advanced">IB / Advanced</a>
+<a class="link-pill" data-i18n="library_teaching_german" href="#resource-german">German Learning</a>
+<a class="link-pill" data-i18n="library_cat_tools" href="#resource-tools">Interactive Tools</a>
+<a class="link-pill" data-i18n="resources_notes" href="#resource-notes">Notes</a>
+<a class="link-pill" data-i18n="library_cat_guides" href="#resource-guides">Guides</a>
 </div>
 </details>
-<div class="grid-3">
-<a class="resource-card resource-card-link" id="resource-school" href="resource-library.html#school-chemistry">
-<div class="resource-cover">School chemistry</div>
-<h3>For School Chemistry</h3>
-<p>Carefully selected materials for school learners who want stronger foundations and clearer understanding.</p>
-</article>
-<a class="resource-card resource-card-link" id="resource-advanced" href="resource-library.html#ib-advanced">
-<div class="resource-cover">IB / advanced</div>
-<h3>For IB / Advanced Learners</h3>
-<p>Resources for demanding chemistry study, deeper conceptual work, and higher-level preparation.</p>
-</article>
-<a class="resource-card resource-card-link" id="resource-german" href="resource-library.html#university-beginners">
-<div class="resource-cover">University beginners</div>
-<h3>For University Beginners</h3>
-<p>Introductory support for general chemistry and early university-level study.</p>
-</article>
-<a class="resource-card resource-card-link" id="resource-tools" href="resource-library.html#german-learning">
-<div class="resource-cover">German resources</div>
-<h3>German Learning Resources</h3>
-<p>Selected tools and materials for learners developing German alongside science study.</p>
-</article>
-<a class="resource-card resource-card-link" id="resource-notes" href="resource-library.html#interactive-tool">
-<div class="resource-cover">Interactive tools</div>
-<h3>Interactive Tools &amp; Simulations</h3>
-<p>Reliable digital tools for visualization, concept-building, and guided independent practice.</p>
-</article>
-<a class="resource-card resource-card-link" id="resource-guides" href="resource-library.html#study-support">
-<div class="resource-cover">Notes and guides</div>
-<h3>Notes, Guides &amp; Study Support</h3>
-<p>Structured summaries, topic notes, and practical guidance for revision and preparation.</p>
+<div class="grid-3" data-i18n-html="resources_school_chemistry_for_school_chemistry_carefully">
+<a class="resource-card resource-card-link" href="resource-library.html#school-chemistry" id="resource-school">
+<div class="resource-cover" data-i18n="resources_school_chemistry">School chemistry</div>
+<h3 data-i18n="resources_for_school_chemistry">For School Chemistry</h3>
+<p data-i18n="resources_carefully_selected_materials_for_school_learners">Carefully selected materials for school learners who want stronger foundations and clearer understanding.</p>
+
+<a class="resource-card resource-card-link" href="resource-library.html#ib-advanced" id="resource-advanced">
+<div class="resource-cover" data-i18n="resources_ib_advanced">IB / advanced</div>
+<h3 data-i18n="resources_for_ib_advanced_learners">For IB / Advanced Learners</h3>
+<p data-i18n="resources_resources_for_demanding_chemistry_study_deeper">Resources for demanding chemistry study, deeper conceptual work, and higher-level preparation.</p>
+
+<a class="resource-card resource-card-link" href="resource-library.html#university-beginners" id="resource-german">
+<div class="resource-cover" data-i18n="who_tag_3">University beginners</div>
+<h3 data-i18n="resources_for_university_beginners">For University Beginners</h3>
+<p data-i18n="resources_introductory_support_for_general_chemistry_and">Introductory support for general chemistry and early university-level study.</p>
+
+<a class="resource-card resource-card-link" href="resource-library.html#german-learning" id="resource-tools">
+<div class="resource-cover" data-i18n="resources_german_resources">German resources</div>
+<h3 data-i18n="resources_german_learning_resources">German Learning Resources</h3>
+<p data-i18n="resources_selected_tools_and_materials_for_learners">Selected tools and materials for learners developing German alongside science study.</p>
+
+<a class="resource-card resource-card-link" href="resource-library.html#interactive-tool" id="resource-notes">
+<div class="resource-cover" data-i18n="resources_interactive_tools">Interactive tools</div>
+<h3 data-i18n="resources_interactive_tools_simulations">Interactive Tools &amp; Simulations</h3>
+<p data-i18n="resources_reliable_digital_tools_for_visualization_concept">Reliable digital tools for visualization, concept-building, and guided independent practice.</p>
+
+<a class="resource-card resource-card-link" href="resource-library.html#study-support" id="resource-guides">
+<div class="resource-cover" data-i18n="resources_notes_and_guides">Notes and guides</div>
+<h3 data-i18n="resources_notes_guides_study_support">Notes, Guides &amp; Study Support</h3>
+<p data-i18n="resources_structured_summaries_topic_notes_and_practical">Structured summaries, topic notes, and practical guidance for revision and preparation.</p>
 </a>
 </a>
 </a>
@@ -172,64 +190,65 @@
 <h3 class="footer-title" data-i18n="footer_meta">Contact &amp; Info</h3>
 <ul class="footer-meta">
 <li>
-<a class="icon-link footer-contact-link" data-contact-email-link="true" href="mailto:your.email@example.com">
+<a class="icon-link footer-contact-link" data-contact-email-link="true" data-i18n-html="index_email" href="mailto:your.email@example.com">
 <span class="icon-badge icon-badge-mail"></span>
-<span>Email</span>
+<span data-i18n="index_email">Email</span>
 </a>
 </li>
-<li>
+<li data-i18n-html="index_in_linkedin">
 <a class="icon-link footer-contact-link" href="https://www.linkedin.com/in/shvedvadym" rel="noreferrer" target="_blank">
-<span class="icon-badge">in</span>
-<span>LinkedIn</span>
+<span class="icon-badge" data-i18n="index_in">in</span>
+<span data-i18n="index_linkedin">LinkedIn</span>
 </a>
 </li>
-<li>
+<li data-i18n-html="index_ig_instagram">
 <a class="icon-link footer-contact-link" href="https://www.instagram.com/vadymtravels" rel="noreferrer" target="_blank">
-<span class="icon-badge">IG</span>
-<span>Instagram</span>
+<span class="icon-badge" data-i18n="index_ig">IG</span>
+<span data-i18n="index_instagram">Instagram</span>
 </a>
 </li>
-<li>
+<li data-i18n-html="index_t24_tutor24">
 <a class="icon-link footer-contact-link" href="https://tutor24.ch/de/providers/3301791?public_view=true" rel="noreferrer" target="_blank">
-<span class="icon-badge">T24</span>
-<span>Tutor24</span>
+<span class="icon-badge" data-i18n="index_t24">T24</span>
+<span data-i18n="index_tutor24">Tutor24</span>
 </a>
 </li>
-<li>
+<li data-i18n-html="index_bu_buki">
 <a class="icon-link footer-contact-link" href="https://buki.com.ua/user-21753/" rel="noreferrer" target="_blank">
-<span class="icon-badge">BU</span>
-<span>BUKI</span>
+<span class="icon-badge" data-i18n="index_bu">BU</span>
+<span data-i18n="index_buki">BUKI</span>
 </a>
 </li>
-<li>
+<li data-i18n-html="index_ar_repetitor_org_ua">
 <a class="icon-link footer-contact-link" href="https://repetitor.org.ua/uk-id8693" rel="noreferrer" target="_blank">
-<span class="icon-badge">AR</span>
-<span>Repetitor.org.ua</span>
+<span class="icon-badge" data-i18n="index_ar">AR</span>
+<span data-i18n="index_repetitor_org_ua">Repetitor.org.ua</span>
 </a>
 </li>
-<li>
+<li data-i18n-html="index_cv_cv_download">
 <a class="icon-link footer-contact-link" data-cv-link="true" href="#">
-<span class="icon-badge">CV</span>
-<span>CV download</span>
+<span class="icon-badge" data-i18n="index_cv">CV</span>
+<span data-i18n="index_cv_download">CV download</span>
 </a>
 </li>
-<li>
+<li data-i18n-html="index_legal_business_info_2">
 <a class="icon-link footer-contact-link" href="#">
-<span class="icon-badge">§</span>
-<span>Legal / Business Info</span>
+<span class="icon-badge" data-i18n="index_text">§</span>
+<span data-i18n="index_legal_business_info">Legal / Business Info</span>
 </a>
 </li>
 </ul>
 </div>
 </div>
 <div class="button-row" style="margin-top: 1.2rem; margin-bottom: 0;">
-<a class="btn btn-primary btn-booking" data-booking-link="true" href="contact.html#booking">Book a Lesson</a>
-<a class="btn btn-secondary btn-contact footer-cta-btn" data-i18n="final_btn_1" href="contact.html"><span class="btn-inline-icon" aria-hidden="true">✉️</span><span>Contact Me</span></a>
+<a class="btn btn-primary btn-booking" data-booking-link="true" data-i18n="hero_btn_book" href="contact.html#booking">Book a Lesson</a>
+<a class="btn btn-secondary btn-contact footer-cta-btn" data-i18n="final_btn_1" href="contact.html"><span aria-hidden="true" class="btn-inline-icon">✉️</span><span>Contact Me</span></a>
 </div>
 <div class="copyright" data-i18n="footer_copy">© Vadym Shved — Multilingual personal professional website</div>
 </div>
 </footer>
-<script src="assets/js/site.js?v=i18n3">
-</script>
+<script src="assets/js/i18n-inline.js?v=langfix1"></script>
+<script src="assets/js/site.js?v=langfix1"></script>
+<script src="assets/js/ui.js?v=langfix1"></script>
 </body>
 </html>

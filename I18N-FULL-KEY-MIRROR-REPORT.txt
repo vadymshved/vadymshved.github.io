@@ -1,0 +1,43 @@
+I18N FULL KEY MIRROR REPORT
+
+What was fixed:
+- Extracted additional translatable content keys directly from all HTML pages.
+- Added missing canonical keys to en.json.
+- Mirrored the exact same key set into:
+  uk.json
+  de.json
+  fr.json
+  es.json
+  pl.json
+- Missing non-English translations were intentionally kept as empty strings for future manual replacement.
+- Updated HTML pages so more user-facing English strings are now explicitly connected to canonical i18n keys.
+
+Current canonical key count:
+- en.json: 924
+- uk.json: 924
+- de.json: 924
+- fr.json: 924
+- es.json: 924
+- pl.json: 924
+
+Pages audited for key extraction:
+- index.html
+- about.html
+- teaching.html
+- academic.html
+- resources.html
+- services.html
+- contact.html
+- gallery.html
+- resource-library.html
+- research-teaching-portfolio.html
+- bachelor-research.html
+- master-research.html
+- didactics-project-textbook-comparison.html
+- scientific-article-presentation.html
+- academic-mini-projects.html
+
+Implementation note:
+- The website now uses one HTML page per page, one canonical JSON file per language, and one JS loader.
+- English remains the base content in HTML and the canonical source in en.json.
+- site.js applies translations with English fallback whenever a target-language value is empty or missing.
